@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faChessKing, faChessRook, faChessPawn } from "@fortawesome/free-solid-svg-icons";
 
 class BodySidebar extends React.Component {
   constructor(props) {
@@ -53,7 +53,7 @@ class BodySidebar extends React.Component {
                 }}
               >
                 <span className="IconWrapper">
-                  <FontAwesomeIcon icon={faCoffee} />
+                  <FontAwesomeIcon icon={faChessPawn} />
                 </span>
                 <span className="SingleMenuName">Data Anggota</span>
               </div>
@@ -68,7 +68,7 @@ class BodySidebar extends React.Component {
                 }}
               >
                 <span className="IconWrapper">
-                  <FontAwesomeIcon icon={faCoffee} />
+                  <FontAwesomeIcon icon={faChessKing} />
                 </span>
                 <span className="SingleMenuName">Eksekutif</span>
               </div>
@@ -83,7 +83,7 @@ class BodySidebar extends React.Component {
                 }}
               >
                 <span className="IconWrapper">
-                  <FontAwesomeIcon icon={faCoffee} />
+                  <FontAwesomeIcon icon={faChessRook} />
                 </span>
                 <span className="SingleMenuName">Legislatif</span>
               </div>

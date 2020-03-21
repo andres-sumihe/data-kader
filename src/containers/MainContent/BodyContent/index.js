@@ -13,7 +13,6 @@ class BodyContent extends React.Component {
       <div className="BodyContent">
         <Switch>
           <Route exact path="/">
-            
             <Anggota />
             <DataList name='NamaOrang' kta='086969' jabatan='Presiden' wilayah='Indonesia'/>
             <DataGrid name='NamaOrang' kta='086969' jabatan='Presiden' wilayah='Indonesia'/>

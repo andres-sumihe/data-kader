@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import Sidebar from "./containers/Sidebar";
 import MainContent from "./containers/MainContent";
+import DetailUser from "./containers/DetailUser/DetailUser";
 
 class App extends React.Component {
   constructor(props) {
@@ -24,11 +25,13 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
+          
           <Sidebar isSidebarActive={isSidebarActive} />
           <MainContent
             isSidebarActive={isSidebarActive}
             onSidebarStatusChange={this.handleSidebarStatusChange}
           />
+          <DetailUser/>
         </Router>
       </div>
     );
