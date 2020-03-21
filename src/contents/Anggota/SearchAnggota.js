@@ -55,7 +55,7 @@ class SearchAnggota extends React.Component {
             <span>Pencarian Cepat</span>
           </div>
           <div className="SingleOfTypeSearch" data-title="Pencarian-Lengkap">
-            <span>Pencarian Lengkap</span>
+            <span>Pencarian Lengkapsss</span>
           </div>
         </div>
         <div className="ContentsOfSearch column-l-9 column-8">
