@@ -4,6 +4,19 @@ import "../../grid.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faTimes } from "@fortawesome/free-solid-svg-icons";
 
+class FullSearch extends React.Component {
+  render() {
+    return (
+      <form className="FullSearch">
+        <div className="InputWrapper">
+          <input type="text" name="" className="singleInputSearch" />
+
+        </div>
+      </form>
+    );
+  }
+}
+
 class FastSearch extends React.Component {
   render() {
     return (
