@@ -4,8 +4,6 @@ import "./style.css";
 import Anggota from "../../../contents/Anggota";
 import Eksekutif from "../../../contents/Eksekutif";
 import Legislatif from "../../../contents/Legislatif";
-import DataList from "./GridAndList/DataList";
-import DataGrid from "./GridAndList/DataGrid";
 
 class BodyContent extends React.Component {
   render() {
@@ -14,8 +12,6 @@ class BodyContent extends React.Component {
         <Switch>
           <Route exact path="/">
             <Anggota />
-            <DataList name='NamaOrang' kta='086969' jabatan='Presiden' wilayah='Indonesia'/>
-            <DataGrid name='NamaOrang' kta='086969' jabatan='Presiden' wilayah='Indonesia'/>
           </Route>
           <Route path="/eksekutif">
             <Eksekutif />
