@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import "./../../skin.css";
 import HeadContent from "./HeadContent";
 import BodyContent from "./BodyContent";
 
@@ -16,7 +17,7 @@ class MainContent extends React.Component {
   render() {
     const isSidebarActive = this.props.isSidebarActive;
     return (
-      <div className={"MainContent" + (!isSidebarActive ? " Full" : "")}>
+      <div className={"MainContent bg-c5" + (!isSidebarActive ? " Full" : "")}>
         <HeadContent
           isSidebarActive={isSidebarActive}
           onMenuButtonClicked={this.handleMenuButtonClicked}

@@ -4,6 +4,10 @@
     ################
 */
 
+/* 
+    ###############
+    bacground solid */
+
 /* white */
 .bg-c1{
     background-color: #ffffff;
@@ -14,7 +18,7 @@
 }
 /* red */
 .bg-c3{
-    background-color: #ff0000;
+    background-color: #f73838;
 }
 /* green */
 .bg-c4{
@@ -22,11 +26,24 @@
 }
 /* light grey */
 .bg-c5{
-    background-color: #F1F4FB;
+    background-color: #e3e3e5;
 }
 /* dark grey */
 .bg-c6{
     background-color: #788782;
+}
+
+/* 
+    ######################
+    bacground with opacity */
+
+/* light grey */
+.bg-c1-o{
+    background-color: rgba(24, 24, 24, 0.527);
+}
+/* red */
+.bg-c2-o{
+    background-color: rgba(255, 0, 0, 0.726);
 }
 
 /* 
@@ -49,11 +66,16 @@
 }
 /* light grey */
 .bd-c4{
-    border-color: #F1F4FB;
+    border-color: #e3e3e5;
 }
 /* dark grey */
 .bd-c5{
     border-color: #788782;
+}
+
+/* border with opacity */
+.bd-c1-o{
+    border-color: rgba(0, 0, 0, 0.068)
 }
 
 /* 
@@ -64,7 +86,7 @@
 
 /* white */
 .tx-c1{
-    color: #F1F4FB;
+    color: #ffffff;
 }
 /* black */
 .tx-c2{
@@ -80,7 +102,7 @@
 }
 /* light grey */
 .tx-c5{
-    color: #F1F4FB;
+    color: #e3e3e5;
 }
 /* dark grey */
 .tx-c6{

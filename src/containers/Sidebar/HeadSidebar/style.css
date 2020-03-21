@@ -3,11 +3,10 @@
   height: 120px;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid;
 }
 
 .brand {
   font-weight: 400;
-  color: #2bcf8a;
   text-transform: capitalize;
 }

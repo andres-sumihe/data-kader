@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.css";
+import "./../../skin.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTh, faList } from "@fortawesome/free-solid-svg-icons";
+import { faTh, faList, faUsers } from "@fortawesome/free-solid-svg-icons";
 
 class DataAnggota extends React.Component {
 	render() {
@@ -11,7 +12,7 @@ class DataAnggota extends React.Component {
 					<div className="ResultData BroderGray"></div>
 					<div className="DisplayDataBy">
 						<div className="ByGrid">
-							<FontAwesomeIcon icon={}
+							<FontAwesomeIcon icon={faUsers}/>
 						</div>
 						<div className="ByList"></div>
 					</div>

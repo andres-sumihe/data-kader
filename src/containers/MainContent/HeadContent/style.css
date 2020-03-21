@@ -1,5 +1,4 @@
 .HeadContent {
-  background-color: #2bcf8a;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 70px;
@@ -11,7 +10,6 @@
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  color: #fff;
 }
 
 .MenuButtonToggle {
@@ -28,14 +26,12 @@
   width: 100%;
   height: 2px;
   display: block;
-  background-color: #fff;
 }
 
 .Separator {
   width: 100%;
   height: 2px;
   margin-bottom: 18px;
-  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .BodyHeadContent {
@@ -46,5 +42,4 @@
 .BodyHeadContent h3 {
   font-weight: 400;
   text-transform: uppercase;
-  color: #fff;
 }

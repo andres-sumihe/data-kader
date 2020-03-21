@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import "./../../../skin.css";
 import { Switch, Route } from "react-router-dom";
 
 class HeadContent extends React.Component {
@@ -15,21 +16,21 @@ class HeadContent extends React.Component {
 
   render() {
     return (
-      <div className="HeadContent">
-        <div className="InnerTopHead">
+      <div className="HeadContent bg-c4">
+        <div className="InnerTopHead bg-c4">
           <div
             className="MenuButtonToggle"
             onClick={this.handleClickMenuButton}
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span className="bg-c1"></span>
+            <span className="bg-c1"></span>
+            <span className="bg-c1"></span>
           </div>
           <div className="UserArea">Hello, Rietts :)</div>
         </div>
-        <div className="Separator"></div>
-        <div className="BodyHeadContent">
-          <h3>
+        <div className="Separator bg-c4"></div>
+        <div className="BodyHeadContent bg-c4">
+          <h3 className="tx-c1">
             <Switch>
               <Route exact path="/">
                 Data Anggota
