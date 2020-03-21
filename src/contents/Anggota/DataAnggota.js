@@ -23,89 +23,121 @@ class DataAnggota extends React.Component {
 				<div className="BodyDataAnggota row">
 					<div className="column-l-3 SingleDataAnggota">
 						<div className="BoxSingleDataAnggota">
-							<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo1.jpg")})` }}>
-							</div>
-							<div className="Nama">Kimono Budi Fuzzy</div>
-							<div className="NoKTA">9922090922309201</div>
-							<div className="Jabatan">Presiden</div>
-							<div className="Wilayah">Kota Salatiga</div>
-						</div>
-					</div>
-					<div className="column-l-3 SingleDataAnggota">
-						<div className="BoxSingleDataAnggota">
-							<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo2.jpg")})` }}>
-							</div>
-							<div className="Nama">Kimono Budi Fuzzy</div>
-							<div className="NoKTA">9922090922309201</div>
-							<div className="Jabatan">Presiden</div>
-							<div className="Wilayah">Kota Salatiga</div>
-						</div>
-					</div>
-					<div className="column-l-3 SingleDataAnggota">
-						<div className="BoxSingleDataAnggota">
-							<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo3.jpg")})` }}>
-							</div>
-							<div className="Nama">Kimono Budi Fuzzy</div>
-							<div className="NoKTA">9922090922309201</div>
-							<div className="Jabatan">Presiden</div>
-							<div className="Wilayah">Kota Salatiga</div>
-						</div>
-					</div>
-					<div className="column-l-3 SingleDataAnggota">
-						<div className="BoxSingleDataAnggota">
-							<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo1.jpg")})` }}>
-							</div>
-							<div className="Nama">Kimono Budi Fuzzy</div>
-							<div className="NoKTA">9922090922309201</div>
-							<div className="Jabatan">Presiden</div>
-							<div className="Wilayah">Kota Salatiga</div>
-						</div>
-					</div>
-					<div className="column-l-3 SingleDataAnggota">
-						<div className="BoxSingleDataAnggota">
-							<div className="BoxOverlay">
-								<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo2.jpg")})` }}>
-								</div>
-								<div className="Nama">Kimono Budi Fuzzy</div>
-								<div className="NoKTA">9922090922309201</div>
-								<div className="Jabatan">Presiden</div>
-								<div className="Wilayah">Kota Salatiga</div>
-								</div>
-						</div>
-					</div>
-					<div className="column-l-3 SingleDataAnggota">
-						<div className="BoxSingleDataAnggota">
-							<div className="BoxOverlay">
-								<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo3.jpg")})` }}>
-								</div>
-								<div className="Nama">Kimono Budi Fuzzy</div>
-								<div className="NoKTA">9922090922309201</div>
-								<div className="Jabatan">Presiden</div>
-								<div className="Wilayah">Kota Salatiga</div>
-							</div>
-						</div>
-					</div>
-					<div className="column-l-3 SingleDataAnggota">
-						<div className="BoxSingleDataAnggota">
-							<div className="BoxOverlay">
+							<div className="PreviewDataAnggota">
 								<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo1.jpg")})` }}>
 								</div>
 								<div className="Nama">Kimono Budi Fuzzy</div>
 								<div className="NoKTA">9922090922309201</div>
 								<div className="Jabatan">Presiden</div>
 								<div className="Wilayah">Kota Salatiga</div>
-								</div>
+							</div>
+							<div className="BoxOverlay">
+								<div className="ViewDetailButton">Lihat Profil</div>
+							</div>
 						</div>
 					</div>
 					<div className="column-l-3 SingleDataAnggota">
 						<div className="BoxSingleDataAnggota">
+							<div className="PreviewDataAnggota">
+								<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo2.jpg")})` }}>
+								</div>
+								<div className="Nama">Kimono Budi Fuzzy</div>
+								<div className="NoKTA">9922090922309201</div>
+								<div className="Jabatan">Presiden</div>
+								<div className="Wilayah">Kota Salatiga</div>
+							</div>
 							<div className="BoxOverlay">
+								<div className="ViewDetailButton">Lihat Profil</div>
+							</div>
+						</div>
+					</div>
+					<div className="column-l-3 SingleDataAnggota">
+						<div className="BoxSingleDataAnggota">
+							<div className="PreviewDataAnggota">
 								<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo3.jpg")})` }}>
 								</div>
 								<div className="Nama">Kimono Budi Fuzzy</div>
 								<div className="NoKTA">9922090922309201</div>
 								<div className="Jabatan">Presiden</div>
 								<div className="Wilayah">Kota Salatiga</div>
+							</div>
+							<div className="BoxOverlay">
+								<div className="ViewDetailButton">Lihat Profil</div>
+							</div>
+						</div>
+					</div>
+					<div className="column-l-3 SingleDataAnggota">
+						<div className="BoxSingleDataAnggota">
+							<div className="PreviewDataAnggota">
+								<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo1.jpg")})` }}>
+								</div>
+								<div className="Nama">Kimono Budi Fuzzy</div>
+								<div className="NoKTA">9922090922309201</div>
+								<div className="Jabatan">Presiden</div>
+								<div className="Wilayah">Kota Salatiga</div>
+							</div>
+							<div className="BoxOverlay">
+								<div className="ViewDetailButton">Lihat Profil</div>
+							</div>
+						</div>
+					</div>
+					<div className="column-l-3 SingleDataAnggota">
+						<div className="BoxSingleDataAnggota">
+							<div className="PreviewDataAnggota">
+								<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo2.jpg")})` }}>
+								</div>
+								<div className="Nama">Kimono Budi Fuzzy</div>
+								<div className="NoKTA">9922090922309201</div>
+								<div className="Jabatan">Presiden</div>
+								<div className="Wilayah">Kota Salatiga</div>
+							</div>
+							<div className="BoxOverlay">
+								<div className="ViewDetailButton">Lihat Profil</div>
+							</div>
+						</div>
+					</div>
+					<div className="column-l-3 SingleDataAnggota">
+						<div className="BoxSingleDataAnggota">
+							<div className="PreviewDataAnggota">
+								<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo3.jpg")})` }}>
+								</div>
+								<div className="Nama">Kimono Budi Fuzzy</div>
+								<div className="NoKTA">9922090922309201</div>
+								<div className="Jabatan">Presiden</div>
+								<div className="Wilayah">Kota Salatiga</div>
+							</div>
+							<div className="BoxOverlay">
+								<div className="ViewDetailButton">Lihat Profil</div>
+							</div>
+						</div>
+					</div>
+					<div className="column-l-3 SingleDataAnggota">
+						<div className="BoxSingleDataAnggota">
+							<div className="PreviewDataAnggota">
+								<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo1.jpg")})` }}>
+								</div>
+								<div className="Nama">Kimono Budi Fuzzy</div>
+								<div className="NoKTA">9922090922309201</div>
+								<div className="Jabatan">Presiden</div>
+								<div className="Wilayah">Kota Salatiga</div>
+							</div>
+							<div className="BoxOverlay">
+								<div className="ViewDetailButton">Lihat Profil</div>
+							</div>
+						</div>
+					</div>
+					<div className="column-l-3 SingleDataAnggota">
+						<div className="BoxSingleDataAnggota">
+							<div className="PreviewDataAnggota">
+								<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo3.jpg")})` }}>
+								</div>
+								<div className="Nama">Kimono Budi Fuzzy</div>
+								<div className="NoKTA">9922090922309201</div>
+								<div className="Jabatan">Presiden</div>
+								<div className="Wilayah">Kota Salatiga</div>
+							</div>
+							<div className="BoxOverlay">
+								<div className="ViewDetailButton">Lihat Profil</div>
 							</div>
 						</div>
 					</div>
