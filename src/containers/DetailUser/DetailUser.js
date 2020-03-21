@@ -26,20 +26,20 @@ export default class DetailUser extends Component {
                 </div>
                 <div className="box-menu">
                     {/* kanan dan kiri 2 menu */}
-                    <ul>
-                        <li>
-                            <div>
-                                <h5>Biodata</h5>
-                            </div>
+                    <ul className="menu-wrap">
+                        <li className="menu">
+                            <h5>Biodata</h5>
                             <div className="bottom-line"/>
                         </li>
-                        <li>
-                            <div>
-                                <h5>Kepartaian</h5>
-                            </div>
+                        <li className="menu">
+                            <h5>Kepartaian</h5>
                             <div className="bottom-line"/>
                         </li>
                     </ul>
+                </div>
+                <div>
+                    <h6>alamat</h6>
+                    <h6>Contat</h6>
                 </div>
             </div>
         )
