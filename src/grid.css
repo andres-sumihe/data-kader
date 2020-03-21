@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 .container {
+=======
+.container,
+.container-fluid {
+>>>>>>> 4cf12c05f33e3393270d6257ff1558208c6c6e79
   width: 100%;
   position: relative;
   padding: 0;

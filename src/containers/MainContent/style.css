@@ -1,0 +1,7 @@
+.MainContent {
+  position: absolute;
+  width: calc(100% - 250px);
+  left: 250px;
+  top: 0;
+  background-color: #e3e3e5;
+}

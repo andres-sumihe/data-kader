@@ -1,0 +1,36 @@
+.SingleMenu {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.MenuWrapper {
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.SingleMenu {
+  padding: 20px 5px;
+}
+
+.SingleMenu.Active {
+  padding: 15px 5px;
+  color: #fff;
+}
+
+.InnerSingleMenu {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.SingleMenu.Active .InnerSingleMenu {
+  background-color: #2bcf8a;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.IconWrapper {
+  margin-right: 15px;
+}

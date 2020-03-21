@@ -1,0 +1,50 @@
+.HeadContent {
+  background-color: #2bcf8a;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 70px;
+  overflow: hidden;
+}
+
+.InnerTopHead {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.MenuButtonToggle {
+  width: 35px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  cursor: pointer;
+}
+
+.MenuButtonToggle span {
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+}
+
+.Separator {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 18px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.BodyHeadContent {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.BodyHeadContent h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
