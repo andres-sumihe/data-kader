@@ -5,6 +5,7 @@
 
 .App * {
   font-family: "Roboto", sans-serif;
+  color: inherit;
 }
 
 h1,
@@ -50,4 +51,11 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+
+a,
+a:focus,
+a::-moz-focus-inner {
+  border: 0;
+  outline: none;
 }

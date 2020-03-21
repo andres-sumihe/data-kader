@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faCoffee, faAddressCard } from "@fortawesome/free-solid-svg-icons";
 
 class BodySidebar extends React.Component {
   constructor(props) {
@@ -21,11 +21,6 @@ class BodySidebar extends React.Component {
         menuActive: title
       });
       switch(title) {
-        case "Anggota":
-          this.eksekutifRef.current.classList.remove("Active");
-          this.legislatifRef.current.classList.remove("Active");
-          this.anggotaRef.current.classList.add("Active");
-        break;
         case "Eksekutif":
           this.anggotaRef.current.classList.remove("Active");
           this.legislatifRef.current.classList.remove("Active");
@@ -36,6 +31,11 @@ class BodySidebar extends React.Component {
           this.eksekutifRef.current.classList.remove("Active");
           this.legislatifRef.current.classList.add("Active");
         break;
+        case "Anggota":
+        default: 
+          this.eksekutifRef.current.classList.remove("Active");
+          this.legislatifRef.current.classList.remove("Active");
+          this.anggotaRef.current.classList.add("Active");
       }
     }
   }
@@ -53,7 +53,7 @@ class BodySidebar extends React.Component {
                 }}
               >
                 <span className="IconWrapper">
-                  <FontAwesomeIcon icon={faCoffee} />
+                  <FontAwesomeIcon icon={faAddressCard} />
                 </span>
                 <span className="SingleMenuName">Data Anggota</span>
               </div>
@@ -68,7 +68,7 @@ class BodySidebar extends React.Component {
                 }}
               >
                 <span className="IconWrapper">
-                  <FontAwesomeIcon icon={faCoffee} />
+                  <FontAwesomeIcon icon={faAddressCard} />
                 </span>
                 <span className="SingleMenuName">Eksekutif</span>
               </div>
@@ -83,7 +83,7 @@ class BodySidebar extends React.Component {
                 }}
               >
                 <span className="IconWrapper">
-                  <FontAwesomeIcon icon={faCoffee} />
+                  <FontAwesomeIcon icon={faAddressCard} />
                 </span>
                 <span className="SingleMenuName">Legislatif</span>
               </div>

@@ -1,0 +1,89 @@
+.Search {
+  margin-bottom: 60px;
+  margin-right: -20px;
+}
+
+.TypeOfSearch {
+	border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.SingleOfTypeSearch {
+	line-height: 1;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+}
+
+.SingleOfTypeSearch:last-of-type {
+	margin-bottom: 0;
+}
+
+.SingleOfTypeSearch.Active {
+	color: #2bcf8a;
+}
+
+.ContentsOfSearch {
+	text-align: center;
+}
+
+.FastSearch {
+	width:100%;
+	padding-left: 20px;
+}
+
+.InputWrapper {
+	margin-bottom: 20px;
+}
+
+.InputWrapper input {
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	padding: 15px 20px;
+	font-size: 1em;
+	transition: 0.3s ease-in-out;
+}
+
+.InputWrapper input:focus {
+	outline: none;
+	border-color: #2bcf8a;
+}
+
+.SingleButtonWrapper:nth-child(odd) {
+	padding-right: 10px !important;
+}
+
+.SingleButtonWrapper:nth-child(even) {
+	padding-left: 10px !important;
+}
+
+.SingleButtonWrapper button {
+	width: 100%;
+	height: 50px;
+	cursor: pointer;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1em;
+	transition: 0.4s ease-in-out;
+}
+
+.SingleButtonWrapper button span {
+	margin-left: 8px;
+}
+
+.SearchButton {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ClearButton {
+	background-color: rgba(255, 0, 0, 0.75);
+}
+
+.SearchButton:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.ClearButton:hover {
+	background-color: rgba(255, 0, 0, 0.6);
+}

@@ -29,7 +29,7 @@ class HeadContent extends React.Component {
         </div>
         <div className="Separator"></div>
         <div className="BodyHeadContent">
-          <h4>
+          <h3>
             <Switch>
               <Route exact path="/">
                 Data Anggota
@@ -37,7 +37,7 @@ class HeadContent extends React.Component {
               <Route path="/eksekutif">Eksekutif</Route>
               <Route path="/legislatif">Legislatif</Route>
             </Switch>
-          </h4>
+          </h3>
         </div>
       </div>
     );
