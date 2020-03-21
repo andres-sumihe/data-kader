@@ -20,7 +20,7 @@ class FastSearch extends React.Component {
             </button>
           </div>
           <div className="SingleButtonWrapper column-6">
-            <button type="button" class="ClearButton" className="bg-c2-o">
+            <button type="button" class="ClearButton" className="bg-c2-o tx-c1">
               <FontAwesomeIcon icon={faTimes} />
               <span>Bersihkan</span>
             </button>

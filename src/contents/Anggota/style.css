@@ -1,5 +1,5 @@
 .Search {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   margin-right: -20px;
 }
 
@@ -77,4 +77,124 @@
 
 .bg-c2-o:hover {
 	background-color: rgba(255, 0, 0, 0.363);
+}
+
+.HeadDataAnggota {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.ResultData .bold {
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+.DisplayDataBy {
+	display: flex;
+	justify-content: space-between;
+	width: 90px;
+	font-size: 1.4em;
+}
+
+.ByGrid,
+.ByList {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 12px;
+	cursor: pointer;
+}
+
+.ByGrid.Active,
+.ByList.Active {
+	color: #2bcf8a;
+	border: 1px solid #2bcf8a;
+	border-radius: 5px;
+}
+
+.ByGrid.Active {
+	margin-right: 5px;
+}
+
+.ByList.Active {
+	margin-left: 5px;
+}
+
+.BodyDataAnggota {
+	border-radius: 5px;
+	padding-top: 20px;
+}
+
+.SingleDataAnggota {
+	margin-bottom: 20px;
+}
+
+.SingleDataAnggota:nth-child(4n + 1) {
+	padding-right: 10px;
+	padding-left: 20px;
+}
+
+.SingleDataAnggota:nth-child(4n + 2) {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.SingleDataAnggota:nth-child(4n + 3) {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.SingleDataAnggota:nth-child(4n + 4) {
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+.BoxSingleDataAnggota {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	padding: 20px;
+	line-height: 1;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+}
+
+.BoxSingleDataAnggota .BoxOverlay {
+	text-align: center;
+}
+
+.BoxSingleDataAnggota .Foto {
+	line-height: 1;
+	margin-bottom: 17px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-size: cover;
+}
+
+.BoxSingleDataAnggota .Nama {
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 7px;
+}
+
+.BoxSingleDataAnggota .NoKTA {
+	padding: 9px 9px 7px;
+	margin-bottom: 16px;
+	border-radius: 5px;
+	font-size: 0.9em;
+}
+
+.BoxSingleDataAnggota .Jabatan {
+	letter-spacing: 0.025em;
+	margin-bottom: 13px;
+}
+
+.BoxSingleDataAnggota .Wilayah {
+	margin-bottom: -3px;
 }
