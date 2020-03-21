@@ -37,9 +37,12 @@ export default class DetailUser extends Component {
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h6>alamat</h6>
-                    <h6>Contat</h6>
+                <div className="box-content">
+                    <div>
+                        <h6>Alamat</h6>
+                        <p>Las Vegas, st.monaco no.666</p>
+                    </div>
+                    
                 </div>
             </div>
         )

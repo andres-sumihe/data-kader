@@ -24,44 +24,65 @@ class DataAnggota extends React.Component {
 				<div className="BodyDataAnggota row bg-c5">
 					<div className="column-l-3 SingleDataAnggota">
 						<div className="BoxSingleDataAnggota bg-c1">
+						<div className="PreviewDataAnggota">
 							<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo1.jpg")})` }}>
 							</div>
 							<div className="Nama tx-c4">Kimono Budi Fuzzy</div>
 							<div className="NoKTA bg-c5">9922090922309201</div>
 							<div className="Jabatan tx-c6">Presiden</div>
 							<div className="Wilayah tx-c7">Kota Salatiga</div>
+							</div>
+							<div className="BoxOverlay">
+								<div className="ViewDetailButton">Lihat Profil</div>
+							</div>
 						</div>
 					</div>
 					<div className="column-l-3 SingleDataAnggota">
 						<div className="BoxSingleDataAnggota bg-c1">
+						<div className="PreviewDataAnggota">
 							<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo1.jpg")})` }}>
 							</div>
 							<div className="Nama tx-c4">Kimono Budi Fuzzy</div>
 							<div className="NoKTA bg-c5">9922090922309201</div>
 							<div className="Jabatan tx-c6">Presiden</div>
 							<div className="Wilayah tx-c7">Kota Salatiga</div>
+							</div>
+							<div className="BoxOverlay">
+								<div className="ViewDetailButton">Lihat Profil</div>
+							</div>
 						</div>
 					</div>
 					<div className="column-l-3 SingleDataAnggota">
 						<div className="BoxSingleDataAnggota bg-c1">
+						<div className="PreviewDataAnggota">
 							<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo1.jpg")})` }}>
 							</div>
 							<div className="Nama tx-c4">Kimono Budi Fuzzy</div>
 							<div className="NoKTA bg-c5">9922090922309201</div>
 							<div className="Jabatan tx-c6">Presiden</div>
 							<div className="Wilayah tx-c7">Kota Salatiga</div>
+							</div>
+							<div className="BoxOverlay">
+								<div className="ViewDetailButton">Lihat Profil</div>
+							</div>
 						</div>
 					</div>
 					<div className="column-l-3 SingleDataAnggota">
 						<div className="BoxSingleDataAnggota bg-c1">
+						<div className="PreviewDataAnggota">
 							<div className="Foto" style={{ backgroundImage: `url(${require("../../photos/photo1.jpg")})` }}>
 							</div>
 							<div className="Nama tx-c4">Kimono Budi Fuzzy</div>
 							<div className="NoKTA bg-c5">9922090922309201</div>
 							<div className="Jabatan tx-c6">Presiden</div>
 							<div className="Wilayah tx-c7">Kota Salatiga</div>
+							</div>
+							<div className="BoxOverlay">
+								<div className="ViewDetailButton">Lihat Profil</div>
+							</div>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		);
