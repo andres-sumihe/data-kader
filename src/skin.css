@@ -73,9 +73,11 @@
     border-color: #788782;
 }
 
-/* border with opacity */
+/* 
+    ###################
+    border with opacity */
 .bd-c1-o{
-    border-color: rgba(0, 0, 0, 0.068)
+    border-color: rgba(0, 0, 0, 0.068);
 }
 
 /* 
