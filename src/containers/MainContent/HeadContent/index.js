@@ -9,6 +9,7 @@ class HeadContent extends React.Component {
   }
 
   handleClickMenuButton(event) {
+    this.props.onMenuButtonClicked(!this.props.isSidebarActive);
     event.preventDefault();
   }
 
@@ -16,12 +17,15 @@ class HeadContent extends React.Component {
     return (
       <div className="HeadContent">
         <div className="InnerTopHead">
-          <div class="MenuButtonToggle" onClick={this.handleClickMenuButton}>
+          <div
+            className="MenuButtonToggle"
+            onClick={this.handleClickMenuButton}
+          >
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <div class="UserArea">Hello, Rietts :)</div>
+          <div className="UserArea">Hello, Rietts :)</div>
         </div>
         <div className="Separator"></div>
         <div className="BodyHeadContent">
