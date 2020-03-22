@@ -245,3 +245,7 @@
 .BoxSingleDataAnggota .Wilayah {
 	margin-bottom: -3px;
 }
+
+.Wilayah{
+	font-weight: 600;
+}
