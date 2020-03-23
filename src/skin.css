@@ -1,0 +1,117 @@
+/* 
+    ################
+    BACKGROUND COLOR
+    ################
+*/
+
+/*  ###############
+    bacground solid */
+
+/* white */
+.bg-c1{
+    background-color: #ffffff;
+}
+/* black */
+.bg-c2{
+    background-color: #000000;
+}
+/* red */
+.bg-c3{
+    background-color: #f73838;
+}
+/* green */
+.bg-c4{
+    background-color: #2BCF8A;
+}
+/* light grey */
+.bg-c5{
+    background-color: #ededee;
+}
+/* dark grey */
+.bg-c6{
+    background-color: #788782;
+}
+
+/*  ######################
+    bacground with opacity */
+
+/* dark grey opacity*/
+.bg-c1-o{
+    background-color: rgba(24, 24, 24, 0.527);
+}
+/* red opacity*/
+.bg-c2-o{
+    background-color: rgba(255, 0, 0, 0.726);
+}
+/* light grey opacity */
+.bg-c3-o{
+    background-color: rgba(0, 0, 0, 0.062);
+}
+
+/* 
+    ############
+    BORDER COLOR 
+    ############
+*/
+
+/* black */
+.bd-c1{
+    border-color: #000000;
+}
+/* red */
+.bd-c2{
+    border-color: #ff0000;
+}
+/* green */
+.bd-c3{
+    border-color: #2BCF8A;
+}
+/* light grey */
+.bd-c4{
+    border-color: #e3e3e5;
+}
+/* dark grey */
+.bd-c5{
+    border-color: #788782;
+}
+
+/*  ###################
+    border with opacity */
+.bd-c1-o{
+    border-color: rgba(0, 0, 0, 0.068);
+}
+
+/* 
+    ##########
+    TEXT COLOR
+    ##########
+*/
+
+/* white */
+.tx-c1{
+    color: #ffffff;
+}
+/* black */
+.tx-c2{
+    color: #000000;
+}
+/* red */
+.tx-c3{
+    color: #ff0000;
+}
+/* green */
+.tx-c4{
+    color: #2BCF8A;
+}
+/* light grey */
+.tx-c5{
+    color: #e3e3e5;
+}
+/* dark grey */
+.tx-c6{
+    color: #74817d;
+}
+/* dark */
+.tx-c7{
+    color: #333;
+}

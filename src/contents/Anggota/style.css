@@ -42,7 +42,7 @@
 .FastSearch .InputWrapper input {
 	width: 100%;
 	border-radius: 5px;
-	border: 1px solid #ddd;
+	border: 1px solid;
 	padding: 15px 20px;
 	font-size: 1em;
 	transition: 0.3s ease-in-out;
@@ -128,7 +128,6 @@
 	cursor: pointer;
 	border: 0;
 	border-radius: 5px;
-	color: #fff;
 	font-size: 1em;
 	transition: 0.4s ease-in-out;
 }
@@ -137,20 +136,12 @@
 	margin-left: 8px;
 }
 
-.SearchButton {
-	background-color: rgba(0, 0, 0, 0.5);
+.bg-c1-o:hover {
+	background-color: rgba(0, 0, 0, 0.219);
 }
 
-.ClearButton {
-	background-color: rgba(255, 0, 0, 0.75);
-}
-
-.SearchButton:hover {
-	background-color: rgba(0, 0, 0, 0.4);
-}
-
-.ClearButton:hover {
-	background-color: rgba(255, 0, 0, 0.6);
+.bg-c2-o:hover {
+	background-color: rgba(255, 0, 0, 0.363);
 }
 
 .HeadDataAnggota {
@@ -163,7 +154,6 @@
 .ResultData .bold {
 	font-size: 1.2em;
 	font-weight: 700;
-	color: #333;
 }
 
 .DisplayDataBy {
@@ -198,7 +188,6 @@
 }
 
 .BodyDataAnggota {
-	background-color: #f2f2f2;
 	border-radius: 5px;
 	padding-top: 20px;
 }
@@ -233,7 +222,6 @@
 	align-items: center;
 	position: relative;
 	height: 100%;
-	background-color: #fff;
 	padding: 20px;
 	line-height: 1.2;
 	border-radius: 5px;
@@ -294,27 +282,26 @@
 
 .BoxSingleDataAnggota .Nama {
 	font-weight: 700;
-	color: #2bcf8a;
 	text-transform: uppercase;
 	margin-bottom: 6px;
 }
 
 .BoxSingleDataAnggota .NoKTA {
 	padding: 9px 9px 7px;
-	background-color: rgba(0, 0, 0, 0.1);
 	margin-bottom: 16px;
 	border-radius: 5px;
-	color: #666;
 	font-size: 0.9em;
 }
 
 .BoxSingleDataAnggota .Jabatan {
-	color: rgba(0, 0, 0, .45);
 	letter-spacing: 0.025em;
 	margin-bottom: 13px;
 }
 
 .BoxSingleDataAnggota .Wilayah {
-	color: #333;
 	margin-bottom: -3px;
+}
+
+.Wilayah{
+	font-weight: 600;
 }

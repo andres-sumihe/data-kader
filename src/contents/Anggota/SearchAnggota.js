@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import "../../grid.css";
+import "./../../skin.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faTimes } from "@fortawesome/free-solid-svg-icons";
 
@@ -48,18 +49,18 @@ class FastSearch extends React.Component {
   render() {
     return (
       <form className="FastSearch">
-        <div className="InputWrapper">
-          <input type="text" name="search" id="input-item-search" placeholder="Contoh: Riettsruff" />
+        <div className="InputWrapper ">
+          <input type="text" name="search" id="input-item-search" placeholder="ex: Hoodie Zipper" className="bd-c4"/>
         </div>
         <div className="buttonWrapper row no-gutters">
           <div className="SingleButtonWrapper column-6">
-            <button type="button" className="SearchButton">
+            <button type="button" class="SearchButton" className="bg-c1-o tx-c1">
               <FontAwesomeIcon icon={faSearch} />
               <span>Cari</span>
             </button>
           </div>
           <div className="SingleButtonWrapper column-6">
-            <button type="button" className="ClearButton">
+            <button type="button" class="ClearButton" className="bg-c2-o tx-c1">
               <FontAwesomeIcon icon={faTimes} />
               <span>Bersihkan</span>
             </button>

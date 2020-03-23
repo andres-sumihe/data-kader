@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import "../../grid.css";
+import "./../../skin.css";
 import SearchAnggota from "./SearchAnggota";
 import DataAnggota from "./DataAnggota";
 
