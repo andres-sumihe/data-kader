@@ -7,10 +7,37 @@ import { faSearch, faTimes } from "@fortawesome/free-solid-svg-icons";
 class FullSearch extends React.Component {
   render() {
     return (
-      <form className="FullSearch">
-        <div className="InputWrapper">
-          <input type="text" name="" className="singleInputSearch" />
-
+      <form className="FullSearch container-fluid">
+        <div className="SingleInputWrapper row">
+          <div class="InputSearch column-7">
+            <input type="text" placeholder="Contoh: Riettsruff" />
+          </div>
+          <div class="FilterBy column-4">
+            <select>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+              <option value="option5">Option 5</option>
+            </select>
+          </div>
+          <div class="ActionButton column-1">
+            <span className="AddButton">+</span>
+          </div>
+        </div>
+        <div className="buttonWrapper row no-gutters">
+          <div className="SingleButtonWrapper column-6">
+            <button type="button" className="SearchButton">
+              <FontAwesomeIcon icon={faSearch} />
+              <span>Cari</span>
+            </button>
+          </div>
+          <div className="SingleButtonWrapper column-6">
+            <button type="button" className="ClearButton">
+              <FontAwesomeIcon icon={faTimes} />
+              <span>Bersihkan</span>
+            </button>
+          </div>
         </div>
       </form>
     );
@@ -55,7 +82,7 @@ class SearchAnggota extends React.Component {
             <span>Pencarian Cepat</span>
           </div>
           <div className="SingleOfTypeSearch" data-title="Pencarian-Lengkap">
-            <span>Pencarian Lengkapsss</span>
+            <span>Pencarian Lengkap</span>
           </div>
         </div>
         <div className="ContentsOfSearch column-l-9 column-8">

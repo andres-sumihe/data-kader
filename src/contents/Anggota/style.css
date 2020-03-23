@@ -55,7 +55,63 @@
 
 .FullSearch {
 	width: 100%;
-	padding-left: 20px;
+	padding-left: 20px !important;
+}
+
+.FullSearch .SingleInputWrapper:not(:last-of-type) {
+	margin-bottom: 20px;
+}
+
+.FullSearch .SingleInputWrapper .InputSearch {
+	padding-left: 0 !important;
+	padding-right: 5px;
+	font-size: 1.2em;
+}
+
+.FullSearch .SingleInputWrapper .InputSearch input {
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	padding: 10px 15px;
+	font-size: 0.9em;
+	transition: 0.3s ease-in-out;
+}
+
+.FullSearch .SingleInputWrapper .FilterBy {
+	padding-left: 5px;
+	padding-right: 5px;
+	line-height: 1;
+}
+
+.FullSearch .SingleInputWrapper .FilterBy select {
+	width: 100%;
+	padding: 11px 15px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	font-size: 0.9em;
+	background-color: #fff;
+}
+
+.FullSearch .SingleInputWrapper .FilterBy select:focus {
+	outline: none;
+}
+
+.FullSearch .SingleInputWrapper .ActionButton {
+	padding-left: 5px;
+	padding-right: 20px;
+}
+
+.FullSearch .SingleInputWrapper .ActionButton .AddButton,
+.FullSearch .SingleInputWrapper .ActionButton .MinusButton {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.25em;
+	font-weight: 700;
+	line-height: 1;
+	padding: 11px 15px;
+	background-color: rgba(43, 207, 138, 0.25);
+	color: #2bcf8a;
+	border-radius: 5px;
 }
 
 .SingleButtonWrapper:nth-child(odd) {
