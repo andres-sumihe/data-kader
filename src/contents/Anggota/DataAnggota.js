@@ -145,7 +145,7 @@ class DetailHeader extends Component {
   }
 }
 
-class Detail extends Component {
+class DetailArea extends Component {
   render() {
     return (
       <div className="full-overlay">
