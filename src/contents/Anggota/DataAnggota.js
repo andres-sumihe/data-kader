@@ -172,7 +172,7 @@ class Preview extends Component {
         <div className="HeadDataAnggota">
           <div className="ResultData">
             <span>
-              Menampilkan <span className="bold tx-c7">9</span> Data
+              Menampilkan <span className="bold tx-c7">10</span> Data
             </span>
           </div>
           <div className="DisplayDataBy">
@@ -325,6 +325,44 @@ class Preview extends Component {
                   className="Foto"
                   style={{
                     backgroundImage: `url(${require("../../photos/photo1.jpg")})`
+                  }}
+                ></div>
+                <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
+                <div className="NoKTA bg-c5">9922090922309201</div>
+                <div className="Jabatan tx-c6">Presiden</div>
+                <div className="Wilayah tx-c7">Kota Salatiga</div>
+              </div>
+              <div className="BoxOverlay">
+                <div className="ViewDetailButton">Lihat Profil</div>
+              </div>
+            </div>
+          </div>
+          <div className="SingleDataAnggota">
+            <div className="BoxSingleDataAnggota bg-c1">
+              <div className="PreviewDataAnggota">
+                <div
+                  className="Foto"
+                  style={{
+                    backgroundImage: `url(${require("../../photos/photo2.jpg")})`
+                  }}
+                ></div>
+                <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
+                <div className="NoKTA bg-c5">9922090922309201</div>
+                <div className="Jabatan tx-c6">Presiden</div>
+                <div className="Wilayah tx-c7">Kota Salatiga</div>
+              </div>
+              <div className="BoxOverlay">
+                <div className="ViewDetailButton">Lihat Profil</div>
+              </div>
+            </div>
+          </div>
+          <div className="SingleDataAnggota">
+            <div className="BoxSingleDataAnggota bg-c1">
+              <div className="PreviewDataAnggota">
+                <div
+                  className="Foto"
+                  style={{
+                    backgroundImage: `url(${require("../../photos/photo3.jpg")})`
                   }}
                 ></div>
                 <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
