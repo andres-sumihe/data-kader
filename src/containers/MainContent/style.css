@@ -1,7 +1,7 @@
 .MainContent {
   position: absolute;
-  width: calc(100% - 250px);
-  left: 250px;
+  width: calc(100% - 190px);
+  left: 190px;
   top: 0;
   transition: 0.4s ease-in-out;
 }

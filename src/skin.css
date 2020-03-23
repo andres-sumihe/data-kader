@@ -1,32 +1,31 @@
-/* 
-    ################
-    BACKGROUND COLOR
-    ################
-*/
-
-/*  ###############
-    bacground solid */
+/* ###############
+   BACKGROUND SOLID */
 
 /* white */
 .bg-c1 {
   background-color: #ffffff;
 }
+
 /* black */
 .bg-c2 {
   background-color: #000000;
 }
+
 /* red */
 .bg-c3 {
   background-color: #f73838;
 }
+
 /* green */
 .bg-c4 {
   background-color: #2bcf8a;
 }
+
 /* light grey */
 .bg-c5 {
   background-color: #ededee;
 }
+
 /* dark grey */
 .bg-c6 {
   background-color: #788782;
@@ -37,27 +36,26 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/*  ######################
-    bacground with opacity */
+/* ######################
+   BACKGROUND WITH ALPHA */
 
-/* dark grey opacity*/
+/* dark grey alpha*/
 .bg-c1-o {
-  background-color: rgba(24, 24, 24, 0.527);
+  background-color: rgba(24, 24, 24, 0.35);
 }
-/* red opacity*/
+
+/* red alpha*/
 .bg-c2-o {
-  background-color: rgba(255, 0, 0, 0.726);
+  background-color: rgba(255, 0, 0, 0.5);
 }
-/* light grey opacity */
+
+/* light grey alpha */
 .bg-c3-o {
   background-color: rgba(0, 0, 0, 0.062);
 }
 
-/* 
-    ############
-    BORDER COLOR 
-    ############
-*/
+/* ######################
+   BORDER SOLID */
 
 /* black */
 .bd-c1 {
@@ -80,17 +78,15 @@
   border-color: #788782;
 }
 
-/*  ###################
-    border with opacity */
+/* ###################
+   BORDER WITH ALPHA */
+
 .bd-c1-o {
   border-color: rgba(0, 0, 0, 0.068);
 }
 
-/* 
-    ##########
-    TEXT COLOR
-    ##########
-*/
+/* ###################
+   COLOR SOLID */
 
 /* white */
 .tx-c1 {
@@ -116,7 +112,15 @@
 .tx-c6 {
   color: #74817d;
 }
-/* dark */
+/* black */
 .tx-c7 {
   color: #333;
+}
+
+/* ###################
+   COLOR WITH ALPHA */
+
+/* black alpha */
+.tx-o-c1 {
+  color: rgba(0, 0, 0, 0.4);
 }

@@ -12,6 +12,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .SingleOfTypeSearch span {
@@ -24,6 +25,7 @@
 
 .SingleOfTypeSearch.Active {
   color: #2bcf8a;
+  font-weight: 700;
 }
 
 .ContentsOfSearch {
@@ -51,7 +53,11 @@
 
 .FastSearch .InputWrapper input:focus {
   outline: none;
-  border-color: #2bcf8a;
+  border-color: rgba(24, 24, 24, 0.265);
+}
+
+.FastSearch .SingleButtonWrapper button {
+  text-transform: capitalize;
 }
 
 .FullSearch {
@@ -183,32 +189,34 @@
 }
 
 .Preview .BodyDataAnggota {
+  padding-top: 15px;
   border-radius: 5px;
-  padding-top: 20px;
 }
 
 .Preview .SingleDataAnggota {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  max-width: calc(100% / 12 * 2.4);
+  -ms-flex: 0 0 calc(100% / 12 * 2.4);
+  -webkit-flex: 0 0 calc(100% / 12 * 2.4);
+  flex: 0 0 calc(100% / 12 * 2.4);
+  border-radius: 5px;
 }
 
-.Preview .SingleDataAnggota:nth-child(4n + 1) {
-  padding-right: 10px;
-  padding-left: 20px;
+.Preview .SingleDataAnggota:nth-child(5n + 1) {
+  padding-right: 7.5px;
+  padding-left: 15px;
 }
 
-.Preview .SingleDataAnggota:nth-child(4n + 2) {
-  padding-left: 10px;
-  padding-right: 10px;
+.Preview .SingleDataAnggota:nth-child(5n + 2),
+.Preview .SingleDataAnggota:nth-child(5n + 3),
+.Preview .SingleDataAnggota:nth-child(5n + 4) {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
 }
 
-.Preview .SingleDataAnggota:nth-child(4n + 3) {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.Preview .SingleDataAnggota:nth-child(4n + 4) {
-  padding-right: 20px;
-  padding-left: 10px;
+.Preview .SingleDataAnggota:nth-child(5n + 5) {
+  padding-left: 7.5px;
+  padding-right: 15px;
 }
 
 .Preview .BoxSingleDataAnggota {
@@ -217,7 +225,7 @@
   align-items: center;
   position: relative;
   height: 100%;
-  padding: 20px;
+  padding: 15px;
   line-height: 1.2;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
@@ -268,14 +276,17 @@
 
 .Preview .BoxSingleDataAnggota .Foto {
   line-height: 1;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 17px;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-size: cover;
 }
 
 .Preview .BoxSingleDataAnggota .Nama {
+  letter-spacing: 1;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 6px;

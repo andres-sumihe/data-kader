@@ -50,17 +50,23 @@ class FastSearch extends React.Component {
     return (
       <form className="FastSearch">
         <div className="InputWrapper ">
-          <input type="text" name="search" id="input-item-search" placeholder="ex: Hoodie Zipper" className="bd-c4"/>
+          <input
+            type="text"
+            name="search"
+            id="input-item-search"
+            placeholder="Contoh: Budi Fuzzy"
+            className="bd-c4"
+          />
         </div>
         <div className="buttonWrapper row no-gutters">
           <div className="SingleButtonWrapper column-6">
-            <button type="button" class="SearchButton" className="bg-c1-o tx-c1">
+            <button type="button" className="bg-c1-o tx-c1">
               <FontAwesomeIcon icon={faSearch} />
               <span>Cari</span>
             </button>
           </div>
           <div className="SingleButtonWrapper column-6">
-            <button type="button" class="ClearButton" className="bg-c2-o tx-c1">
+            <button type="button" className="bg-c2-o tx-c1">
               <FontAwesomeIcon icon={faTimes} />
               <span>Bersihkan</span>
             </button>

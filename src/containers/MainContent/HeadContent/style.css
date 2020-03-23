@@ -14,7 +14,7 @@
 
 .MenuButtonToggle {
   width: 35px;
-  height: 25px;
+  height: 23px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -24,7 +24,7 @@
 
 .MenuButtonToggle span {
   width: 100%;
-  height: 2px;
+  height: 1px;
   display: block;
 }
 
@@ -39,7 +39,7 @@
   margin-bottom: 20px;
 }
 
-.BodyHeadContent h3 {
+.BodyHeadContent h4 {
   font-weight: 400;
   text-transform: uppercase;
 }

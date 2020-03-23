@@ -184,8 +184,8 @@ class Preview extends Component {
             </div>
           </div>
         </div>
-        <div className="BodyDataAnggota row bg-c5">
-          <div className="column-l-3 SingleDataAnggota">
+        <div className="BodyDataAnggota row no-gutters bg-c5">
+          <div className="SingleDataAnggota">
             <div className="BoxSingleDataAnggota bg-c1">
               <div className="PreviewDataAnggota">
                 <div
@@ -204,7 +204,7 @@ class Preview extends Component {
               </div>
             </div>
           </div>
-          <div className="column-l-3 SingleDataAnggota">
+          <div className="SingleDataAnggota">
             <div className="BoxSingleDataAnggota bg-c1">
               <div className="PreviewDataAnggota">
                 <div
@@ -223,7 +223,7 @@ class Preview extends Component {
               </div>
             </div>
           </div>
-          <div className="column-l-3 SingleDataAnggota">
+          <div className="SingleDataAnggota">
             <div className="BoxSingleDataAnggota bg-c1">
               <div className="PreviewDataAnggota">
                 <div
@@ -242,7 +242,7 @@ class Preview extends Component {
               </div>
             </div>
           </div>
-          <div className="column-l-3 SingleDataAnggota">
+          <div className="SingleDataAnggota">
             <div className="BoxSingleDataAnggota bg-c1">
               <div className="PreviewDataAnggota">
                 <div
@@ -261,7 +261,7 @@ class Preview extends Component {
               </div>
             </div>
           </div>
-          <div className="column-l-3 SingleDataAnggota">
+          <div className="SingleDataAnggota">
             <div className="BoxSingleDataAnggota bg-c1">
               <div className="PreviewDataAnggota">
                 <div
@@ -280,7 +280,7 @@ class Preview extends Component {
               </div>
             </div>
           </div>
-          <div className="column-l-3 SingleDataAnggota">
+          <div className="SingleDataAnggota">
             <div className="BoxSingleDataAnggota bg-c1">
               <div className="PreviewDataAnggota">
                 <div
@@ -299,7 +299,7 @@ class Preview extends Component {
               </div>
             </div>
           </div>
-          <div className="column-l-3 SingleDataAnggota">
+          <div className="SingleDataAnggota">
             <div className="BoxSingleDataAnggota bg-c1">
               <div className="PreviewDataAnggota">
                 <div
@@ -318,7 +318,7 @@ class Preview extends Component {
               </div>
             </div>
           </div>
-          <div className="column-l-3 SingleDataAnggota">
+          <div className="SingleDataAnggota">
             <div className="BoxSingleDataAnggota bg-c1">
               <div className="PreviewDataAnggota">
                 <div
