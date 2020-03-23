@@ -4,7 +4,7 @@
 }
 
 .App * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   color: inherit;
 }
 
@@ -58,4 +58,21 @@ a:focus,
 a::-moz-focus-inner {
   border: 0;
   outline: none;
+}
+
+.full-overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.329);
+}
+
+.full-overlay.active {
+  opacity: 1;
+  visibility: visible;
 }

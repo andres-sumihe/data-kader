@@ -26,9 +26,9 @@ class HeadContent extends React.Component {
             <span className="bg-c1"></span>
             <span className="bg-c1"></span>
           </div>
-          <div className="UserArea">Hello, Rietts :)</div>
+          <div className="UserArea tx-c1">Hello, Rietts :)</div>
         </div>
-        <div className="Separator bg-c4"></div>
+        <div className="Separator bg-c7"></div>
         <div className="BodyHeadContent bg-c4">
           <h3 className="tx-c1">
             <Switch>

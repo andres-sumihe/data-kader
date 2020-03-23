@@ -4,304 +4,460 @@
 }
 
 .TypeOfSearch {
-	border-right: 2px solid rgba(0, 0, 0, 0.1);
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .SingleOfTypeSearch {
-	line-height: 1;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	text-align: center;
+  line-height: 1;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
 }
 
 .SingleOfTypeSearch span {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .SingleOfTypeSearch:last-of-type {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .SingleOfTypeSearch.Active {
-	color: #2bcf8a;
+  color: #2bcf8a;
 }
 
 .ContentsOfSearch {
-	text-align: center;
+  text-align: center;
 }
 
 .FastSearch {
-	width: 100%;
-	padding-left: 20px;
+  width: 100%;
+  padding-left: 20px;
 }
 
 .FastSearch .InputWrapper {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .FastSearch .InputWrapper input {
-	width: 100%;
-	border-radius: 5px;
-	border: 1px solid;
-	padding: 15px 20px;
-	font-size: 1em;
-	transition: 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 15px 20px;
+  font-size: 1em;
+  transition: 0.3s ease-in-out;
 }
 
 .FastSearch .InputWrapper input:focus {
-	outline: none;
-	border-color: #2bcf8a;
+  outline: none;
+  border-color: #2bcf8a;
 }
 
 .FullSearch {
-	width: 100%;
-	padding-left: 20px !important;
+  width: 100%;
+  padding-left: 20px !important;
 }
 
 .FullSearch .SingleInputWrapper:not(:last-of-type) {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .FullSearch .SingleInputWrapper .InputSearch {
-	padding-left: 0 !important;
-	padding-right: 5px;
-	font-size: 1.2em;
+  padding-left: 0 !important;
+  padding-right: 5px;
+  font-size: 1.2em;
 }
 
 .FullSearch .SingleInputWrapper .InputSearch input {
-	width: 100%;
-	border-radius: 5px;
-	border: 1px solid #ddd;
-	padding: 10px 15px;
-	font-size: 0.9em;
-	transition: 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  font-size: 0.9em;
+  transition: 0.3s ease-in-out;
 }
 
 .FullSearch .SingleInputWrapper .FilterBy {
-	padding-left: 5px;
-	padding-right: 5px;
-	line-height: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 1;
 }
 
 .FullSearch .SingleInputWrapper .FilterBy select {
-	width: 100%;
-	padding: 11px 15px;
-	border-radius: 5px;
-	border: 1px solid #ddd;
-	font-size: 0.9em;
-	background-color: #fff;
+  width: 100%;
+  padding: 11px 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 0.9em;
+  background-color: #fff;
 }
 
 .FullSearch .SingleInputWrapper .FilterBy select:focus {
-	outline: none;
+  outline: none;
 }
 
 .FullSearch .SingleInputWrapper .ActionButton {
-	padding-left: 5px;
-	padding-right: 20px;
+  padding-left: 5px;
+  padding-right: 20px;
 }
 
 .FullSearch .SingleInputWrapper .ActionButton .AddButton,
 .FullSearch .SingleInputWrapper .ActionButton .MinusButton {
-	cursor: pointer;
-	display: inline-block;
-	font-size: 1.25em;
-	font-weight: 700;
-	line-height: 1;
-	padding: 11px 15px;
-	background-color: rgba(43, 207, 138, 0.25);
-	color: #2bcf8a;
-	border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1;
+  padding: 11px 15px;
+  background-color: rgba(43, 207, 138, 0.25);
+  color: #2bcf8a;
+  border-radius: 5px;
 }
 
 .SingleButtonWrapper:nth-child(odd) {
-	padding-right: 10px !important;
+  padding-right: 10px !important;
 }
 
 .SingleButtonWrapper:nth-child(even) {
-	padding-left: 10px !important;
+  padding-left: 10px !important;
 }
 
 .SingleButtonWrapper button {
-	width: 100%;
-	height: 50px;
-	cursor: pointer;
-	border: 0;
-	border-radius: 5px;
-	font-size: 1em;
-	transition: 0.4s ease-in-out;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: 0.4s ease-in-out;
 }
 
 .SingleButtonWrapper button span {
-	margin-left: 8px;
+  margin-left: 8px;
 }
 
-.bg-c1-o:hover {
-	background-color: rgba(0, 0, 0, 0.219);
+/* PREVIEW */
+
+.Preview .HeadDataAnggota {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-.bg-c2-o:hover {
-	background-color: rgba(255, 0, 0, 0.363);
+.Preview .ResultData .bold {
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
-.HeadDataAnggota {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 50px;
+.Preview .DisplayDataBy {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+  font-size: 1.4em;
 }
 
-.ResultData .bold {
-	font-size: 1.2em;
-	font-weight: 700;
+.Preview .ByGrid,
+.Preview .ByList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  cursor: pointer;
 }
 
-.DisplayDataBy {
-	display: flex;
-	justify-content: space-between;
-	width: 90px;
-	font-size: 1.4em;
+.Preview .ByGrid.Active,
+.Preview .ByList.Active {
+  color: #2bcf8a;
+  border: 1px solid #2bcf8a;
+  border-radius: 5px;
 }
 
-.ByGrid,
-.ByList {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 10px 12px;
-	cursor: pointer;
+.Preview .ByGrid.Active {
+  margin-right: 5px;
 }
 
-.ByGrid.Active,
-.ByList.Active {
-	color: #2bcf8a;
-	border: 1px solid #2bcf8a;
-	border-radius: 5px;
+.Preview .ByList.Active {
+  margin-left: 5px;
 }
 
-.ByGrid.Active {
-	margin-right: 5px;
+.Preview .BodyDataAnggota {
+  border-radius: 5px;
+  padding-top: 20px;
 }
 
-.ByList.Active {
-	margin-left: 5px;
+.Preview .SingleDataAnggota {
+  margin-bottom: 20px;
 }
 
-.BodyDataAnggota {
-	border-radius: 5px;
-	padding-top: 20px;
+.Preview .SingleDataAnggota:nth-child(4n + 1) {
+  padding-right: 10px;
+  padding-left: 20px;
 }
 
-.SingleDataAnggota {
-	margin-bottom: 20px;
+.Preview .SingleDataAnggota:nth-child(4n + 2) {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.SingleDataAnggota:nth-child(4n + 1) {
-	padding-right: 10px;
-	padding-left: 20px;
+.Preview .SingleDataAnggota:nth-child(4n + 3) {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.SingleDataAnggota:nth-child(4n + 2) {
-	padding-left: 10px;
-	padding-right: 10px;
+.Preview .SingleDataAnggota:nth-child(4n + 4) {
+  padding-right: 20px;
+  padding-left: 10px;
 }
 
-.SingleDataAnggota:nth-child(4n + 3) {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.SingleDataAnggota:nth-child(4n + 4) {
-	padding-right: 20px;
-	padding-left: 10px;
-}
-
-.BoxSingleDataAnggota {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
-	height: 100%;
-	padding: 20px;
-	line-height: 1.2;
-	border-radius: 5px;
-	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+.Preview .BoxSingleDataAnggota {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  padding: 20px;
+  line-height: 1.2;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
   -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
 }
 
-.BoxSingleDataAnggota .PreviewDataAnggota {
-	text-align: center;
+.Preview .BoxSingleDataAnggota .PreviewDataAnggota {
+  text-align: center;
 }
 
-.BoxSingleDataAnggota .BoxOverlay {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	left: 0;
-	top: 0;
-	background-color: rgba(255, 255, 255, 0.75);
-	z-index: 5;
-	opacity: 0;
-	transform: scale(0.75);
-	transition: 0.4s ease-in-out;
+.Preview .BoxSingleDataAnggota .BoxOverlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 5;
+  opacity: 0;
+  transform: scale(0.75);
+  transition: 0.4s ease-in-out;
 }
 
-.BoxSingleDataAnggota:hover .BoxOverlay {
-	opacity: 1;
-	transform: scale(1.0);
+.Preview .BoxSingleDataAnggota:hover .BoxOverlay {
+  opacity: 1;
+  transform: scale(1);
 }
 
-.BoxSingleDataAnggota .BoxOverlay .ViewDetailButton {
-	width: calc(100% - 40px);
-	text-align: center;
-	color: #fff;
-	cursor: pointer;
-	background-color: rgba(43, 207, 138, 0.8);
-	padding: 15px;
-	font-size: 1.1em;
-	border-radius: 30px;
-	transition: 0.4s ease-in-out;
+.Preview .BoxSingleDataAnggota .BoxOverlay .ViewDetailButton {
+  width: calc(100% - 40px);
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(43, 207, 138, 0.8);
+  padding: 15px;
+  font-size: 1.1em;
+  border-radius: 30px;
+  transition: 0.4s ease-in-out;
 }
 
-.BoxSingleDataAnggota .BoxOverlay .ViewDetailButton:hover {
-	background-color: rgba(43, 207, 138, 1);
+.Preview .BoxSingleDataAnggota .BoxOverlay .ViewDetailButton:hover {
+  background-color: rgba(43, 207, 138, 1);
 }
 
-.BoxSingleDataAnggota .Foto {
-	line-height: 1;
-	margin-bottom: 17px;
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	background-size: cover;
+.Preview .BoxSingleDataAnggota .Foto {
+  line-height: 1;
+  margin-bottom: 17px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
 }
 
-.BoxSingleDataAnggota .Nama {
-	font-weight: 700;
-	text-transform: uppercase;
-	margin-bottom: 6px;
+.Preview .BoxSingleDataAnggota .Nama {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 6px;
 }
 
-.BoxSingleDataAnggota .NoKTA {
-	padding: 9px 9px 7px;
-	margin-bottom: 16px;
-	border-radius: 5px;
-	font-size: 0.9em;
+.Preview .BoxSingleDataAnggota .NoKTA {
+  padding: 9px 9px 7px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  font-size: 0.9em;
 }
 
-.BoxSingleDataAnggota .Jabatan {
-	letter-spacing: 0.025em;
-	margin-bottom: 13px;
+.Preview .BoxSingleDataAnggota .Jabatan {
+  letter-spacing: 0.025em;
+  margin-bottom: 13px;
 }
 
-.BoxSingleDataAnggota .Wilayah {
-	margin-bottom: -3px;
+.Preview .BoxSingleDataAnggota .Wilayah {
+  margin-bottom: -3px;
 }
 
-.Wilayah{
-	font-weight: 600;
+/* DETAIL */
+
+.Detail {
+  width: 575px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.Detail .box-anggota {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Detail .anggota-close {
+  position: absolute;
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  right: 575px;
+  transform: translate(50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb2b2;
+  color: #ff4747;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+.Detail .close-icon {
+  transition: 0.4s ease-in-out;
+  line-height: 1;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.Detail .anggota-close:hover .close-icon {
+  transform: rotate(180deg);
+}
+
+.Detail .anggota-photo {
+  width: 150px;
+  height: 150px;
+  margin: 30px auto 0;
+  margin-bottom: -7px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Detail .anggota-atribute {
+  margin: 30px auto;
+  margin-bottom: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Detail .Name {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.Detail .NoKTA {
+  margin-bottom: 9px;
+  padding: 5px 12px 5px 12px;
+  border-radius: 0.5em;
+  font-size: 0.9em;
+}
+
+.Detail .Wilayah {
+  margin-top: 2px;
+}
+
+.Detail .menu-wrap {
+  padding: 0;
+  width: 100%;
+  display: flex;
+}
+
+.Detail .menu {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.Detail .menu.active {
+  color: #2bcf8a;
+  font-weight: 700;
+  border-bottom-color: #2bcf8a;
+}
+
+.Detail .menu {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 17px;
+  font-weight: 400;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.068);
+}
+
+.Detail .menu:nth-child(1) {
+  border-right: 1px solid rgba(0, 0, 0, 0.068);
+}
+
+.Detail .menu:nth-child(2) {
+  border-left: 1px solid rgba(0, 0, 0, 0.068);
+}
+
+.Detail .menu > span {
+  cursor: pointer;
+}
+
+/* Content */
+
+.Detail .box-content {
+  margin-top: -8px;
+  padding-bottom: 23px;
+}
+
+.Detail .box-item {
+  margin: 6px 0;
+  line-height: 1.3;
+}
+
+.Detail .box-item fieldset {
+  height: 100%;
+  border-radius: 0.5em;
+  padding-bottom: 25px;
+}
+
+.Detail .box-item:nth-child(odd) {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.Detail .box-item:nth-child(even) {
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.Detail .box-item fieldset span {
+  padding-top: 1px;
+  display: inline-block;
+}
+
+.Detail .box-item > div {
+  width: 100%;
+}
+
+.Detail .label {
+  padding: 10px;
+  margin: 5px;
+  line-height: 5px;
+  text-transform: uppercase;
 }
