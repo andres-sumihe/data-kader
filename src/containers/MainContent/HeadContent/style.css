@@ -96,7 +96,7 @@
   height: 90px;
   border-radius: 50%;
   background-size: cover;
-  margin-bottom: 19px;
+  margin-bottom: 9px;
   position: relative;
 }
 
@@ -115,7 +115,7 @@
 
 .UserAction > .Name {
   text-transform: uppercase;
-  margin-bottom: 2px;
+  margin-bottom: 7px;
   font-weight: 700;
 }
 
