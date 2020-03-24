@@ -72,6 +72,19 @@
   transition: 0.5s ease-in-out;
 }
 
+.UserAction:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 12px solid #fff;
+  position: absolute;
+  top: -12px;
+  right: 30px;
+}
+
 .UserAction.Active {
   opacity: 1;
   visibility: visible;
@@ -151,7 +164,7 @@
 
 .UserAction .GoToWrapper .GoTo.Logout {
   color: rgba(255, 0, 0, 0.65);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .Separator {
