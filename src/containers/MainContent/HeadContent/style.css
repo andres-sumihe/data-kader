@@ -10,6 +10,7 @@
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .MenuButtonToggle {
@@ -28,15 +29,140 @@
   display: block;
 }
 
+.UserArea {
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.UserArea .UserPhoto {
+  display: inline-block;
+  margin-right: 9px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.UserArea .Username {
+  display: inline-block;
+}
+
+.UserAction {
+  position: absolute;
+  right: 15px;
+  top: 65px;
+  width: 200px;
+  padding: 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  z-index: 1000;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-22px);
+  transition: 0.5s ease-in-out;
+}
+
+.UserAction.Active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.UserAction .Photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-bottom: 19px;
+  position: relative;
+}
+
+.UserAction .Photo:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #42b72a;
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+}
+
+.UserAction > .Name {
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.UserAction .Level {
+  text-transform: capitalize;
+  font-size: 0.9em;
+  padding: 7px 9px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.UserAction .GoToWrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+.UserAction .GoToWrapper .GoTo {
+  line-height: 1;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.UserAction .GoToWrapper .GoTo:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.UserAction .GoToWrapper .GoTo:last-of-type {
+  margin-bottom: 0;
+}
+
+.UserAction .GoToWrapper .Icon {
+  margin-right: 11px;
+}
+
+.UserAction .GoToWrapper .GoTo .Name {
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+.UserAction .GoToWrapper .GoTo.Logout {
+  color: rgba(255, 0, 0, 0.65);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .Separator {
   width: 100%;
   height: 2px;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
 }
 
 .BodyHeadContent {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .BodyHeadContent h4 {

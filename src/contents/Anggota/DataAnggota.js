@@ -122,7 +122,7 @@ class DetailHeader extends Component {
             style={{
               backgroundImage: `url(${require("../../photos/photo1.jpg")})`
             }}
-          />
+          ></div>
           <div className="anggota-atribute">
             <span className="Name tx-c4">BUDI TORTELINI UWAWWWW YAY</span>
             <div className="NoKTA bg-c5">9922090922309201</div>
