@@ -3,7 +3,21 @@ import "./style.css";
 import "./../../../skin.css";
 import { Switch, Route } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faSignOutAlt, faTimes } from "@fortawesome/free-solid-svg-icons";
+
+class MyAccount extends React.Component {
+  render() {
+    return (
+      <div className="full-overlay">
+        <div className="MyAccount">
+          <span className="close-icon">
+            <FontAwesomeIcon icon={faTimes} size="2x" />
+          </span>
+        </div>
+      </div>
+    );
+  }
+}
 
 class HeadContent extends React.Component {
   constructor(props) {
