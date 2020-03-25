@@ -1,9 +1,13 @@
 .Search {
   margin-bottom: 50px;
-  margin-right: -20px;
 }
 
 .TypeOfSearch {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -13,6 +17,8 @@
   padding-bottom: 12px;
   text-align: center;
   color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  right: 7.5px;
 }
 
 .SingleOfTypeSearch span {
@@ -23,22 +29,23 @@
   margin-bottom: 0;
 }
 
-.SingleOfTypeSearch.Active {
+.SingleOfTypeSearch span.Active {
   color: #2bcf8a;
   font-weight: 700;
 }
 
 .ContentsOfSearch {
   text-align: center;
+  width: calc(100% - 220px);
 }
 
 .FastSearch {
   width: 100%;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 .FastSearch .InputWrapper {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .FastSearch .InputWrapper input {
@@ -62,20 +69,48 @@
 
 .FullSearch {
   width: 100%;
-  padding-left: 20px !important;
+  padding-left: 15px !important;
 }
 
-.FullSearch .SingleInputWrapper:not(:last-of-type) {
-  margin-bottom: 20px;
+.FullSearch .Alert {
+  border-radius: 5px;
+  font-weight: 700;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0;
+  margin-bottom: 0;
+  transition: 0.3s ease-in-out;
 }
 
-.FullSearch .SingleInputWrapper .InputSearch {
+.FullSearch .Alert.Active {
+  opacity: 1;
+  height: auto;
+  visibility: visible;
+  padding: 8px 15px;
+  margin-bottom: 15px;
+}
+
+.FullSearch .Alert.Active.Danger {
+  color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+.FullSearch .InputWrapper {
+  margin-bottom: 15px;
+}
+
+.FullSearch .InputWrapper .InputSearch {
+  max-width: calc(70% - 23.5px);
+  -ms-flex: 0 0 calc(70% - 23.5px);
+  -webkit-flex: 0 0 calc(70% - 23.5px);
+  flex: 0 0 calc(70% - 23.5px);
   padding-left: 0 !important;
-  padding-right: 5px;
+  padding-right: 7.5px;
   font-size: 1.2em;
 }
 
-.FullSearch .SingleInputWrapper .InputSearch input {
+.FullSearch .InputWrapper .InputSearch input {
   width: 100%;
   border-radius: 5px;
   border: 1px solid #ddd;
@@ -84,41 +119,101 @@
   transition: 0.3s ease-in-out;
 }
 
-.FullSearch .SingleInputWrapper .FilterBy {
-  padding-left: 5px;
-  padding-right: 5px;
-  line-height: 1;
+.FullSearch .InputWrapper .InputSearch input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
-.FullSearch .SingleInputWrapper .FilterBy select {
-  width: 100%;
-  padding: 11px 15px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  font-size: 0.9em;
-  background-color: #fff;
+.FullSearch .InputWrapper .FilterBy {
+  max-width: calc(30% - 23.5px);
+  -ms-flex: 0 0 calc(30% - 23.5px);
+  -webkit-flex: 0 0 calc(30% - 23.5px);
+  flex: 0 0 calc(30% - 23.5px);
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  text-align: left;
 }
 
-.FullSearch .SingleInputWrapper .FilterBy select:focus {
+.FullSearch .InputWrapper .FilterBy select:focus {
   outline: none;
 }
 
-.FullSearch .SingleInputWrapper .ActionButton {
-  padding-left: 5px;
-  padding-right: 20px;
+.FullSearch .InputWrapper .ActionButton {
+  width: 47px;
+  height: 38px;
+  padding-left: 7.5px;
 }
 
-.FullSearch .SingleInputWrapper .ActionButton .AddButton,
-.FullSearch .SingleInputWrapper .ActionButton .MinusButton {
+.FullSearch .InputWrapper .ActionButton .AddButton {
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
   font-size: 1.25em;
   font-weight: 700;
   line-height: 1;
-  padding: 11px 15px;
-  background-color: rgba(43, 207, 138, 0.25);
-  color: #2bcf8a;
   border-radius: 5px;
+}
+
+.FullSearch .InputWrapper .ActionButton .AddButton {
+  color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+.FullSearch .ListOfSearch {
+  margin-bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.FullSearch .ListOfSearch.Active {
+  margin-bottom: 15px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.FullSearch .ListOfSearch .SingleOfSearch {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 7.5px 15px;
+  position: relative;
+}
+
+.FullSearch .ListOfSearch .SingleOfSearch:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+
+.FullSearch .ListOfSearch .SingleOfSearch .InputSearchValue {
+  margin-right: 15px;
+}
+
+.FullSearch .ListOfSearch .SingleOfSearch .FilterByValue {
+  background-color: rgba(0, 0, 0, 0.125);
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 2px 15px;
+}
+
+.FullSearch .ListOfSearch .SingleOfSearch .RemoveList {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.FullSearch .ListOfSearch .SingleOfSearch .RemoveList:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .SingleButtonWrapper:nth-child(odd) {

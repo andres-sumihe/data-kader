@@ -39,7 +39,13 @@ class EditProfile extends React.Component {
             <tr className="SingleInfo">
               <td className="InfoTitle">Level</td>
               <td className="InfoValue">
-                <input type="text" id="level" value="Admin" disabled />
+                <input
+                  type="text"
+                  id="level"
+                  value="Admin"
+                  disabled
+                  readOnly={true}
+                />
               </td>
             </tr>
             <tr className="SingleInfo">
@@ -98,6 +104,7 @@ class InfoProfile extends React.Component {
                   type="password"
                   value="admin321"
                   className="PasswordValue"
+                  readOnly={true}
                 />
                 <div className="ShowPasswordWrapper">
                   <input type="checkbox" id="ShowPassword" />
