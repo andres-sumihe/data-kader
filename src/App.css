@@ -60,19 +60,24 @@ a::-moz-focus-inner {
   outline: none;
 }
 
+input[type="checkbox" i] {
+  margin: 0;
+}
+
 .full-overlay {
   height: 100%;
   width: 100%;
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
   opacity: 0;
   visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.329);
+  background-color: rgba(0, 0, 0, 0.65);
+  transition: 0.4s ease-in-out;
 }
 
-.full-overlay.active {
+.full-overlay.Active {
   opacity: 1;
   visibility: visible;
 }
