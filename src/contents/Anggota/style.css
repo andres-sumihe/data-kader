@@ -101,10 +101,10 @@
 }
 
 .FullSearch .InputWrapper .InputSearch {
-  max-width: calc(65% - 25px);
-  -ms-flex: 0 0 calc(65% - 25px);
-  -webkit-flex: 0 0 calc(65% - 25px);
-  flex: 0 0 calc(65% - 25px);
+  max-width: calc(65% - 26px);
+  -ms-flex: 0 0 calc(65% - 26px);
+  -webkit-flex: 0 0 calc(65% - 26px);
+  flex: 0 0 calc(65% - 26px);
   padding-left: 0 !important;
   padding-right: 7.5px;
   font-size: 1.2em;
@@ -126,10 +126,10 @@
 }
 
 .FullSearch .InputWrapper .FilterBy {
-  max-width: calc(35% - 25px);
-  -ms-flex: 0 0 calc(35% - 25px);
-  -webkit-flex: 0 0 calc(35% - 25px);
-  flex: 0 0 calc(35% - 25px);
+  max-width: calc(35% - 26px);
+  -ms-flex: 0 0 calc(35% - 26px);
+  -webkit-flex: 0 0 calc(35% - 26px);
+  flex: 0 0 calc(35% - 26px);
   padding-left: 7.5px;
   padding-right: 7.5px;
   text-align: left;
@@ -140,7 +140,7 @@
 }
 
 .FullSearch .InputWrapper .ActionButton {
-  width: 50px;
+  width: 52px;
   height: 47px;
   padding-left: 7.5px;
 }
