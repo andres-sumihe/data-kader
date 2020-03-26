@@ -216,12 +216,12 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-.SingleButtonWrapper:nth-child(odd) {
-  padding-right: 10px !important;
+.SingleButtonWrapper:first-of-type {
+  padding-right: 7.5px !important;
 }
 
-.SingleButtonWrapper:nth-child(even) {
-  padding-left: 10px !important;
+.SingleButtonWrapper:last-of-type {
+  padding-left: 7.5px !important;
 }
 
 .SingleButtonWrapper button {
