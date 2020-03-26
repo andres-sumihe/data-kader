@@ -162,6 +162,7 @@ class FullSearch extends React.Component {
               styles={{
                 control: (base, state) => ({
                   ...base,
+                  padding: "5px 10px",
                   borderRadius: 5,
                   boxShadow: state.isFocused ? 0 : 0,
                   borderColor: state.isFocused ? "#ddd" : base.borderColor,

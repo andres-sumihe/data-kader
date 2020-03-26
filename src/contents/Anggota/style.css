@@ -101,10 +101,10 @@
 }
 
 .FullSearch .InputWrapper .InputSearch {
-  max-width: calc(70% - 23.5px);
-  -ms-flex: 0 0 calc(70% - 23.5px);
-  -webkit-flex: 0 0 calc(70% - 23.5px);
-  flex: 0 0 calc(70% - 23.5px);
+  max-width: calc(65% - 25px);
+  -ms-flex: 0 0 calc(65% - 25px);
+  -webkit-flex: 0 0 calc(65% - 25px);
+  flex: 0 0 calc(65% - 25px);
   padding-left: 0 !important;
   padding-right: 7.5px;
   font-size: 1.2em;
@@ -114,8 +114,8 @@
   width: 100%;
   border-radius: 5px;
   border: 1px solid #ddd;
-  padding: 10px 15px;
-  font-size: 0.9em;
+  padding: 14px 18px;
+  font-size: 0.875em;
   transition: 0.3s ease-in-out;
 }
 
@@ -126,10 +126,10 @@
 }
 
 .FullSearch .InputWrapper .FilterBy {
-  max-width: calc(30% - 23.5px);
-  -ms-flex: 0 0 calc(30% - 23.5px);
-  -webkit-flex: 0 0 calc(30% - 23.5px);
-  flex: 0 0 calc(30% - 23.5px);
+  max-width: calc(35% - 25px);
+  -ms-flex: 0 0 calc(35% - 25px);
+  -webkit-flex: 0 0 calc(35% - 25px);
+  flex: 0 0 calc(35% - 25px);
   padding-left: 7.5px;
   padding-right: 7.5px;
   text-align: left;
@@ -140,8 +140,8 @@
 }
 
 .FullSearch .InputWrapper .ActionButton {
-  width: 47px;
-  height: 38px;
+  width: 50px;
+  height: 47px;
   padding-left: 7.5px;
 }
 
@@ -152,7 +152,7 @@
   height: 100%;
   justify-content: center;
   align-items: center;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 700;
   line-height: 1;
   border-radius: 5px;
