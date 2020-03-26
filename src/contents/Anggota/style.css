@@ -289,7 +289,7 @@
   border-radius: 5px;
 }
 
-.Preview .SingleDataAnggota {
+.Preview .GridPreview .SingleDataAnggota {
   margin-bottom: 15px;
   max-width: calc(100% / 12 * 2.4);
   -ms-flex: 0 0 calc(100% / 12 * 2.4);
@@ -298,24 +298,24 @@
   border-radius: 5px;
 }
 
-.Preview .SingleDataAnggota:nth-child(5n + 1) {
+.Preview .GridPreview .SingleDataAnggota:nth-child(5n + 1) {
   padding-right: 7.5px;
   padding-left: 15px;
 }
 
-.Preview .SingleDataAnggota:nth-child(5n + 2),
-.Preview .SingleDataAnggota:nth-child(5n + 3),
-.Preview .SingleDataAnggota:nth-child(5n + 4) {
+.Preview .GridPreview .SingleDataAnggota:nth-child(5n + 2),
+.Preview .GridPreview .SingleDataAnggota:nth-child(5n + 3),
+.Preview .GridPreview .SingleDataAnggota:nth-child(5n + 4) {
   padding-left: 7.5px;
   padding-right: 7.5px;
 }
 
-.Preview .SingleDataAnggota:nth-child(5n + 5) {
+.Preview .GridPreview .SingleDataAnggota:nth-child(5n + 5) {
   padding-left: 7.5px;
   padding-right: 15px;
 }
 
-.Preview .BoxSingleDataAnggota {
+.Preview .GridPreview .BoxSingleDataAnggota {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -329,11 +329,11 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
 }
 
-.Preview .BoxSingleDataAnggota .PreviewDataAnggota {
+.Preview .GridPreview .BoxSingleDataAnggota .PreviewDataAnggota {
   text-align: center;
 }
 
-.Preview .BoxSingleDataAnggota .BoxOverlay {
+.Preview .GridPreview .BoxSingleDataAnggota .BoxOverlay {
   width: 100%;
   height: 100%;
   display: flex;
@@ -349,12 +349,12 @@
   transition: 0.4s ease-in-out;
 }
 
-.Preview .BoxSingleDataAnggota:hover .BoxOverlay {
+.Preview .GridPreview .BoxSingleDataAnggota:hover .BoxOverlay {
   opacity: 1;
   transform: scale(1);
 }
 
-.Preview .BoxSingleDataAnggota .BoxOverlay .ViewDetailButton {
+.Preview .GridPreview .BoxSingleDataAnggota .BoxOverlay .ViewDetailButton {
   width: calc(100% - 40px);
   text-align: center;
   color: #fff;
@@ -366,11 +366,15 @@
   transition: 0.4s ease-in-out;
 }
 
-.Preview .BoxSingleDataAnggota .BoxOverlay .ViewDetailButton:hover {
+.Preview
+  .GridPreview
+  .BoxSingleDataAnggota
+  .BoxOverlay
+  .ViewDetailButton:hover {
   background-color: rgba(43, 207, 138, 1);
 }
 
-.Preview .BoxSingleDataAnggota .Foto {
+.Preview .GridPreview .BoxSingleDataAnggota .Foto {
   line-height: 1;
   margin-left: auto;
   margin-right: auto;
@@ -381,27 +385,101 @@
   background-size: cover;
 }
 
-.Preview .BoxSingleDataAnggota .Nama {
+.Preview .GridPreview .BoxSingleDataAnggota .Nama {
   letter-spacing: 1;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 7px;
 }
 
-.Preview .BoxSingleDataAnggota .NoKTA {
+.Preview .GridPreview .BoxSingleDataAnggota .NoKTA {
   padding: 9px;
   margin-bottom: 14px;
   border-radius: 5px;
   font-size: 0.9em;
 }
 
-.Preview .BoxSingleDataAnggota .Jabatan {
+.Preview .GridPreview .BoxSingleDataAnggota .Jabatan {
   letter-spacing: 0.025em;
   margin-bottom: 11px;
 }
 
-.Preview .BoxSingleDataAnggota .Wilayah {
+.Preview .GridPreview .BoxSingleDataAnggota .Wilayah {
   margin-bottom: -3px;
+}
+
+.Preview .ListPreview .SingleDataAnggota {
+  margin: 5px 20px 20px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.Preview .ListPreview .SingleDataAnggota .Photo {
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.Preview .ListPreview .SingleDataAnggota .InfoAnggota {
+  width: calc(100% - 480px);
+}
+
+.Preview .ListPreview .SingleDataAnggota .InfoAnggota .Name {
+  text-transform: uppercase;
+  font-size: 1.6em;
+  margin-bottom: 15px;
+}
+
+.Preview .ListPreview .SingleDataAnggota .InfoAnggota .NoKTA {
+  padding: 14px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-bottom: 33px;
+}
+
+.Preview .ListPreview .SingleDataAnggota .InfoAnggota .Jabatan {
+  margin-bottom: 9px;
+  font-size: 1.1em;
+}
+
+.Preview .ListPreview .SingleDataAnggota .Wilayah {
+  font-size: 1.1em;
+}
+
+.Preview .ListPreview .SingleDataAnggota .AdditionalInfo {
+  width: 250px;
+  margin-left: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Preview .ListPreview .SingleDataAnggota .AdditionalInfo .ViewDetailButton {
+  width: calc(100% - 40px);
+  position: relative;
+  left: 10px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(43, 207, 138, 0.8);
+  padding: 15px;
+  font-size: 1.1em;
+  border-radius: 30px;
+  transition: 0.4s ease-in-out;
+}
+
+.Preview
+  .ListPreview
+  .SingleDataAnggota
+  .AdditionalInfo
+  .ViewDetailButton:hover {
+  background-color: rgba(43, 207, 138, 0.8);
 }
 
 /* DETAIL */

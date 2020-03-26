@@ -165,7 +165,293 @@ class DetailArea extends Component {
   }
 }
 
+class GridPreview extends Component {
+  render() {
+    return (
+      <div className="GridPreview row no-gutters">
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota bg-c1">
+            <div className="PreviewDataAnggota">
+              <div
+                className="Foto"
+                style={{
+                  backgroundImage: `url(${require("../../photos/photo1.jpg")})`
+                }}
+              ></div>
+              <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
+              <div className="NoKTA bg-c5">9922090922309201</div>
+              <div className="Jabatan tx-c6">Presiden</div>
+              <div className="Wilayah tx-c7">Kota Salatiga</div>
+            </div>
+            <div className="BoxOverlay">
+              <div className="ViewDetailButton">Lihat Profil</div>
+            </div>
+          </div>
+        </div>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota bg-c1">
+            <div className="PreviewDataAnggota">
+              <div
+                className="Foto"
+                style={{
+                  backgroundImage: `url(${require("../../photos/photo2.jpg")})`
+                }}
+              ></div>
+              <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
+              <div className="NoKTA bg-c5">9922090922309201</div>
+              <div className="Jabatan tx-c6">Presiden</div>
+              <div className="Wilayah tx-c7">Kota Salatiga</div>
+            </div>
+            <div className="BoxOverlay">
+              <div className="ViewDetailButton">Lihat Profil</div>
+            </div>
+          </div>
+        </div>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota bg-c1">
+            <div className="PreviewDataAnggota">
+              <div
+                className="Foto"
+                style={{
+                  backgroundImage: `url(${require("../../photos/photo3.jpg")})`
+                }}
+              ></div>
+              <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
+              <div className="NoKTA bg-c5">9922090922309201</div>
+              <div className="Jabatan tx-c6">Presiden</div>
+              <div className="Wilayah tx-c7">Kota Salatiga</div>
+            </div>
+            <div className="BoxOverlay">
+              <div className="ViewDetailButton">Lihat Profil</div>
+            </div>
+          </div>
+        </div>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota bg-c1">
+            <div className="PreviewDataAnggota">
+              <div
+                className="Foto"
+                style={{
+                  backgroundImage: `url(${require("../../photos/photo1.jpg")})`
+                }}
+              ></div>
+              <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
+              <div className="NoKTA bg-c5">9922090922309201</div>
+              <div className="Jabatan tx-c6">Presiden</div>
+              <div className="Wilayah tx-c7">Kota Salatiga</div>
+            </div>
+            <div className="BoxOverlay">
+              <div className="ViewDetailButton">Lihat Profil</div>
+            </div>
+          </div>
+        </div>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota bg-c1">
+            <div className="PreviewDataAnggota">
+              <div
+                className="Foto"
+                style={{
+                  backgroundImage: `url(${require("../../photos/photo1.jpg")})`
+                }}
+              ></div>
+              <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
+              <div className="NoKTA bg-c5">9922090922309201</div>
+              <div className="Jabatan tx-c6">Presiden</div>
+              <div className="Wilayah tx-c7">Kota Salatiga</div>
+            </div>
+            <div className="BoxOverlay">
+              <div className="ViewDetailButton">Lihat Profil</div>
+            </div>
+          </div>
+        </div>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota bg-c1">
+            <div className="PreviewDataAnggota">
+              <div
+                className="Foto"
+                style={{
+                  backgroundImage: `url(${require("../../photos/photo2.jpg")})`
+                }}
+              ></div>
+              <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
+              <div className="NoKTA bg-c5">9922090922309201</div>
+              <div className="Jabatan tx-c6">Presiden</div>
+              <div className="Wilayah tx-c7">Kota Salatiga</div>
+            </div>
+            <div className="BoxOverlay">
+              <div className="ViewDetailButton">Lihat Profil</div>
+            </div>
+          </div>
+        </div>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota bg-c1">
+            <div className="PreviewDataAnggota">
+              <div
+                className="Foto"
+                style={{
+                  backgroundImage: `url(${require("../../photos/photo3.jpg")})`
+                }}
+              ></div>
+              <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
+              <div className="NoKTA bg-c5">9922090922309201</div>
+              <div className="Jabatan tx-c6">Presiden</div>
+              <div className="Wilayah tx-c7">Kota Salatiga</div>
+            </div>
+            <div className="BoxOverlay">
+              <div className="ViewDetailButton">Lihat Profil</div>
+            </div>
+          </div>
+        </div>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota bg-c1">
+            <div className="PreviewDataAnggota">
+              <div
+                className="Foto"
+                style={{
+                  backgroundImage: `url(${require("../../photos/photo1.jpg")})`
+                }}
+              ></div>
+              <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
+              <div className="NoKTA bg-c5">9922090922309201</div>
+              <div className="Jabatan tx-c6">Presiden</div>
+              <div className="Wilayah tx-c7">Kota Salatiga</div>
+            </div>
+            <div className="BoxOverlay">
+              <div className="ViewDetailButton">Lihat Profil</div>
+            </div>
+          </div>
+        </div>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota bg-c1">
+            <div className="PreviewDataAnggota">
+              <div
+                className="Foto"
+                style={{
+                  backgroundImage: `url(${require("../../photos/photo2.jpg")})`
+                }}
+              ></div>
+              <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
+              <div className="NoKTA bg-c5">9922090922309201</div>
+              <div className="Jabatan tx-c6">Presiden</div>
+              <div className="Wilayah tx-c7">Kota Salatiga</div>
+            </div>
+            <div className="BoxOverlay">
+              <div className="ViewDetailButton">Lihat Profil</div>
+            </div>
+          </div>
+        </div>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota bg-c1">
+            <div className="PreviewDataAnggota">
+              <div
+                className="Foto"
+                style={{
+                  backgroundImage: `url(${require("../../photos/photo3.jpg")})`
+                }}
+              ></div>
+              <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
+              <div className="NoKTA bg-c5">9922090922309201</div>
+              <div className="Jabatan tx-c6">Presiden</div>
+              <div className="Wilayah tx-c7">Kota Salatiga</div>
+            </div>
+            <div className="BoxOverlay">
+              <div className="ViewDetailButton">Lihat Profil</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+class ListPreview extends Component {
+  render() {
+    return (
+      <div className="ListPreview row no-gutters">
+        <div className="SingleDataAnggota bg-c1">
+          <div
+            className="Photo"
+            style={{
+              backgroundImage: `url(${require("../../photos/photo1.jpg")})`
+            }}
+          ></div>
+          <div className="InfoAnggota">
+            <div className="Name tx-c4">Michael Fuzzy Arianto</div>
+            <div className="NoKTA bg-c5">12194343483723235</div>
+            <div className="Jabatan tx-c6">Presiden</div>
+            <div className="Wilayah tx-c7">Kota Salatiga</div>
+          </div>
+          <div className="AdditionalInfo">
+            <div className="ViewDetailButton">Lihat Profil</div>
+          </div>
+        </div>
+        <div className="SingleDataAnggota bg-c1">
+          <div
+            className="Photo"
+            style={{
+              backgroundImage: `url(${require("../../photos/photo2.jpg")})`
+            }}
+          ></div>
+          <div className="InfoAnggota">
+            <div className="Name tx-c4">Michael Fuzzy Arianto</div>
+            <div className="NoKTA bg-c5">12194343483723235</div>
+            <div className="Jabatan tx-c6">Presiden</div>
+            <div className="Wilayah tx-c7">Kota Salatiga</div>
+          </div>
+          <div className="AdditionalInfo">
+            <div className="ViewDetailButton">Lihat Profil</div>
+          </div>
+        </div>
+        <div className="SingleDataAnggota bg-c1">
+          <div
+            className="Photo"
+            style={{
+              backgroundImage: `url(${require("../../photos/photo3.jpg")})`
+            }}
+          ></div>
+          <div className="InfoAnggota">
+            <div className="Name tx-c4">Michael Fuzzy Arianto</div>
+            <div className="NoKTA bg-c5">12194343483723235</div>
+            <div className="Jabatan tx-c6">Presiden</div>
+            <div className="Wilayah tx-c7">Kota Salatiga</div>
+          </div>
+          <div className="AdditionalInfo">
+            <div className="ViewDetailButton">Lihat Profil</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
 class Preview extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      displayDataBy: "Grid"
+    };
+    this.byGridRef = React.createRef();
+    this.byListRef = React.createRef();
+  }
+
+  handleClickDisplayDataBy(event, targetDisplayDataBy) {
+    const displayDataBy = this.state.displayDataBy;
+    if (displayDataBy !== targetDisplayDataBy) {
+      switch (targetDisplayDataBy) {
+        case "List":
+          this.byGridRef.current.classList.remove("Active");
+          this.byListRef.current.classList.add("Active");
+          break;
+        case "Grid":
+        default:
+          this.byListRef.current.classList.remove("Active");
+          this.byGridRef.current.classList.add("Active");
+      }
+      this.setState({ displayDataBy: targetDisplayDataBy });
+      event.preventDefault();
+    }
+  }
+
   render() {
     return (
       <div className="Preview">
@@ -176,205 +462,28 @@ class Preview extends Component {
             </span>
           </div>
           <div className="DisplayDataBy">
-            <div className="ByGrid Active">
+            <div
+              className="ByGrid Active"
+              ref={this.byGridRef}
+              onClick={event => this.handleClickDisplayDataBy(event, "Grid")}
+            >
               <FontAwesomeIcon icon={faTh} />
             </div>
-            <div className="ByList">
+            <div
+              className="ByList"
+              ref={this.byListRef}
+              onClick={event => this.handleClickDisplayDataBy(event, "List")}
+            >
               <FontAwesomeIcon icon={faList} />
             </div>
           </div>
         </div>
-        <div className="BodyDataAnggota row no-gutters bg-c5">
-          <div className="SingleDataAnggota">
-            <div className="BoxSingleDataAnggota bg-c1">
-              <div className="PreviewDataAnggota">
-                <div
-                  className="Foto"
-                  style={{
-                    backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-                  }}
-                ></div>
-                <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
-                <div className="NoKTA bg-c5">9922090922309201</div>
-                <div className="Jabatan tx-c6">Presiden</div>
-                <div className="Wilayah tx-c7">Kota Salatiga</div>
-              </div>
-              <div className="BoxOverlay">
-                <div className="ViewDetailButton">Lihat Profil</div>
-              </div>
-            </div>
-          </div>
-          <div className="SingleDataAnggota">
-            <div className="BoxSingleDataAnggota bg-c1">
-              <div className="PreviewDataAnggota">
-                <div
-                  className="Foto"
-                  style={{
-                    backgroundImage: `url(${require("../../photos/photo2.jpg")})`
-                  }}
-                ></div>
-                <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
-                <div className="NoKTA bg-c5">9922090922309201</div>
-                <div className="Jabatan tx-c6">Presiden</div>
-                <div className="Wilayah tx-c7">Kota Salatiga</div>
-              </div>
-              <div className="BoxOverlay">
-                <div className="ViewDetailButton">Lihat Profil</div>
-              </div>
-            </div>
-          </div>
-          <div className="SingleDataAnggota">
-            <div className="BoxSingleDataAnggota bg-c1">
-              <div className="PreviewDataAnggota">
-                <div
-                  className="Foto"
-                  style={{
-                    backgroundImage: `url(${require("../../photos/photo3.jpg")})`
-                  }}
-                ></div>
-                <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
-                <div className="NoKTA bg-c5">9922090922309201</div>
-                <div className="Jabatan tx-c6">Presiden</div>
-                <div className="Wilayah tx-c7">Kota Salatiga</div>
-              </div>
-              <div className="BoxOverlay">
-                <div className="ViewDetailButton">Lihat Profil</div>
-              </div>
-            </div>
-          </div>
-          <div className="SingleDataAnggota">
-            <div className="BoxSingleDataAnggota bg-c1">
-              <div className="PreviewDataAnggota">
-                <div
-                  className="Foto"
-                  style={{
-                    backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-                  }}
-                ></div>
-                <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
-                <div className="NoKTA bg-c5">9922090922309201</div>
-                <div className="Jabatan tx-c6">Presiden</div>
-                <div className="Wilayah tx-c7">Kota Salatiga</div>
-              </div>
-              <div className="BoxOverlay">
-                <div className="ViewDetailButton">Lihat Profil</div>
-              </div>
-            </div>
-          </div>
-          <div className="SingleDataAnggota">
-            <div className="BoxSingleDataAnggota bg-c1">
-              <div className="PreviewDataAnggota">
-                <div
-                  className="Foto"
-                  style={{
-                    backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-                  }}
-                ></div>
-                <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
-                <div className="NoKTA bg-c5">9922090922309201</div>
-                <div className="Jabatan tx-c6">Presiden</div>
-                <div className="Wilayah tx-c7">Kota Salatiga</div>
-              </div>
-              <div className="BoxOverlay">
-                <div className="ViewDetailButton">Lihat Profil</div>
-              </div>
-            </div>
-          </div>
-          <div className="SingleDataAnggota">
-            <div className="BoxSingleDataAnggota bg-c1">
-              <div className="PreviewDataAnggota">
-                <div
-                  className="Foto"
-                  style={{
-                    backgroundImage: `url(${require("../../photos/photo2.jpg")})`
-                  }}
-                ></div>
-                <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
-                <div className="NoKTA bg-c5">9922090922309201</div>
-                <div className="Jabatan tx-c6">Presiden</div>
-                <div className="Wilayah tx-c7">Kota Salatiga</div>
-              </div>
-              <div className="BoxOverlay">
-                <div className="ViewDetailButton">Lihat Profil</div>
-              </div>
-            </div>
-          </div>
-          <div className="SingleDataAnggota">
-            <div className="BoxSingleDataAnggota bg-c1">
-              <div className="PreviewDataAnggota">
-                <div
-                  className="Foto"
-                  style={{
-                    backgroundImage: `url(${require("../../photos/photo3.jpg")})`
-                  }}
-                ></div>
-                <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
-                <div className="NoKTA bg-c5">9922090922309201</div>
-                <div className="Jabatan tx-c6">Presiden</div>
-                <div className="Wilayah tx-c7">Kota Salatiga</div>
-              </div>
-              <div className="BoxOverlay">
-                <div className="ViewDetailButton">Lihat Profil</div>
-              </div>
-            </div>
-          </div>
-          <div className="SingleDataAnggota">
-            <div className="BoxSingleDataAnggota bg-c1">
-              <div className="PreviewDataAnggota">
-                <div
-                  className="Foto"
-                  style={{
-                    backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-                  }}
-                ></div>
-                <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
-                <div className="NoKTA bg-c5">9922090922309201</div>
-                <div className="Jabatan tx-c6">Presiden</div>
-                <div className="Wilayah tx-c7">Kota Salatiga</div>
-              </div>
-              <div className="BoxOverlay">
-                <div className="ViewDetailButton">Lihat Profil</div>
-              </div>
-            </div>
-          </div>
-          <div className="SingleDataAnggota">
-            <div className="BoxSingleDataAnggota bg-c1">
-              <div className="PreviewDataAnggota">
-                <div
-                  className="Foto"
-                  style={{
-                    backgroundImage: `url(${require("../../photos/photo2.jpg")})`
-                  }}
-                ></div>
-                <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
-                <div className="NoKTA bg-c5">9922090922309201</div>
-                <div className="Jabatan tx-c6">Presiden</div>
-                <div className="Wilayah tx-c7">Kota Salatiga</div>
-              </div>
-              <div className="BoxOverlay">
-                <div className="ViewDetailButton">Lihat Profil</div>
-              </div>
-            </div>
-          </div>
-          <div className="SingleDataAnggota">
-            <div className="BoxSingleDataAnggota bg-c1">
-              <div className="PreviewDataAnggota">
-                <div
-                  className="Foto"
-                  style={{
-                    backgroundImage: `url(${require("../../photos/photo3.jpg")})`
-                  }}
-                ></div>
-                <div className="Nama tx-c4">Kimono Budi Fuzzy</div>
-                <div className="NoKTA bg-c5">9922090922309201</div>
-                <div className="Jabatan tx-c6">Presiden</div>
-                <div className="Wilayah tx-c7">Kota Salatiga</div>
-              </div>
-              <div className="BoxOverlay">
-                <div className="ViewDetailButton">Lihat Profil</div>
-              </div>
-            </div>
-          </div>
+        <div className="BodyDataAnggota bg-c5">
+          {this.state.displayDataBy === "Grid" ? (
+            <GridPreview />
+          ) : (
+            <ListPreview />
+          )}
         </div>
       </div>
     );

@@ -43,7 +43,7 @@ class FullSearch extends React.Component {
         },
         () => this.alertRef.current.classList.remove("Active", type)
       );
-    }, 5000);
+    }, 4000);
   }
 
   handleClickRemoveSingleList(event) {
