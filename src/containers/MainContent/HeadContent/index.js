@@ -125,37 +125,21 @@ class MyProfile extends React.Component {
     this.myProfileRef = React.createRef();
     this.InfoProfileRef = React.createRef();
     this.EditProfileRef = React.createRef();
-    this.tabActiveRef = React.createRef();
+    this.infoProfileTabRef = React.createRef();
+    this.editProfileTabRef = React.createRef();
     this.state = {
-      tabActive: this.tabActiveRef
+      tabActive: "InfoProfil"
     };
     this.handleClickClose = this.handleClickClose.bind(this);
     this.handleClickTab = this.handleClickTab.bind(this);
   }
 
   handleClickTab(event, tabTarget) {
-    const parentElem = event.target.parentElement;
-    const tabActive = this.state.tabActive;
-    if (!parentElem.classList.contains("Active")) {
-      if (!tabActive.current) {
-        tabActive.classList.remove("Active");
-      } else {
-        tabActive.current.classList.remove("Active");
-      }
-      parentElem.classList.add("Active");
-      this.setState({
-        tabActive: parentElem
-      });
+    if (this.state.tabActive !== tabTarget) {
       switch (tabTarget) {
-        case "InfoProfil":
-          this.EditProfileRef.current.editProfileRef.current.classList.remove(
-            "Active"
-          );
-          this.InfoProfileRef.current.infoProfileRef.current.classList.add(
-            "Active"
-          );
-          break;
         case "EditProfil":
+          this.infoProfileTabRef.current.classList.remove("Active");
+          this.editProfileTabRef.current.classList.add("Active");
           this.InfoProfileRef.current.infoProfileRef.current.classList.remove(
             "Active"
           );
@@ -163,7 +147,18 @@ class MyProfile extends React.Component {
             "Active"
           );
           break;
+        case "InfoProfil":
+        default:
+          this.editProfileTabRef.current.classList.remove("Active");
+          this.infoProfileTabRef.current.classList.add("Active");
+          this.EditProfileRef.current.editProfileRef.current.classList.remove(
+            "Active"
+          );
+          this.InfoProfileRef.current.infoProfileRef.current.classList.add(
+            "Active"
+          );
       }
+      this.setState({ tabActive: tabTarget });
       event.preventDefault();
     }
   }
@@ -187,32 +182,32 @@ class MyProfile extends React.Component {
             </span>
           </div>
           <div className="Body">
-            <div
-              className="UserPhoto"
-              style={{
-                backgroundImage: `url(${require("../../../photos/photo1.jpg")})`
-              }}
-            >
-              <div className="ChangeUserPhoto">
-                <FontAwesomeIcon icon={faCamera} />
+            <div className="UserPhotoArea">
+              <div
+                className="UserPhoto"
+                style={{
+                  backgroundImage: `url(${require("../../../photos/photo1.jpg")})`
+                }}
+              >
+                <div className="ChangeUserPhoto">
+                  <FontAwesomeIcon icon={faCamera} />
+                </div>
               </div>
             </div>
             <div className="Tab">
-              <div className="SingleTabWrapper Active" ref={this.tabActiveRef}>
-                <span
-                  className="SingleTab InfoProfil"
-                  onClick={event => this.handleClickTab(event, "InfoProfil")}
-                >
-                  Info Profil
-                </span>
+              <div
+                className="SingleTabWrapper Active"
+                ref={this.infoProfileTabRef}
+                onClick={event => this.handleClickTab(event, "InfoProfil")}
+              >
+                <span className="SingleTab InfoProfil">Info Profil</span>
               </div>
-              <div className="SingleTabWrapper">
-                <span
-                  className="SingleTab EditProfil"
-                  onClick={event => this.handleClickTab(event, "EditProfil")}
-                >
-                  Edit Profil
-                </span>
+              <div
+                className="SingleTabWrapper"
+                ref={this.editProfileTabRef}
+                onClick={event => this.handleClickTab(event, "EditProfil")}
+              >
+                <span className="SingleTab EditProfil">Edit Profil</span>
               </div>
             </div>
             <div className="Content">

@@ -215,7 +215,6 @@
   line-height: 1;
   margin: -15px;
   padding: 15px 15px 13px;
-  background-color: rgba(0, 0, 0, 0.075);
 }
 
 .MyProfile .Head h5,
@@ -228,7 +227,7 @@
 }
 
 .MyProfile .Head .CloseIcon {
-  font-size: 1.5em;
+  font-size: 1.35em;
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
@@ -243,19 +242,28 @@
   justify-content: center;
   align-items: center;
   margin-top: 15px;
-  padding-top: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-.MyProfile .Body .UserPhoto {
+.MyProfile .Body .UserPhotoArea {
+  width: 100%;
+  padding-top: 30px;
+  background-color: #2bcf8a;
+}
+
+.MyProfile .Body .UserPhotoArea .UserPhoto {
   width: 120px;
   height: 120px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 50%;
   background-size: cover;
   position: relative;
-  margin-bottom: 17px;
+  margin-bottom: 32px;
 }
 
-.MyProfile .Body .UserPhoto .ChangeUserPhoto {
+.MyProfile .Body .UserPhotoArea .UserPhoto .ChangeUserPhoto {
   position: absolute;
   right: 2px;
   bottom: 2px;
@@ -266,9 +274,9 @@
   justify-content: center;
   align-items: center;
   line-height: 1;
-  background-color: #2bcf8a;
-  color: #fff;
-  border: 2px solid #fff;
+  background-color: #fff;
+  color: #2bcf8a;
+  border: 2px solid #2bcf8a;
   cursor: pointer;
 }
 
@@ -276,18 +284,19 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .MyProfile .Body .Tab .SingleTabWrapper {
   width: calc(50% + 15px);
   text-align: center;
-  padding-top: 7px;
+  padding-top: 8px;
   padding-bottom: 7px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #2bcf8a;
+  cursor: pointer;
 }
 
 .MyProfile .Body .Tab .SingleTabWrapper:first-of-type {
-  border-right: 1px solid rgba(0, 0, 0, 0.15);
   margin-left: -15px;
 }
 
@@ -296,14 +305,15 @@
 }
 
 .MyProfile .Body .Tab .SingleTabWrapper.Active {
-  border-bottom-color: #2bcf8a;
+  background-color: #fff;
 }
 
-.MyProfile .Body .Tab .SingleTabWrapper .SingleTab {
-  line-height: 1;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.45);
-  cursor: pointer;
+.MyProfile .Body .Tab .SingleTabWrapper:first-of-type.Active {
+  border-top-right-radius: 5px !important;
+}
+
+.MyProfile .Body .Tab .SingleTabWrapper:last-of-type.Active {
+  border-top-left-radius: 5px !important;
 }
 
 .MyProfile .Body .Tab .SingleTabWrapper.Active .SingleTab {
@@ -311,10 +321,18 @@
   font-weight: 700;
 }
 
+.MyProfile .Body .Tab .SingleTabWrapper .SingleTab {
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 .MyProfile .Content {
   position: relative;
   width: 100%;
   padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .MyProfile .InfoProfile,
