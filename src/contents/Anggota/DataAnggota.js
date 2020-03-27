@@ -2,7 +2,12 @@ import React, { Component } from "react";
 import "./style.css";
 import "./../../grid.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes, faList, faTh } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTimes,
+  faList,
+  faTh,
+  faEye
+} from "@fortawesome/free-solid-svg-icons";
 
 class Kepartaian extends Component {
   render() {
@@ -184,7 +189,10 @@ class GridPreview extends Component {
               <div className="Wilayah tx-c7">Kota Salatiga</div>
             </div>
             <div className="BoxOverlay">
-              <div className="ViewDetailButton">Lihat Profil</div>
+              <div className="ViewDetailButton">
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
@@ -203,7 +211,10 @@ class GridPreview extends Component {
               <div className="Wilayah tx-c7">Kota Salatiga</div>
             </div>
             <div className="BoxOverlay">
-              <div className="ViewDetailButton">Lihat Profil</div>
+              <div className="ViewDetailButton">
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
@@ -222,7 +233,10 @@ class GridPreview extends Component {
               <div className="Wilayah tx-c7">Kota Salatiga</div>
             </div>
             <div className="BoxOverlay">
-              <div className="ViewDetailButton">Lihat Profil</div>
+              <div className="ViewDetailButton">
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
@@ -241,7 +255,10 @@ class GridPreview extends Component {
               <div className="Wilayah tx-c7">Kota Salatiga</div>
             </div>
             <div className="BoxOverlay">
-              <div className="ViewDetailButton">Lihat Profil</div>
+              <div className="ViewDetailButton">
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
@@ -260,7 +277,10 @@ class GridPreview extends Component {
               <div className="Wilayah tx-c7">Kota Salatiga</div>
             </div>
             <div className="BoxOverlay">
-              <div className="ViewDetailButton">Lihat Profil</div>
+              <div className="ViewDetailButton">
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
@@ -279,7 +299,10 @@ class GridPreview extends Component {
               <div className="Wilayah tx-c7">Kota Salatiga</div>
             </div>
             <div className="BoxOverlay">
-              <div className="ViewDetailButton">Lihat Profil</div>
+              <div className="ViewDetailButton">
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
@@ -298,7 +321,10 @@ class GridPreview extends Component {
               <div className="Wilayah tx-c7">Kota Salatiga</div>
             </div>
             <div className="BoxOverlay">
-              <div className="ViewDetailButton">Lihat Profil</div>
+              <div className="ViewDetailButton">
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
@@ -317,7 +343,10 @@ class GridPreview extends Component {
               <div className="Wilayah tx-c7">Kota Salatiga</div>
             </div>
             <div className="BoxOverlay">
-              <div className="ViewDetailButton">Lihat Profil</div>
+              <div className="ViewDetailButton">
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
@@ -336,7 +365,10 @@ class GridPreview extends Component {
               <div className="Wilayah tx-c7">Kota Salatiga</div>
             </div>
             <div className="BoxOverlay">
-              <div className="ViewDetailButton">Lihat Profil</div>
+              <div className="ViewDetailButton">
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
@@ -355,7 +387,10 @@ class GridPreview extends Component {
               <div className="Wilayah tx-c7">Kota Salatiga</div>
             </div>
             <div className="BoxOverlay">
-              <div className="ViewDetailButton">Lihat Profil</div>
+              <div className="ViewDetailButton">
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
@@ -382,7 +417,10 @@ class ListPreview extends Component {
             <div className="Wilayah tx-c7">Kota Salatiga</div>
           </div>
           <div className="AdditionalInfo">
-            <div className="ViewDetailButton">Lihat Profil</div>
+            <div className="ViewDetailButton">
+              <FontAwesomeIcon icon={faEye} />
+              <span>Lihat Profil</span>
+            </div>
           </div>
         </div>
         <div className="SingleDataAnggota bg-c1">
@@ -399,7 +437,10 @@ class ListPreview extends Component {
             <div className="Wilayah tx-c7">Kota Salatiga</div>
           </div>
           <div className="AdditionalInfo">
-            <div className="ViewDetailButton">Lihat Profil</div>
+            <div className="ViewDetailButton">
+              <FontAwesomeIcon icon={faEye} />
+              <span>Lihat Profil</span>
+            </div>
           </div>
         </div>
         <div className="SingleDataAnggota bg-c1">
@@ -416,7 +457,10 @@ class ListPreview extends Component {
             <div className="Wilayah tx-c7">Kota Salatiga</div>
           </div>
           <div className="AdditionalInfo">
-            <div className="ViewDetailButton">Lihat Profil</div>
+            <div className="ViewDetailButton">
+              <FontAwesomeIcon icon={faEye} />
+              <span>Lihat Profil</span>
+            </div>
           </div>
         </div>
       </div>

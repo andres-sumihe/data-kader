@@ -376,6 +376,10 @@
   transition: 0.4s ease-in-out;
 }
 
+.Preview .GridPreview .BoxSingleDataAnggota .BoxOverlay .ViewDetailButton span {
+  margin-left: 7px;
+}
+
 .Preview
   .GridPreview
   .BoxSingleDataAnggota
@@ -482,6 +486,15 @@
   font-size: 1.1em;
   border-radius: 30px;
   transition: 0.4s ease-in-out;
+}
+
+.Preview
+  .ListPreview
+  .SingleDataAnggota
+  .AdditionalInfo
+  .ViewDetailButton
+  span {
+  margin-left: 7px;
 }
 
 .Preview

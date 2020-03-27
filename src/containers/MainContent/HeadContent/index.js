@@ -7,7 +7,8 @@ import {
   faUser,
   faSignOutAlt,
   faTimes,
-  faCamera
+  faCamera,
+  faSave
 } from "@fortawesome/free-solid-svg-icons";
 
 class EditProfile extends React.Component {
@@ -67,7 +68,8 @@ class EditProfile extends React.Component {
               <td></td>
               <td className="SubmitArea">
                 <button type="submit" className="saveButton">
-                  Simpan
+                  <FontAwesomeIcon icon={faSave} />
+                  <span>Simpan</span>
                 </button>
               </td>
             </tr>
