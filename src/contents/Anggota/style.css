@@ -355,13 +355,11 @@
   background-color: rgba(255, 255, 255, 0.75);
   z-index: 5;
   opacity: 0;
-  transform: scale(0.75);
   transition: 0.4s ease-in-out;
 }
 
 .Preview .GridPreview .BoxSingleDataAnggota:hover .BoxOverlay {
   opacity: 1;
-  transform: scale(1);
 }
 
 .Preview .GridPreview .BoxSingleDataAnggota .BoxOverlay .ViewDetailButton {
