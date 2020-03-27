@@ -1,12 +1,12 @@
 .AddAnggotaButton {
   position: absolute;
-  top: -77px;
+  top: -78px;
   right: 0;
   background-color: #2bcf8a;
   border: 1px solid #fff;
   color: #fff;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 11px 15px;
   cursor: pointer;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .Search {
-  margin-top: 36px;
+  margin-top: 38px;
   margin-bottom: 50px;
 }
 
