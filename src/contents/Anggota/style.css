@@ -1,4 +1,22 @@
+.AddAnggotaButton {
+  position: absolute;
+  top: -77px;
+  right: 0;
+  background-color: #2bcf8a;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.AddAnggotaButton > span {
+  display: inline-block;
+  margin-left: 10px;
+}
+
 .Search {
+  margin-top: 36px;
   margin-bottom: 50px;
 }
 
