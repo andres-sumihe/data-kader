@@ -331,7 +331,7 @@
   align-items: center;
   position: relative;
   height: 100%;
-  padding: 15px;
+  padding: 15px 0 0;
   line-height: 1.2;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
@@ -339,58 +339,11 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
 }
 
-.Preview .GridPreview .BoxSingleDataAnggota .PreviewDataAnggota {
-  text-align: center;
-}
-
-.Preview .GridPreview .BoxSingleDataAnggota .BoxOverlay {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.75);
-  z-index: 5;
-  opacity: 0;
-  transition: 0.4s ease-in-out;
-}
-
-.Preview .GridPreview .BoxSingleDataAnggota:hover .BoxOverlay {
-  opacity: 1;
-}
-
-.Preview .GridPreview .BoxSingleDataAnggota .BoxOverlay .ViewDetailButton {
-  width: calc(100% - 40px);
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
-  background-color: rgba(43, 207, 138, 0.8);
-  padding: 15px;
-  font-size: 1.1em;
-  border-radius: 30px;
-  transition: 0.4s ease-in-out;
-}
-
-.Preview .GridPreview .BoxSingleDataAnggota .BoxOverlay .ViewDetailButton span {
-  margin-left: 7px;
-}
-
-.Preview
-  .GridPreview
-  .BoxSingleDataAnggota
-  .BoxOverlay
-  .ViewDetailButton:hover {
-  background-color: rgba(43, 207, 138, 1);
-}
-
 .Preview .GridPreview .BoxSingleDataAnggota .Foto {
   line-height: 1;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 18px;
+  margin-bottom: 13px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -402,22 +355,49 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 7px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .Preview .GridPreview .BoxSingleDataAnggota .NoKTA {
   padding: 9px;
-  margin-bottom: 14px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 9px;
   border-radius: 5px;
   font-size: 0.9em;
 }
 
 .Preview .GridPreview .BoxSingleDataAnggota .Jabatan {
   letter-spacing: 0.025em;
-  margin-bottom: 11px;
+  margin-bottom: 6px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .Preview .GridPreview .BoxSingleDataAnggota .Wilayah {
-  margin-bottom: -3px;
+  margin-bottom: 11px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.Preview .GridPreview .BoxSingleDataAnggota .ViewDetailButton {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(43, 207, 138, 0.8);
+  padding: 15px;
+  font-size: 1.1em;
+  transition: 0.4s ease-in-out;
+}
+
+.Preview .GridPreview .BoxSingleDataAnggota .ViewDetailButton span {
+  margin-left: 7px;
+}
+
+.Preview .GridPreview .BoxSingleDataAnggota .ViewDetailButton:hover {
+  background-color: rgba(43, 207, 138, 1);
 }
 
 .Preview .ListPreview .SingleDataAnggota {
