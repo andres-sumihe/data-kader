@@ -386,9 +386,12 @@
   text-align: center;
   color: #fff;
   cursor: pointer;
+  pointer-events: auto;
   background-color: rgba(43, 207, 138, 0.8);
   padding: 15px;
   font-size: 1.1em;
+  position: relative;
+  z-index: 100;
   transition: 0.4s ease-in-out;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
