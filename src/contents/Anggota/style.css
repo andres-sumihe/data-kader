@@ -390,6 +390,8 @@
   padding: 15px;
   font-size: 1.1em;
   transition: 0.4s ease-in-out;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .Preview .GridPreview .BoxSingleDataAnggota .ViewDetailButton span {
