@@ -27,7 +27,7 @@ class Kepartaian extends React.Component {
                 <label htmlFor="KepartaianStruktural">Struktural</label>
               </td>
               <td className="Value">
-                <input type="text" id="KepartaianStruktural" value="" />
+                <input type="text" id="KepartaianStruktural" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -35,7 +35,7 @@ class Kepartaian extends React.Component {
                 <label htmlFor="KepartaianDepartemen">Departemen</label>
               </td>
               <td className="Value">
-                <input type="text" id="KepartaianDepartemen" value="" />
+                <input type="text" id="KepartaianDepartemen" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -59,7 +59,7 @@ class Kepartaian extends React.Component {
                 <label htmlFor="KepartaianSekolahPartai">Sekolah Partai</label>
               </td>
               <td className="Value">
-                <input type="text" id="KepartaianSekolahPartai" value="" />
+                <input type="text" id="KepartaianSekolahPartai" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -67,7 +67,7 @@ class Kepartaian extends React.Component {
                 <label htmlFor="KepartaianPenugasan">Penugasan</label>
               </td>
               <td className="Value">
-                <input type="text" id="KepartaianPenugasan" value="" />
+                <input type="text" id="KepartaianPenugasan" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -75,7 +75,7 @@ class Kepartaian extends React.Component {
                 <label htmlFor="KepartaianKomunitasJuang">Komunitas Juang</label>
               </td>
               <td className="Value">
-                <input type="text" id="KepartaianKomunitasJuang" value="" />
+                <input type="text" id="KepartaianKomunitasJuang" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -110,7 +110,7 @@ class Biodata extends React.Component {
                 <label htmlFor="BiodataNama">Nama</label>
               </td>
               <td className="Value">
-                <input type="text" id="BiodataNama" value="" />
+                <input type="text" id="BiodataNama" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -118,7 +118,7 @@ class Biodata extends React.Component {
                 <label htmlFor="BiodataNoKTA">No. KTA</label>
               </td>
               <td className="Value">
-                <input type="text" id="BiodataNoKTA" value="" />
+                <input type="text" id="BiodataNoKTA" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -142,7 +142,7 @@ class Biodata extends React.Component {
                 <label htmlFor="BiodataJabatan">Jabatan</label>
               </td>
               <td className="Value">
-                <input type="text" id="BiodataJabatan" value="" />
+                <input type="text" id="BiodataJabatan" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -150,7 +150,7 @@ class Biodata extends React.Component {
                 <label htmlFor="BiodataWilayah">Wilayah</label>
               </td>
               <td className="Value">
-                <input type="text" id="BiodataWilayah" value="" />
+                <input type="text" id="BiodataWilayah" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -158,7 +158,7 @@ class Biodata extends React.Component {
                 <label htmlFor="BiodataAlamat">Alamat</label>
               </td>
               <td className="Value">
-                <input type="text" id="BiodataAlamat" value="" />
+                <input type="text" id="BiodataAlamat" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -166,7 +166,7 @@ class Biodata extends React.Component {
                 <label htmlFor="BiodataKontak">Kontak</label>
               </td>
               <td className="Value">
-                <input type="text" id="BiodataKontak" value="" />
+                <input type="text" id="BiodataKontak" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -174,7 +174,7 @@ class Biodata extends React.Component {
                 <label htmlFor="BiodataPendidikan">Pendidikan</label>
               </td>
               <td className="Value">
-                <input type="text" id="BiodataPendidikan" value="" />
+                <input type="text" id="BiodataPendidikan" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -182,7 +182,7 @@ class Biodata extends React.Component {
                 <label htmlFor="BiodataPekerjaan">Pekerjaan</label>
               </td>
               <td className="Value">
-                <input type="text" id="BiodataPekerjaan" value="" />
+                <input type="text" id="BiodataPekerjaan" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -190,7 +190,7 @@ class Biodata extends React.Component {
                 <label htmlFor="BiodataBahasa">Bahasa</label>
               </td>
               <td className="Value">
-                <input type="text" id="BiodataBahasa" value="" />
+                <input type="text" id="BiodataBahasa" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -198,7 +198,7 @@ class Biodata extends React.Component {
                 <label htmlFor="BiodataOrganisasi">Organisasi</label>
               </td>
               <td className="Value">
-                <input type="text" id="BiodataOrganisasi" value="" />
+                <input type="text" id="BiodataOrganisasi" />
               </td>
             </tr>
             <tr className="SingleInput">
@@ -206,7 +206,7 @@ class Biodata extends React.Component {
                 <label htmlFor="BiodataBakat">Bakat</label>
               </td>
               <td className="Value">
-                <input type="text" id="BiodataBakat" value="" />
+                <input type="text" id="BiodataBakat" />
               </td>
             </tr>
           </tbody>

@@ -46,7 +46,7 @@ class BodySidebar extends React.Component {
       <div className="BodySidebar">
         <ul className="MenuWrapper">
           <li className="SingleMenu Active" ref={this.anggotaRef}>
-            <Link to="/">
+            <Link to="/anggota">
               <div
                 className="InnerSingleMenu"
                 onClick={event => {

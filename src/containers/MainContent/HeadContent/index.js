@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import "./../../../skin.css";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -247,9 +247,9 @@ class UserAction extends React.Component {
     switch (goTo) {
       case "Profile":
         this.MyProfileRef.current.myProfileRef.current.classList.add("Active");
+        event.preventDefault();
         break;
     }
-    event.preventDefault();
   }
 
   render() {
@@ -278,10 +278,12 @@ class UserAction extends React.Component {
               className="GoTo Logout"
               onClick={event => this.handleClickGoTo(event, "Logout")}
             >
-              <span className="Icon">
-                <FontAwesomeIcon icon={faSignOutAlt} />
-              </span>
-              <span className="Name">Keluar</span>
+              <Link to="/">
+                <span className="Icon">
+                  <FontAwesomeIcon icon={faSignOutAlt} />
+                </span>
+                <span className="Name">Keluar</span>
+              </Link>
             </li>
           </ul>
         </div>
@@ -336,9 +338,7 @@ class HeadContent extends React.Component {
         <div className="BodyHeadContent bg-c4">
           <h4 className="tx-c1">
             <Switch>
-              <Route exact path="/">
-                Data Anggota
-              </Route>
+              <Route path="/anggota">Data Anggota</Route>
               <Route path="/eksekutif">Eksekutif</Route>
               <Route path="/legislatif">Legislatif</Route>
             </Switch>

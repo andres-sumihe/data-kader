@@ -21,7 +21,7 @@
 }
 
 .PopupAddAnggota.Active {
-  z-index: 2000 !important;
+  z-index: 1000 !important;
 }
 
 .PopupAddAnggota .AddAnggota {
@@ -146,11 +146,6 @@
 .PopupAddAnggota .AddAnggota .Content .Kepartaian .InputWrapper .SingleInput .Value {
   padding-top: 7px;
   padding-bottom: 7px;
-}
-
-.PopupAddAnggota .AddAnggota .Content .Biodata .InputWrapper .SingleInput .Title,
-.PopupAddAnggota .AddAnggota .Content .Kepartaian .InputWrapper .SingleInput .Title {
-  padding-right: 7.5px;
 }
 
 .PopupAddAnggota .AddAnggota .Content .Biodata .InputWrapper .SingleInput .Value,
@@ -304,6 +299,7 @@
   border-style: solid;
   padding: 15px 20px;
   font-size: 1em;
+  position: relative;
   transition: 0.3s ease-in-out;
 }
 

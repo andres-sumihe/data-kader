@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./style.css";
 import "./../../../skin.css";
 import Anggota from "../../../contents/Anggota";
@@ -11,7 +11,7 @@ class BodyContent extends React.Component {
     return (
       <div className="BodyContent bg-c1">
         <Switch>
-          <Route exact path="/">
+          <Route path="/anggota">
             <Anggota />
           </Route>
           <Route path="/eksekutif">

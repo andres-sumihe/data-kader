@@ -1,6 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router,
+  Route,
+  Link,
+  Switch } from "react-router-dom";
 import "./App.css";
+import Login from "./Login";
 import Sidebar from "./containers/Sidebar";
 import MainContent from "./containers/MainContent";
 
@@ -24,11 +28,18 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
-          <Sidebar isSidebarActive={isSidebarActive} />
-          <MainContent
-            isSidebarActive={isSidebarActive}
-            onSidebarStatusChange={this.handleSidebarStatusChange}
-          />
+          <Switch>
+            <Route exact path="/">
+              <Login />
+            </Route>
+            <Route path="/:id">
+              <Sidebar isSidebarActive={isSidebarActive} />
+              <MainContent
+                isSidebarActive={isSidebarActive}
+                onSidebarStatusChange={this.handleSidebarStatusChange}
+              />
+            </Route>
+          </Switch>
         </Router>
       </div>
     );
