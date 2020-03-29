@@ -2,12 +2,17 @@
   position: absolute;
   top: -78px;
   right: 0;
-  background-color: #2bcf8a;
+  background-color: #55d9a1;
   border: 1px solid #fff;
   color: #fff;
   border-radius: 5px;
   padding: 11px 15px;
   cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.AddAnggotaButton:hover {
+  background-color: #2bcf8a;
 }
 
 .AddAnggotaButton > span {
@@ -444,14 +449,6 @@
 .Preview .ListPreview .ListPreviewTable tbody tr:hover td {
   background-color: #eee;
 }
-
-/* .Preview .ListPreview .ListPreviewTable tbody tr:first-of-type td {
-  padding-top: 15px;
-}
-
-.Preview .ListPreview .ListPreviewTable tbody tr:last-of-type td {
-  padding-bottom: 15px;
-} */
 
 .Preview .ListPreview .ListPreviewTable tbody tr td.Aksi {
   width: 150px;
