@@ -203,10 +203,6 @@
   padding: 15px;
 }
 
-.PopupMyProfile.Active {
-  z-index: 1000 !important;
-}
-
 .PopupMyProfile .MyProfile {
   width: 470px;
   padding: 15px;
