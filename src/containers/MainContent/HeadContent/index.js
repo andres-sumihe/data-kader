@@ -14,9 +14,11 @@ import {
 class EditProfile extends React.Component {
   constructor(props) {
     super(props);
+    this.passwordRef = React.createRef();
     this.editProfileRef = React.createRef();
     this.handleInputType = this.handleInputType.bind(this);
     this.handleClickSubmit = this.handleClickSubmit.bind(this);
+    this.handleChangeTampilkanKataSandi = this.handleChangeTampilkanKataSandi.bind(this);
   }
 
   handleInputType(event) {
@@ -25,6 +27,10 @@ class EditProfile extends React.Component {
 
   handleClickSubmit(event) {
     event.preventDefault();
+  }
+
+  handleChangeTampilkanKataSandi(event) {
+    this.passwordRef.current.type = event.target.checked ? "text" : "password";
   }
 
   render() {
@@ -67,12 +73,13 @@ class EditProfile extends React.Component {
                 <input
                   type="password"
                   value="admin321"
+                  ref={this.passwordRef}
                   id="EditUserKataSandi"
                   className="PasswordValue"
                   onChange={this.handleInputType}
                 />
                 <div className="ShowPasswordWrapper">
-                  <input type="checkbox" id="EditUserTampilkanKataSandi" />
+                  <input type="checkbox" id="EditUserTampilkanKataSandi" onChange={this.handleChangeTampilkanKataSandi} />
                   <label htmlFor="EditUserTampikanKataSandi">Tampilkan Kata Sandi</label>
                 </div>
               </td>
@@ -96,7 +103,13 @@ class EditProfile extends React.Component {
 class InfoProfile extends React.Component {
   constructor(props) {
     super(props);
+    this.passwordRef = React.createRef();
     this.infoProfileRef = React.createRef();
+    this.handleChangeTampilkanKataSandi = this.handleChangeTampilkanKataSandi.bind(this);
+  }
+
+  handleChangeTampilkanKataSandi(event) {
+    this.passwordRef.current.type = event.target.checked ? "text" : "password";
   }
 
   render() {
@@ -120,9 +133,10 @@ class InfoProfile extends React.Component {
                   value="admin321"
                   className="PasswordValue"
                   readOnly={true}
+                  ref={this.passwordRef}
                 />
                 <div className="ShowPasswordWrapper">
-                  <input type="checkbox" id="InfoUserTampilkanKataSandi" />
+                  <input type="checkbox" id="InfoUserTampilkanKataSandi" onChange={this.handleChangeTampilkanKataSandi} />
                   <label htmlFor="InfoUserTampilkanKataSandi">Tampilkan Kata Sandi</label>
                 </div>
               </td>

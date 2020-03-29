@@ -9,10 +9,12 @@ import { faSignInAlt, faTimes } from "@fortawesome/free-solid-svg-icons";
 class Login extends React.Component {
   constructor(props) {
     super(props);
-    this.handleSubmitMasuk = this.handleSubmitMasuk.bind(this);
     this.state = {
       redirectToReferrer: false
     };
+    this.passwordRef = React.createRef();
+    this.handleSubmitMasuk = this.handleSubmitMasuk.bind(this);
+    this.handleChangeTampilkanKataSandi = this.handleChangeTampilkanKataSandi.bind(this);
   }
 
   handleSubmitMasuk(event) {
@@ -20,6 +22,10 @@ class Login extends React.Component {
       redirectToReferrer: true
     });
     event.preventDefault();
+  }
+
+  handleChangeTampilkanKataSandi(event) {
+    this.passwordRef.current.type = event.target.checked ? "text" : "password";
   }
 
   render() {
@@ -57,9 +63,9 @@ class Login extends React.Component {
                         <label htmlFor="LoginKataSandi">Kata Sandi</label>
                       </td>
                       <td className="Value">
-                        <input type="password" id="LoginKataSandi" className="PasswordValue" />
+                        <input type="password" id="LoginKataSandi" className="PasswordValue" ref={this.passwordRef} />
                         <div className="ShowPasswordWrapper">
-                          <input type="checkbox" id="LoginTampilkanKataSandi" />
+                          <input type="checkbox" id="LoginTampilkanKataSandi" onChange={this.handleChangeTampilkanKataSandi} />
                           <label htmlFor="LoginTampikanKataSandi">Tampilkan Kata Sandi</label>
                         </div>
                       </td>
