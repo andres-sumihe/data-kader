@@ -197,7 +197,11 @@
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.MyProfile {
+.PopupMyProfile.Active {
+  z-index: 2000 !important;
+}
+
+.PopupMyProfile .MyProfile {
   width: 470px;
   padding: 15px;
   position: absolute;
@@ -208,7 +212,7 @@
   border-radius: 5px;
 }
 
-.MyProfile .Head {
+.PopupMyProfile .MyProfile .Head {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -217,26 +221,26 @@
   padding: 15px 15px 13px;
 }
 
-.MyProfile .Head h5,
-.MyProfile .Head .CloseIcon {
+.PopupMyProfile .MyProfile .Head h5,
+.PopupMyProfile .MyProfile .Head .CloseIcon {
   font-weight: 400;
 }
 
-.MyProfile .Head h5 span {
+.PopupMyProfile .MyProfile .Head h5 span {
   margin-left: 12px;
 }
 
-.MyProfile .Head .CloseIcon {
+.PopupMyProfile .MyProfile .Head .CloseIcon {
   font-size: 1.35em;
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
 
-.MyProfile .Head .CloseIcon:hover {
+.PopupMyProfile .MyProfile .Head .CloseIcon:hover {
   transform: rotate(90deg);
 }
 
-.MyProfile .Body {
+.PopupMyProfile .MyProfile .Body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,13 +250,13 @@
   margin-right: -15px;
 }
 
-.MyProfile .Body .UserPhotoArea {
+.PopupMyProfile .MyProfile .Body .UserPhotoArea {
   width: 100%;
   padding-top: 30px;
   background-color: #2bcf8a;
 }
 
-.MyProfile .Body .UserPhotoArea .UserPhoto {
+.PopupMyProfile .MyProfile .Body .UserPhotoArea .UserPhoto {
   width: 120px;
   height: 120px;
   margin-left: auto;
@@ -263,7 +267,7 @@
   margin-bottom: 32px;
 }
 
-.MyProfile .Body .UserPhotoArea .UserPhoto .ChangeUserPhoto {
+.PopupMyProfile .MyProfile .Body .UserPhotoArea .UserPhoto .ChangeUserPhoto {
   position: absolute;
   right: 2px;
   bottom: 2px;
@@ -280,46 +284,47 @@
   cursor: pointer;
 }
 
-.MyProfile .Body .Tab {
+.PopupMyProfile .MyProfile .Body .Tab {
   width: 100%;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
 }
 
-.MyProfile .Body .Tab .SingleTabWrapper {
+.PopupMyProfile .MyProfile .Body .Tab .SingleTabWrapper {
   width: 50%;
   text-align: center;
   padding-top: 8px;
   padding-bottom: 7px;
   background-color: #2bcf8a;
   cursor: pointer;
+  pointer-events: auto;
 }
 
-.MyProfile .Body .Tab .SingleTabWrapper.Active {
+.PopupMyProfile .MyProfile .Body .Tab .SingleTabWrapper.Active {
   background-color: #fff;
 }
 
-.MyProfile .Body .Tab .SingleTabWrapper:first-of-type.Active {
+.PopupMyProfile .MyProfile .Body .Tab .SingleTabWrapper:first-of-type.Active {
   border-top-right-radius: 5px !important;
 }
 
-.MyProfile .Body .Tab .SingleTabWrapper:last-of-type.Active {
+.PopupMyProfile .MyProfile .Body .Tab .SingleTabWrapper:last-of-type.Active {
   border-top-left-radius: 5px !important;
 }
 
-.MyProfile .Body .Tab .SingleTabWrapper.Active .SingleTab {
+.PopupMyProfile .MyProfile .Body .Tab .SingleTabWrapper.Active .SingleTab {
   color: #2bcf8a;
   font-weight: 700;
 }
 
-.MyProfile .Body .Tab .SingleTabWrapper .SingleTab {
+.PopupMyProfile .MyProfile .Body .Tab .SingleTabWrapper .SingleTab {
   line-height: 1;
   color: #fff;
   text-transform: uppercase;
 }
 
-.MyProfile .Content {
+.PopupMyProfile .MyProfile .Content {
   position: relative;
   width: 100%;
   padding-top: 15px;
@@ -327,47 +332,47 @@
   padding-right: 15px;
 }
 
-.MyProfile .InfoProfile,
-.MyProfile .EditProfile {
+.PopupMyProfile .MyProfile .InfoProfile,
+.PopupMyProfile .MyProfile .EditProfile {
   opacity: 0;
   visibility: hidden;
   display: none;
 }
 
-.MyProfile .InfoProfile.Active,
-.MyProfile .EditProfile.Active {
+.PopupMyProfile .MyProfile .InfoProfile.Active,
+.PopupMyProfile .MyProfile .EditProfile.Active {
   opacity: 1;
   visibility: visible;
   display: block;
 }
 
-.MyProfile .InfoProfile .InfoWrapper,
-.MyProfile .EditProfile .InfoWrapper {
+.PopupMyProfile .MyProfile .InfoProfile .InfoWrapper,
+.PopupMyProfile .MyProfile .EditProfile .InfoWrapper {
   width: 100%;
 }
 
-.MyProfile .InfoProfile .InfoWrapper .SingleInfo .InfoTitle,
-.MyProfile .InfoProfile .InfoWrapper .SingleInfo .InfoValue,
-.MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoTitle,
-.MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoValue,
-.MyProfile .EditProfile .InfoWrapper .SingleInfo .SubmitArea {
+.PopupMyProfile .MyProfile .InfoProfile .InfoWrapper .SingleInfo .InfoTitle,
+.PopupMyProfile .MyProfile .InfoProfile .InfoWrapper .SingleInfo .InfoValue,
+.PopupMyProfile .MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoTitle,
+.PopupMyProfile .MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoValue,
+.PopupMyProfile .MyProfile .EditProfile .InfoWrapper .SingleInfo .SubmitArea {
   padding-top: 9px;
   padding-bottom: 9px;
 }
 
-.MyProfile .InfoProfile .InfoWrapper .SingleInfo .InfoTitle,
-.MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoTitle {
+.PopupMyProfile .MyProfile .InfoProfile .InfoWrapper .SingleInfo .InfoTitle,
+.PopupMyProfile .MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoTitle {
   padding-right: 7.5px;
 }
 
-.MyProfile .InfoProfile .InfoWrapper .SingleInfo .InfoValue,
-.MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoValue {
+.PopupMyProfile .MyProfile .InfoProfile .InfoWrapper .SingleInfo .InfoValue,
+.PopupMyProfile .MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoValue {
   padding-left: 7.5px;
   color: rgba(0, 0, 0, 0.5);
 }
 
-.MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoValue input[type="text"],
-.MyProfile
+.PopupMyProfile .MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoValue input[type="text"],
+.PopupMyProfile .MyProfile
   .EditProfile
   .InfoWrapper
   .SingleInfo
@@ -379,30 +384,30 @@
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoValue input#level {
+.PopupMyProfile .MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoValue input#level {
   cursor: not-allowed;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.MyProfile
+.PopupMyProfile .MyProfile
   .EditProfile
   .InfoWrapper
   .SingleInfo
   .InfoValue
   input[type="text"]::-moz-focus-inner,
-.MyProfile
+.PopupMyProfile .MyProfile
   .EditProfile
   .InfoWrapper
   .SingleInfo
   .InfoValue
   input[type="password"]::-moz-focus-inner,
-.MyProfile
+.PopupMyProfile .MyProfile
   .InfoProfile
   .InfoWrapper
   .SingleInfo
   .InfoValue
   input[type="checkbox"]:focus,
-.MyProfile
+.PopupMyProfile .MyProfile
   .EditProfile
   .InfoWrapper
   .SingleInfo
@@ -412,13 +417,13 @@
   box-shadow: none !important;
 }
 
-.MyProfile
+.PopupMyProfile .MyProfile
   .EditProfile
   .InfoWrapper
   .SingleInfo
   .InfoValue
   input[type="text"]:focus,
-.MyProfile
+.PopupMyProfile .MyProfile
   .EditProfile
   .InfoWrapper
   .SingleInfo
@@ -428,30 +433,35 @@
   box-shadow: none !important;
 }
 
-.MyProfile .InfoProfile .InfoWrapper .SingleInfo .PasswordValue,
-.MyProfile .EditProfile .InfoWrapper .SingleInfo .PasswordValue {
+.PopupMyProfile .MyProfile .InfoProfile .InfoWrapper .SingleInfo .PasswordValue,
+.PopupMyProfile .MyProfile .EditProfile .InfoWrapper .SingleInfo .PasswordValue {
   margin-bottom: 5px;
   border: 0;
 }
 
-.MyProfile .InfoProfile .InfoWrapper .SingleInfo .InfoValue #ShowPassword,
-.MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoValue #ShowPassword {
+.PopupMyProfile .MyProfile .InfoProfile .InfoWrapper .SingleInfo .InfoValue #InfoUserTampilkanKataSandi,
+.PopupMyProfile .MyProfile .EditProfile .InfoWrapper .SingleInfo .InfoValue #EditUserTampilkanKataSandi {
   margin-right: 6px;
 }
 
-.MyProfile .EditProfile .InfoWrapper .SingleInfo .SubmitArea .saveButton {
+.PopupMyProfile .MyProfile .EditProfile .InfoWrapper .SingleInfo .SubmitArea .saveButton {
   width: 120px;
   height: 40px;
   text-align: center;
   border-radius: 5px;
   border: 0;
   color: #fff;
-  background-color: #2bcf8a;
+  background-color: rgba(43, 207, 138, 0.8);
   cursor: pointer;
   font-size: 1em;
+  transition: 0.4s ease-in-out;
 }
 
-.MyProfile .EditProfile .InfoWrapper .SingleInfo .SubmitArea .saveButton span {
+.PopupMyProfile .MyProfile .EditProfile .InfoWrapper .SingleInfo .SubmitArea .saveButton:hover {
+  background-color: rgba(43, 207, 138, 1);
+}
+
+.PopupMyProfile .MyProfile .EditProfile .InfoWrapper .SingleInfo .SubmitArea .saveButton span {
   margin-left: 7px;
 }
 

@@ -16,33 +16,43 @@ class EditProfile extends React.Component {
     super(props);
     this.editProfileRef = React.createRef();
     this.handleInputType = this.handleInputType.bind(this);
+    this.handleClickSubmit = this.handleClickSubmit.bind(this);
   }
 
   handleInputType(event) {
     event.preventDefault();
   }
 
+  handleClickSubmit(event) {
+    event.preventDefault();
+  }
+
   render() {
     return (
-      <form className="EditProfile" ref={this.editProfileRef}>
+      <form className="EditProfile" ref={this.editProfileRef} onSubmit={this.handleClickSubmit}>
         <table className="InfoWrapper">
           <tbody>
             <tr className="SingleInfo">
-              <td className="InfoTitle">Nama Pengguna</td>
+              <td className="InfoTitle">
+                <label htmlFor="EditUserNamaPengguna">Nama Pengguna</label>
+              </td>
               <td className="InfoValue">
                 <input
                   type="text"
+                  id="EditUserNamaPengguna"
                   value="John Fuzzy"
                   onChange={this.handleInputType}
                 />
               </td>
             </tr>
             <tr className="SingleInfo">
-              <td className="InfoTitle">Level</td>
+              <td className="InfoTitle">
+                <label htmlFor="EditUserLevel">Level</label>
+              </td>
               <td className="InfoValue">
                 <input
                   type="text"
-                  id="level"
+                  id="EditUserLevel"
                   value="Admin"
                   disabled
                   readOnly={true}
@@ -50,17 +60,20 @@ class EditProfile extends React.Component {
               </td>
             </tr>
             <tr className="SingleInfo">
-              <td className="InfoTitle">Kata Sandi</td>
+              <td className="InfoTitle">
+                <label htmlFor="EditUserKataSandi">Kata Sandi</label>
+              </td>
               <td className="InfoValue">
                 <input
                   type="password"
                   value="admin321"
+                  id="EditUserKataSandi"
                   className="PasswordValue"
                   onChange={this.handleInputType}
                 />
                 <div className="ShowPasswordWrapper">
-                  <input type="checkbox" id="ShowPassword" />
-                  <label htmlFor="ShowPassword">Tampilkan Kata Sandi</label>
+                  <input type="checkbox" id="EditUserTampilkanKataSandi" />
+                  <label htmlFor="EditUserTampikanKataSandi">Tampilkan Kata Sandi</label>
                 </div>
               </td>
             </tr>
@@ -109,8 +122,8 @@ class InfoProfile extends React.Component {
                   readOnly={true}
                 />
                 <div className="ShowPasswordWrapper">
-                  <input type="checkbox" id="ShowPassword" />
-                  <label htmlFor="ShowPassword">Tampilkan Kata Sandi</label>
+                  <input type="checkbox" id="InfoUserTampilkanKataSandi" />
+                  <label htmlFor="InfoUserTampilkanKataSandi">Tampilkan Kata Sandi</label>
                 </div>
               </td>
             </tr>
@@ -172,7 +185,7 @@ class MyProfile extends React.Component {
 
   render() {
     return (
-      <div className="full-overlay" ref={this.myProfileRef}>
+      <div className="full-overlay PopupMyProfile" ref={this.myProfileRef}>
         <div className="MyProfile">
           <div className="Head">
             <h5>
@@ -202,14 +215,14 @@ class MyProfile extends React.Component {
                 ref={this.infoProfileTabRef}
                 onClick={event => this.handleClickTab(event, "InfoProfil")}
               >
-                <span className="SingleTab InfoProfil">Info Profil</span>
+                <span className="SingleTab">Info Profil</span>
               </div>
               <div
                 className="SingleTabWrapper"
                 ref={this.editProfileTabRef}
                 onClick={event => this.handleClickTab(event, "EditProfil")}
               >
-                <span className="SingleTab EditProfil">Edit Profil</span>
+                <span className="SingleTab">Edit Profil</span>
               </div>
             </div>
             <div className="Content">
