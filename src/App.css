@@ -81,6 +81,6 @@ input[type="checkbox" i] {
 
 .full-overlay.Active {
   opacity: 1;
-  z-index: 1000;
+  z-index: 9999;
   visibility: visible;
 }
