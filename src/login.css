@@ -5,69 +5,86 @@
 }
 
 .BoxLogin {
-  width: 470px;
+  width: 500px;
   padding: 15px;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -51.5%);
+}
+
+.BoxLogin .Brand {
+  margin-bottom: 22px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.BoxLogin .Brand h3 {
+  font-weight: 400;
+}
+
+.InnerBoxLogin {
   background-color: #fff;
   border-radius: 5px;
 }
 
-.BoxLogin .Head {
+.InnerBoxLogin .Head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   line-height: 1;
-  margin: -15px -15px 0;
   padding: 15px 15px 13px;
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.BoxLogin .Head h5,
-.BoxLogin .Head .CloseIcon {
+.InnerBoxLogin .Head h5,
+.InnerBoxLogin .Head .CloseIcon {
   font-weight: 400;
 }
 
-.BoxLogin .Head h5 span {
+.InnerBoxLogin .Head h5 span {
   margin-left: 10px;
 }
 
-.BoxLogin .Body .InputWrapper {
-  width: 100%;
-  margin-top: 7.5px;
+.InnerBoxLogin .Body {
+  padding: 15px;
 }
 
-.BoxLogin .Body .InputWrapper .SingleInput .Label,
-.BoxLogin .Body .InputWrapper .SingleInput .Value {
+.InnerBoxLogin .Body .InputWrapper {
+  width: 100%;
+  margin-bottom: 7.5px;
+}
+
+.InnerBoxLogin .Body .InputWrapper .SingleInput .Label,
+.InnerBoxLogin .Body .InputWrapper .SingleInput .Value {
   padding-top: 7px;
   padding-bottom: 7px;
 }
 
-.BoxLogin .Body .InputWrapper .SingleInput .Value {
+.InnerBoxLogin .Body .InputWrapper .SingleInput .Value {
   padding-left: 7.5px;
   color: rgba(0, 0, 0, 0.5);
 }
 
-.BoxLogin .Body .InputWrapper .SingleInput .Value input[type="text"],
-.BoxLogin .Body .InputWrapper .SingleInput .Value input[type="password"] {
+.InnerBoxLogin .Body .InputWrapper .SingleInput .Value input[type="text"],
+.InnerBoxLogin .Body .InputWrapper .SingleInput .Value input[type="password"] {
   width: 100%;
   border-radius: 5px;
   padding: 6px;
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.BoxLogin .Body .InputWrapper .SingleInput .Value .PasswordValue {
+.InnerBoxLogin .Body .InputWrapper .SingleInput .Value .PasswordValue {
   margin-bottom: 5px;
   border: 0;
 }
 
-.BoxLogin .Body .InputWrapper .SingleInput .Value #LoginTampilkanKataSandi {
+.InnerBoxLogin .Body .InputWrapper .SingleInput .Value #LoginTampilkanKataSandi {
   margin-right: 6px;
 }
 
-.BoxLogin .Body .InputWrapper .SingleInput .SubmitArea .LoginButton {
+.InnerBoxLogin .Body .InputWrapper .SingleInput .SubmitArea .LoginButton {
   width: 120px;
   height: 40px;
   text-align: center;
@@ -80,10 +97,10 @@
   transition: 0.4s ease-in-out;
 }
 
-.BoxLogin .Body .InputWrapper .SingleInput .SubmitArea .LoginButton:hover {
+.InnerBoxLogin .Body .InputWrapper .SingleInput .SubmitArea .LoginButton:hover {
   background-color: rgba(43, 207, 138, 1);
 }
 
-.BoxLogin .Body .InputWrapper .SingleInput .SubmitArea .LoginButton span {
+.InnerBoxLogin .Body .InputWrapper .SingleInput .SubmitArea .LoginButton span {
   margin-left: 7px;
 }
