@@ -405,87 +405,71 @@
   background-color: rgba(43, 207, 138, 1);
 }
 
-.Preview .ListPreview .SingleDataAnggota {
-  margin: 5px 20px 20px;
-  border-radius: 5px;
-  padding: 20px;
-  display: flex;
+.Preview .ListPreview {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px; 
+}
+
+.Preview .ListPreview .ListPreviewTable {
+  border: none !important;
+  border-collapse: collapse !important;
   width: 100%;
-  line-height: 1.2;
-}
-
-.Preview .ListPreview .SingleDataAnggota .Photo {
-  background-size: cover;
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
   border-radius: 5px;
 }
 
-.Preview .ListPreview .SingleDataAnggota .InfoAnggota {
-  width: calc(100% - 480px);
-}
-
-.Preview .ListPreview .SingleDataAnggota .InfoAnggota .Name {
+.Preview .ListPreview .ListPreviewTable thead tr th {
   text-transform: uppercase;
-  font-size: 1.5em;
-  margin-bottom: 15px;
-}
-
-.Preview .ListPreview .SingleDataAnggota .InfoAnggota .NoKTA {
-  padding: 14px;
-  display: inline-block;
-  border-radius: 5px;
-  margin-bottom: 33px;
-}
-
-.Preview .ListPreview .SingleDataAnggota .InfoAnggota .Jabatan {
-  margin-bottom: 9px;
-  font-size: 1.1em;
-}
-
-.Preview .ListPreview .SingleDataAnggota .Wilayah {
-  font-size: 1.1em;
-}
-
-.Preview .ListPreview .SingleDataAnggota .AdditionalInfo {
-  width: 250px;
-  margin-left: 15px;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Preview .ListPreview .SingleDataAnggota .AdditionalInfo .ViewDetailButton {
-  width: calc(100% - 40px);
-  position: relative;
-  left: 10px;
-  text-align: center;
+  padding: 12px 14px;
   color: #fff;
-  cursor: pointer;
+  text-align: left;
+  font-weight: 400;
+  background-color: #2bcf8a;
+}
+
+.Preview .ListPreview .ListPreviewTable tbody tr td {
+  background-color: #fff;
+  transition: 0.2s ease-in-out;
+  padding: 7px 14px;
+  text-align: left;
+}
+
+.Preview .ListPreview .ListPreviewTable tbody tr:nth-child(even) td {
+  background-color: #f8f8f8;
+}
+
+.Preview .ListPreview .ListPreviewTable tbody tr:hover td {
+  background-color: #eee;
+}
+
+/* .Preview .ListPreview .ListPreviewTable tbody tr:first-of-type td {
+  padding-top: 15px;
+}
+
+.Preview .ListPreview .ListPreviewTable tbody tr:last-of-type td {
+  padding-bottom: 15px;
+} */
+
+.Preview .ListPreview .ListPreviewTable tbody tr td.Aksi {
+  width: 150px;
+}
+
+.Preview .ListPreview .ListPreviewTable tbody tr td.Aksi .ViewDetailButton {
+  border-radius: 5px;
   background-color: rgba(43, 207, 138, 0.8);
-  padding: 15px;
-  font-size: 1.1em;
-  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  padding: 7px 14px;
+  cursor: pointer;
   transition: 0.4s ease-in-out;
 }
 
-.Preview
-  .ListPreview
-  .SingleDataAnggota
-  .AdditionalInfo
-  .ViewDetailButton
-  span {
-  margin-left: 7px;
+.Preview .ListPreview .ListPreviewTable tbody tr td.Aksi .ViewDetailButton:hover {
+  background-color: rgba(43, 207, 138, 1);
 }
 
-.Preview
-  .ListPreview
-  .SingleDataAnggota
-  .AdditionalInfo
-  .ViewDetailButton:hover {
-  background-color: rgba(43, 207, 138, 1);
+.Preview .ListPreview .ListPreviewTable tbody tr td.Aksi .ViewDetailButton span {
+  margin-left: 7px;
 }
 
 /* DETAIL */

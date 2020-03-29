@@ -362,67 +362,151 @@ class GridPreview extends Component {
 class ListPreview extends Component {
   render() {
     return (
-      <div className="ListPreview row no-gutters">
-        <div className="SingleDataAnggota bg-c1">
-          <div
-            className="Photo"
-            style={{
-              backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-            }}
-          ></div>
-          <div className="InfoAnggota">
-            <div className="Name tx-c4">Michael Fuzzy Arianto</div>
-            <div className="NoKTA bg-c5">12194343483723235</div>
-            <div className="Jabatan tx-c6">Presiden</div>
-            <div className="Wilayah tx-c7">Kota Salatiga</div>
-          </div>
-          <div className="AdditionalInfo">
-            <div className="ViewDetailButton">
-              <FontAwesomeIcon icon={faEye} />
-              <span>Lihat Profil</span>
-            </div>
-          </div>
-        </div>
-        <div className="SingleDataAnggota bg-c1">
-          <div
-            className="Photo"
-            style={{
-              backgroundImage: `url(${require("../../photos/photo2.jpg")})`
-            }}
-          ></div>
-          <div className="InfoAnggota">
-            <div className="Name tx-c4">Michael Fuzzy Arianto</div>
-            <div className="NoKTA bg-c5">12194343483723235</div>
-            <div className="Jabatan tx-c6">Presiden</div>
-            <div className="Wilayah tx-c7">Kota Salatiga</div>
-          </div>
-          <div className="AdditionalInfo">
-            <div className="ViewDetailButton">
-              <FontAwesomeIcon icon={faEye} />
-              <span>Lihat Profil</span>
-            </div>
-          </div>
-        </div>
-        <div className="SingleDataAnggota bg-c1">
-          <div
-            className="Photo"
-            style={{
-              backgroundImage: `url(${require("../../photos/photo3.jpg")})`
-            }}
-          ></div>
-          <div className="InfoAnggota">
-            <div className="Name tx-c4">Michael Fuzzy Arianto</div>
-            <div className="NoKTA bg-c5">12194343483723235</div>
-            <div className="Jabatan tx-c6">Presiden</div>
-            <div className="Wilayah tx-c7">Kota Salatiga</div>
-          </div>
-          <div className="AdditionalInfo">
-            <div className="ViewDetailButton">
-              <FontAwesomeIcon icon={faEye} />
-              <span>Lihat Profil</span>
-            </div>
-          </div>
-        </div>
+      <div className="ListPreview">
+        <table className="ListPreviewTable">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Nama</th>
+              <th>No. KTA</th>
+              <th>Jabatan</th>
+              <th>Wilayah</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="SingleDataAnggota">
+              <td className="No">1.</td>
+              <td className="Nama">Kimono Budi Fuzzy</td>
+              <td className="NoKTA">9922090922309201</td>
+              <td className="Jabatan">Presiden</td>
+              <td className="Wilayah">Kota Salatiga</td>
+              <td className="Aksi">
+                <div className="ViewDetailButton">
+                  <FontAwesomeIcon icon={faEye} />
+                  <span>Lihat Profil</span>
+                </div>
+              </td>
+            </tr>
+            <tr className="SingleDataAnggota">
+              <td className="No">2.</td>
+              <td className="Nama">Kimono Budi Fuzzy</td>
+              <td className="NoKTA">9922090922309201</td>
+              <td className="Jabatan">Presiden</td>
+              <td className="Wilayah">Kota Salatiga</td>
+              <td className="Aksi">
+                <div className="ViewDetailButton">
+                  <FontAwesomeIcon icon={faEye} />
+                  <span>Lihat Profil</span>
+                </div>
+              </td>
+            </tr>
+            <tr className="SingleDataAnggota">
+              <td className="No">3.</td>
+              <td className="Nama">Kimono Budi Fuzzy</td>
+              <td className="NoKTA">9922090922309201</td>
+              <td className="Jabatan">Presiden</td>
+              <td className="Wilayah">Kota Salatiga</td>
+              <td className="Aksi">
+                <div className="ViewDetailButton">
+                  <FontAwesomeIcon icon={faEye} />
+                  <span>Lihat Profil</span>
+                </div>
+              </td>
+            </tr>
+            <tr className="SingleDataAnggota">
+              <td className="No">4.</td>
+              <td className="Nama">Kimono Budi Fuzzy</td>
+              <td className="NoKTA">9922090922309201</td>
+              <td className="Jabatan">Presiden</td>
+              <td className="Wilayah">Kota Salatiga</td>
+              <td className="Aksi">
+                <div className="ViewDetailButton">
+                  <FontAwesomeIcon icon={faEye} />
+                  <span>Lihat Profil</span>
+                </div>
+              </td>
+            </tr>
+            <tr className="SingleDataAnggota">
+              <td className="No">5.</td>
+              <td className="Nama">Kimono Budi Fuzzy</td>
+              <td className="NoKTA">9922090922309201</td>
+              <td className="Jabatan">Presiden</td>
+              <td className="Wilayah">Kota Salatiga</td>
+              <td className="Aksi">
+                <div className="ViewDetailButton">
+                  <FontAwesomeIcon icon={faEye} />
+                  <span>Lihat Profil</span>
+                </div>
+              </td>
+            </tr>
+            <tr className="SingleDataAnggota">
+              <td className="No">6.</td>
+              <td className="Nama">Kimono Budi Fuzzy</td>
+              <td className="NoKTA">9922090922309201</td>
+              <td className="Jabatan">Presiden</td>
+              <td className="Wilayah">Kota Salatiga</td>
+              <td className="Aksi">
+                <div className="ViewDetailButton">
+                  <FontAwesomeIcon icon={faEye} />
+                  <span>Lihat Profil</span>
+                </div>
+              </td>
+            </tr>
+            <tr className="SingleDataAnggota">
+              <td className="No">7.</td>
+              <td className="Nama">Kimono Budi Fuzzy</td>
+              <td className="NoKTA">9922090922309201</td>
+              <td className="Jabatan">Presiden</td>
+              <td className="Wilayah">Kota Salatiga</td>
+              <td className="Aksi">
+                <div className="ViewDetailButton">
+                  <FontAwesomeIcon icon={faEye} />
+                  <span>Lihat Profil</span>
+                </div>
+              </td>
+            </tr>
+            <tr className="SingleDataAnggota">
+              <td className="No">8.</td>
+              <td className="Nama">Kimono Budi Fuzzy</td>
+              <td className="NoKTA">9922090922309201</td>
+              <td className="Jabatan">Presiden</td>
+              <td className="Wilayah">Kota Salatiga</td>
+              <td className="Aksi">
+                <div className="ViewDetailButton">
+                  <FontAwesomeIcon icon={faEye} />
+                  <span>Lihat Profil</span>
+                </div>
+              </td>
+            </tr>
+            <tr className="SingleDataAnggota">
+              <td className="No">9.</td>
+              <td className="Nama">Kimono Budi Fuzzy</td>
+              <td className="NoKTA">9922090922309201</td>
+              <td className="Jabatan">Presiden</td>
+              <td className="Wilayah">Kota Salatiga</td>
+              <td className="Aksi">
+                <div className="ViewDetailButton">
+                  <FontAwesomeIcon icon={faEye} />
+                  <span>Lihat Profil</span>
+                </div>
+              </td>
+            </tr>
+            <tr className="SingleDataAnggota">
+              <td className="No">10.</td>
+              <td className="Nama">Kimono Budi Fuzzy</td>
+              <td className="NoKTA">9922090922309201</td>
+              <td className="Jabatan">Presiden</td>
+              <td className="Wilayah">Kota Salatiga</td>
+              <td className="Aksi">
+                <div className="ViewDetailButton">
+                  <FontAwesomeIcon icon={faEye} />
+                  <span>Lihat Profil</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     );
   }
