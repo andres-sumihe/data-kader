@@ -224,6 +224,7 @@ class PopupAddAnggota extends React.Component {
     this.kepartaianTabRef = React.createRef();
     this.BiodataRef = React.createRef();
     this.KepartaianRef = React.createRef();
+    this.addAnggotaContentRef = React.createRef();
     this.state = {
       tabActive: "Biodata"
     };
@@ -249,6 +250,7 @@ class PopupAddAnggota extends React.Component {
         this.BiodataRef.current.biodataRef.current.classList.add("Active");
     }
     this.setState({ tabActive: target });
+    this.addAnggotaContentRef.current.scrollTop = 0;
   }
 
   handleClickStep(event, stepTarget) {
@@ -304,7 +306,7 @@ class PopupAddAnggota extends React.Component {
                 <span className="SingleTab Kepartaian">Kepartaian</span>
               </div>
             </div>
-            <div className="Content">
+            <div className="Content" ref={this.addAnggotaContentRef}>
               <Biodata ref={this.BiodataRef} />
               <Kepartaian ref={this.KepartaianRef} />
             </div>
