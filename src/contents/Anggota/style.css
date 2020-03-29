@@ -428,10 +428,13 @@
 }
 
 .Preview .ListPreview .ListPreviewTable tbody tr td {
-  background-color: #fff;
   transition: 0.2s ease-in-out;
   padding: 7px 14px;
   text-align: left;
+}
+
+.Preview .ListPreview .ListPreviewTable tbody tr:nth-child(odd) td {
+  background-color: #fff;
 }
 
 .Preview .ListPreview .ListPreviewTable tbody tr:nth-child(even) td {
