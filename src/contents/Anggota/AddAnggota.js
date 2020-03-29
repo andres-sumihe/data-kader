@@ -3,7 +3,15 @@ import "./style.css";
 import "../../grid.css";
 import "./../../skin.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes, faUser, faPlus, faAddressCard, faChevronLeft, faChevronRight, faSave } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTimes,
+  faUser,
+  faPlus,
+  faAddressCard,
+  faChevronLeft,
+  faChevronRight,
+  faSave
+} from "@fortawesome/free-solid-svg-icons";
 import Select from "react-select";
 
 class Kepartaian extends React.Component {
@@ -19,7 +27,11 @@ class Kepartaian extends React.Component {
 
   render() {
     return (
-      <form className="Kepartaian" ref={this.kepartaianRef} onSubmit={this.handleClickSubmit}>
+      <form
+        className="Kepartaian"
+        ref={this.kepartaianRef}
+        onSubmit={this.handleClickSubmit}
+      >
         <table className="InputWrapper">
           <tbody>
             <tr className="SingleInput">
@@ -40,7 +52,9 @@ class Kepartaian extends React.Component {
             </tr>
             <tr className="SingleInput">
               <td className="Label">
-                <label htmlFor="KepartaianAlatKelengkapan">Alat Kelengkapan</label>
+                <label htmlFor="KepartaianAlatKelengkapan">
+                  Alat Kelengkapan
+                </label>
               </td>
               <td className="Value">
                 <input type="file" id="KepartaianAlatKelengkapan" />
@@ -72,7 +86,9 @@ class Kepartaian extends React.Component {
             </tr>
             <tr className="SingleInput">
               <td className="Label">
-                <label htmlFor="KepartaianKomunitasJuang">Komunitas Juang</label>
+                <label htmlFor="KepartaianKomunitasJuang">
+                  Komunitas Juang
+                </label>
               </td>
               <td className="Value">
                 <input type="text" id="KepartaianKomunitasJuang" />
@@ -235,18 +251,22 @@ class PopupAddAnggota extends React.Component {
   }
 
   handleChangeContent(target) {
-    switch(target) {
+    switch (target) {
       case "Kepartaian":
         this.biodataTabRef.current.classList.remove("Active");
         this.kepartaianTabRef.current.classList.add("Active");
         this.BiodataRef.current.biodataRef.current.classList.remove("Active");
-        this.KepartaianRef.current.kepartaianRef.current.classList.add("Active");
-      break;
+        this.KepartaianRef.current.kepartaianRef.current.classList.add(
+          "Active"
+        );
+        break;
       case "Biodata":
       default:
         this.kepartaianTabRef.current.classList.remove("Active");
         this.biodataTabRef.current.classList.add("Active");
-        this.KepartaianRef.current.kepartaianRef.current.classList.remove("Active");
+        this.KepartaianRef.current.kepartaianRef.current.classList.remove(
+          "Active"
+        );
         this.BiodataRef.current.biodataRef.current.classList.add("Active");
     }
     this.setState({ tabActive: target });
@@ -254,31 +274,35 @@ class PopupAddAnggota extends React.Component {
   }
 
   handleClickStep(event, stepTarget) {
-    if(this.state.tabActive === "Biodata" && stepTarget === "Next") {
+    if (this.state.tabActive === "Biodata" && stepTarget === "Next") {
       this.handleChangeContent("Kepartaian");
       event.preventDefault();
-    } else if(this.state.tabActive === "Kepartaian" && stepTarget === "Prev") {
+    } else if (this.state.tabActive === "Kepartaian" && stepTarget === "Prev") {
       this.handleChangeContent("Biodata");
       event.preventDefault();
     }
   }
 
   handleClickTab(event, tabTarget) {
-    if(this.state.tabActive !== tabTarget) {
-      this.handleChangeContent(tabTarget);   
+    if (this.state.tabActive !== tabTarget) {
+      this.handleChangeContent(tabTarget);
       event.preventDefault();
     }
   }
 
   handleClickClose(event) {
     this.popupAddAnggotaRef.current.classList.remove("Active");
+    document.body.style.overflowY = "auto";
     event.preventDefault();
   }
 
   render() {
     const tabActive = this.state.tabActive;
     return (
-      <div className="full-overlay PopupAddAnggota" ref={this.popupAddAnggotaRef} >
+      <div
+        className="full-overlay PopupAddAnggota"
+        ref={this.popupAddAnggotaRef}
+      >
         <div className="AddAnggota">
           <div className="Head">
             <h5>
@@ -311,11 +335,17 @@ class PopupAddAnggota extends React.Component {
               <Kepartaian ref={this.KepartaianRef} />
             </div>
             <div className="Step">
-              <div className={`Prev${tabActive === "Biodata" ? "" : " Active"}`} onClick={event => this.handleClickStep(event, "Prev")}>
+              <div
+                className={`Prev${tabActive === "Biodata" ? "" : " Active"}`}
+                onClick={event => this.handleClickStep(event, "Prev")}
+              >
                 <FontAwesomeIcon icon={faChevronLeft} />
                 <span>Sebelumnya</span>
               </div>
-              <div className={`Next${tabActive === "Biodata" ? " Active" : ""}`} onClick={event => this.handleClickStep(event, "Next")}>
+              <div
+                className={`Next${tabActive === "Biodata" ? " Active" : ""}`}
+                onClick={event => this.handleClickStep(event, "Next")}
+              >
                 <span>Berikutnya</span>
                 <FontAwesomeIcon icon={faChevronRight} />
               </div>
@@ -335,7 +365,10 @@ class AddAnggota extends React.Component {
   }
 
   handleClickAddAnggota(event) {
-    this.PopupAddAnggotaRef.current.popupAddAnggotaRef.current.classList.add("Active");
+    this.PopupAddAnggotaRef.current.popupAddAnggotaRef.current.classList.add(
+      "Active"
+    );
+    document.body.style.overflow = "hidden";
     event.preventDefault();
   }
 

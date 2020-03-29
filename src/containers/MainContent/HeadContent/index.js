@@ -18,7 +18,9 @@ class EditProfile extends React.Component {
     this.editProfileRef = React.createRef();
     this.handleInputType = this.handleInputType.bind(this);
     this.handleClickSubmit = this.handleClickSubmit.bind(this);
-    this.handleChangeTampilkanKataSandi = this.handleChangeTampilkanKataSandi.bind(this);
+    this.handleChangeTampilkanKataSandi = this.handleChangeTampilkanKataSandi.bind(
+      this
+    );
   }
 
   handleInputType(event) {
@@ -35,7 +37,11 @@ class EditProfile extends React.Component {
 
   render() {
     return (
-      <form className="EditProfile" ref={this.editProfileRef} onSubmit={this.handleClickSubmit}>
+      <form
+        className="EditProfile"
+        ref={this.editProfileRef}
+        onSubmit={this.handleClickSubmit}
+      >
         <table className="InfoWrapper">
           <tbody>
             <tr className="SingleInfo">
@@ -79,8 +85,14 @@ class EditProfile extends React.Component {
                   onChange={this.handleInputType}
                 />
                 <div className="ShowPasswordWrapper">
-                  <input type="checkbox" id="EditUserTampilkanKataSandi" onChange={this.handleChangeTampilkanKataSandi} />
-                  <label htmlFor="EditUserTampikanKataSandi">Tampilkan Kata Sandi</label>
+                  <input
+                    type="checkbox"
+                    id="EditUserTampilkanKataSandi"
+                    onChange={this.handleChangeTampilkanKataSandi}
+                  />
+                  <label htmlFor="EditUserTampikanKataSandi">
+                    Tampilkan Kata Sandi
+                  </label>
                 </div>
               </td>
             </tr>
@@ -105,7 +117,9 @@ class InfoProfile extends React.Component {
     super(props);
     this.passwordRef = React.createRef();
     this.infoProfileRef = React.createRef();
-    this.handleChangeTampilkanKataSandi = this.handleChangeTampilkanKataSandi.bind(this);
+    this.handleChangeTampilkanKataSandi = this.handleChangeTampilkanKataSandi.bind(
+      this
+    );
   }
 
   handleChangeTampilkanKataSandi(event) {
@@ -136,8 +150,14 @@ class InfoProfile extends React.Component {
                   ref={this.passwordRef}
                 />
                 <div className="ShowPasswordWrapper">
-                  <input type="checkbox" id="InfoUserTampilkanKataSandi" onChange={this.handleChangeTampilkanKataSandi} />
-                  <label htmlFor="InfoUserTampilkanKataSandi">Tampilkan Kata Sandi</label>
+                  <input
+                    type="checkbox"
+                    id="InfoUserTampilkanKataSandi"
+                    onChange={this.handleChangeTampilkanKataSandi}
+                  />
+                  <label htmlFor="InfoUserTampilkanKataSandi">
+                    Tampilkan Kata Sandi
+                  </label>
                 </div>
               </td>
             </tr>
@@ -194,6 +214,7 @@ class MyProfile extends React.Component {
 
   handleClickClose(event) {
     this.myProfileRef.current.classList.remove("Active");
+    document.body.style.overflowY = "auto";
     event.preventDefault();
   }
 
@@ -261,6 +282,7 @@ class UserAction extends React.Component {
     switch (goTo) {
       case "Profile":
         this.MyProfileRef.current.myProfileRef.current.classList.add("Active");
+        document.body.style.overflow = "hidden";
         event.preventDefault();
         break;
     }

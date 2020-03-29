@@ -3,7 +3,7 @@ import "./style.css";
 import "../../grid.css";
 import "./../../skin.css";
 import SearchAnggota from "./SearchAnggota";
-import DataAnggota from "./DataAnggota";
+import PreviewAnggota from "./PreviewAnggota";
 import AddAnggota from "./AddAnggota";
 
 class Anggota extends React.Component {
@@ -32,7 +32,7 @@ class Anggota extends React.Component {
           onTypeOfSearchChange={this.state.handleTypeOfSearchChange}
           valueOfFastSearch={valueOfFastSearch}
         />
-        <DataAnggota
+        <PreviewAnggota
           typeOfSearch={typeOfSearch}
           valueOfFastSearch={valueOfFastSearch}
           valueOfFullSearch={valueOfFullSearch}
