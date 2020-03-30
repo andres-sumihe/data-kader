@@ -144,7 +144,7 @@ class FullSearch extends React.Component {
           <div className="InputSearch">
             <input
               type="text"
-              placeholder="Contoh: Riettsruff"
+              placeholder="Contoh: Tsukomoto"
               value={searchValue}
               onChange={event =>
                 this.handleInputSearchValue(event.target.value)
@@ -222,7 +222,7 @@ class FastSearch extends React.Component {
             type="text"
             name="search"
             id="input-item-search"
-            placeholder="Contoh: Budi Fuzzy"
+            placeholder="Contoh: Tsukomoto"
             className="bd-c4"
           />
         </div>

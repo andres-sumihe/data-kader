@@ -291,8 +291,8 @@ class PopupAddAnggota extends React.Component {
   }
 
   handleClickClose(event) {
-    this.popupAddAnggotaRef.current.classList.remove("Active");
     document.body.style.overflowY = "auto";
+    this.popupAddAnggotaRef.current.classList.remove("Active");
     event.preventDefault();
   }
 
@@ -365,10 +365,10 @@ class AddAnggota extends React.Component {
   }
 
   handleClickAddAnggota(event) {
+    document.body.style.overflow = "hidden";
     this.PopupAddAnggotaRef.current.popupAddAnggotaRef.current.classList.add(
       "Active"
     );
-    document.body.style.overflow = "hidden";
     event.preventDefault();
   }
 

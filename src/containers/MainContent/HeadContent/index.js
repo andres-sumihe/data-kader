@@ -52,7 +52,7 @@ class EditProfile extends React.Component {
                 <input
                   type="text"
                   id="EditUserNamaPengguna"
-                  value="John Fuzzy"
+                  value="Mamdani Fuzzy"
                   onChange={this.handleInputType}
                 />
               </td>
@@ -133,7 +133,7 @@ class InfoProfile extends React.Component {
           <tbody>
             <tr className="SingleInfo">
               <td className="InfoTitle">Nama Pengguna</td>
-              <td className="InfoValue">John Fuzzy</td>
+              <td className="InfoValue">Mamdani Fuzzy</td>
             </tr>
             <tr className="SingleInfo">
               <td className="InfoTitle">Level</td>
@@ -213,8 +213,8 @@ class MyProfile extends React.Component {
   }
 
   handleClickClose(event) {
-    this.myProfileRef.current.classList.remove("Active");
     document.body.style.overflowY = "auto";
+    this.myProfileRef.current.classList.remove("Active");
     event.preventDefault();
   }
 
@@ -281,8 +281,8 @@ class UserAction extends React.Component {
   handleClickGoTo(event, goTo) {
     switch (goTo) {
       case "Profile":
-        this.MyProfileRef.current.myProfileRef.current.classList.add("Active");
         document.body.style.overflow = "hidden";
+        this.MyProfileRef.current.myProfileRef.current.classList.add("Active");
         event.preventDefault();
         break;
     }
@@ -298,7 +298,7 @@ class UserAction extends React.Component {
               backgroundImage: `url(${require("../../../photos/photo1.jpg")})`
             }}
           ></div>
-          <div className="Name tx-c4">John Fuzzy</div>
+          <div className="Name tx-c4">Mamdani Fuzzy</div>
           <div className="Level bg-c5">Admin</div>
           <ul className="GoToWrapper">
             <li
@@ -366,7 +366,7 @@ class HeadContent extends React.Component {
                 backgroundImage: `url(${require("../../../photos/photo1.jpg")})`
               }}
             ></div>
-            <div className="Username tx-c1">John Fuzzy</div>
+            <div className="Username tx-c1">Mamdani Fuzzy</div>
           </div>
           <UserAction ref={this.UserActionRef} />
         </div>
