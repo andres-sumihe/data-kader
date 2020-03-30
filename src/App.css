@@ -84,3 +84,9 @@ input[type="checkbox" i] {
   z-index: 100;
   visibility: visible;
 }
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: rgba(0, 0, 0, 0.3);
+}

@@ -375,17 +375,11 @@
 .FastSearch .InputWrapper input {
   width: 100%;
   border-radius: 5px;
-  border-width: 1px;
-  border-style: solid;
+  border: 1px solid #ddd;
   padding: 15px 20px;
   font-size: 1em;
   position: relative;
   transition: 0.3s ease-in-out;
-}
-
-.FastSearch .InputWrapper input:focus {
-  outline: none;
-  border-color: rgba(24, 24, 24, 0.265);
 }
 
 .FastSearch .SingleButtonWrapper button {
@@ -442,12 +436,6 @@
   padding: 14px 18px;
   font-size: 0.875em;
   transition: 0.3s ease-in-out;
-}
-
-.FullSearch .InputWrapper .InputSearch input:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .FullSearch .InputWrapper .FilterBy {

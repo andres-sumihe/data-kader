@@ -223,7 +223,6 @@ class FastSearch extends React.Component {
             name="search"
             id="input-item-search"
             placeholder="Contoh: Tsukomoto"
-            className="bd-c4"
           />
         </div>
         <div className="buttonWrapper row no-gutters">
