@@ -1251,6 +1251,10 @@
   padding-right: 0 !important;
 }
 
+.DetailAnggota .DetailInfoProfil .DetailBodyInfoProfil .box-item fieldset {
+  border-color: inherit;
+}
+
 .DetailAnggota
   .DetailInfoProfil
   .DetailBodyInfoProfil
