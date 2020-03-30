@@ -1240,7 +1240,7 @@
 }
 
 .DetailAnggota .DetailInfoProfil .DetailBodyInfoProfil .box-item fieldset {
-  border-color: inherit;
+  border-color: rgba(0, 0, 0, 0.6);
 }
 
 .DetailAnggota
