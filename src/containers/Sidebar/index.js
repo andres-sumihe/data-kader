@@ -12,7 +12,7 @@ class Sidebar extends React.Component {
   render() {
     const isSidebarActive = this.props.isSidebarActive;
     return (
-      <div className={"Sidebar bg-c1" + (isSidebarActive ? " Active" : "")}>
+      <div className={"Sidebar" + (isSidebarActive ? " Active" : "")}>
         <HeadSidebar />
         <BodySidebar />
       </div>

@@ -8,7 +8,8 @@ import {
   faSignOutAlt,
   faTimes,
   faCamera,
-  faSave
+  faSave,
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 
 class EditProfile extends React.Component {
@@ -177,7 +178,7 @@ class MyProfile extends React.Component {
     this.infoProfileTabRef = React.createRef();
     this.editProfileTabRef = React.createRef();
     this.state = {
-      tabActive: "InfoProfil"
+      tabActive: "InfoProfil",
     };
     this.handleClickClose = this.handleClickClose.bind(this);
     this.handleClickTab = this.handleClickTab.bind(this);
@@ -222,21 +223,22 @@ class MyProfile extends React.Component {
     return (
       <div className="full-overlay PopupMyProfile" ref={this.myProfileRef}>
         <div className="MyProfile">
-          <div className="Head">
-            <h5>
-              <FontAwesomeIcon icon={faUser} />
-              <span>Profil Saya</span>
-            </h5>
-            <span className="CloseIcon" onClick={this.handleClickClose}>
-              <FontAwesomeIcon icon={faTimes} />
-            </span>
-          </div>
           <div className="Body">
-            <div className="UserPhotoArea">
+            <span className="CloseIconWrapper" onClick={this.handleClickClose}>
+              <span className="CloseIcon">
+                <FontAwesomeIcon icon={faTimes} />
+              </span>
+            </span>
+            <div
+              className="UserPhotoArea"
+              style={{
+                backgroundImage: `url(${require("../../../photos/batik.jpg")})`,
+              }}
+            >
               <div
                 className="UserPhoto"
                 style={{
-                  backgroundImage: `url(${require("../../../photos/photo1.jpg")})`
+                  backgroundImage: `url(${require("../../../photos/photo1.jpg")})`,
                 }}
               >
                 <div className="ChangeUserPhoto">
@@ -248,14 +250,14 @@ class MyProfile extends React.Component {
               <div
                 className="SingleTabWrapper Active"
                 ref={this.infoProfileTabRef}
-                onClick={event => this.handleClickTab(event, "InfoProfil")}
+                onClick={(event) => this.handleClickTab(event, "InfoProfil")}
               >
                 <span className="SingleTab">Info Profil</span>
               </div>
               <div
                 className="SingleTabWrapper"
                 ref={this.editProfileTabRef}
-                onClick={event => this.handleClickTab(event, "EditProfil")}
+                onClick={(event) => this.handleClickTab(event, "EditProfil")}
               >
                 <span className="SingleTab">Edit Profil</span>
               </div>
@@ -295,15 +297,15 @@ class UserAction extends React.Component {
           <div
             className="Photo"
             style={{
-              backgroundImage: `url(${require("../../../photos/photo1.jpg")})`
+              backgroundImage: `url(${require("../../../photos/photo1.jpg")})`,
             }}
           ></div>
-          <div className="Name tx-c4">Mamdani Fuzzy</div>
-          <div className="Level bg-c5">Admin</div>
+          <div className="Name">Mamdani Fuzzy</div>
+          <div className="Level">Admin</div>
           <ul className="GoToWrapper">
             <li
               className="GoTo Profile"
-              onClick={event => this.handleClickGoTo(event, "Profile")}
+              onClick={(event) => this.handleClickGoTo(event, "Profile")}
             >
               <span className="Icon">
                 <FontAwesomeIcon icon={faUser} />
@@ -312,7 +314,7 @@ class UserAction extends React.Component {
             </li>
             <li
               className="GoTo Logout"
-              onClick={event => this.handleClickGoTo(event, "Logout")}
+              onClick={(event) => this.handleClickGoTo(event, "Logout")}
             >
               <Link to="/">
                 <span className="Icon">
@@ -349,36 +351,26 @@ class HeadContent extends React.Component {
 
   render() {
     return (
-      <div className="HeadContent bg-c4">
-        <div className="InnerTopHead bg-c4">
+      <div className="HeadContent">
+        <div className="InnerTopHead">
           <div
             className="MenuButtonToggle"
             onClick={this.handleClickMenuButton}
           >
-            <span className="bg-c1"></span>
-            <span className="bg-c1"></span>
-            <span className="bg-c1"></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
           <div className="UserArea" onClick={this.handleClickUserArea}>
             <div
               className="UserPhoto"
               style={{
-                backgroundImage: `url(${require("../../../photos/photo1.jpg")})`
+                backgroundImage: `url(${require("../../../photos/photo1.jpg")})`,
               }}
             ></div>
-            <div className="Username tx-c1">Mamdani Fuzzy</div>
+            <div className="Username">Mamdani Fuzzy</div>
           </div>
           <UserAction ref={this.UserActionRef} />
-        </div>
-        <div className="Separator bg-c7"></div>
-        <div className="BodyHeadContent bg-c4">
-          <h4 className="tx-c1">
-            <Switch>
-              <Route path="/anggota">Data Anggota</Route>
-              <Route path="/eksekutif">Eksekutif</Route>
-              <Route path="/legislatif">Legislatif</Route>
-            </Switch>
-          </h4>
         </div>
       </div>
     );

@@ -6,7 +6,9 @@ import {
   faTimes,
   faList,
   faTh,
-  faEye
+  faEye,
+  faPlus,
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import DetailAnggota from "./DetailAnggota";
 
@@ -24,233 +26,332 @@ class GridPreview extends React.Component {
   render() {
     return (
       <div className="GridPreview row no-gutters">
-        <div className="SingleDataAnggota" key="9922090922309201">
-          <div className="BoxSingleDataAnggota bg-c1">
-            <div
-              className="Foto"
-              style={{
-                backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-              }}
-            ></div>
-            <div className="Nama tx-c4">Sugeno Moto Fuzzy</div>
-            <div className="NoKTA bg-c5">9922090922309201</div>
-            <div className="Jabatan tx-c6">Presiden</div>
-            <div className="Wilayah tx-c7">Kota Salatiga</div>
-            <div
-              className="ViewDetailButton"
-              onClick={event =>
-                this.handleClickLihatProfil(event, "9922090922309201")
-              }
-            >
-              <FontAwesomeIcon icon={faEye} />
-              <span>Lihat Profil</span>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota">
+            <div className="InnerBoxTopWrapper">
+              <div className="InnerBoxTop">
+                <FontAwesomeIcon icon={faPlus} />
+              </div>
+            </div>
+            <div className="InnerBoxBottomWrapper">
+              <div className="FloatBox AddAnggotaBaru">
+                <span className="FloatBoxContent">Tambah Anggota Baru</span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="SingleDataAnggota" key="9922090922309202">
-          <div className="BoxSingleDataAnggota bg-c1">
-            <div
-              className="Foto"
-              style={{
-                backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-              }}
-            ></div>
-            <div className="Nama tx-c4">Sugeno Moto Fuzzy</div>
-            <div className="NoKTA bg-c5">9922090922309201</div>
-            <div className="Jabatan tx-c6">Presiden</div>
-            <div className="Wilayah tx-c7">Kota Salatiga</div>
-            <div
-              className="ViewDetailButton"
-              onClick={event =>
-                this.handleClickLihatProfil(event, "9922090922309202")
-              }
-            >
-              <FontAwesomeIcon icon={faEye} />
-              <span>Lihat Profil</span>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota">
+            <div className="InnerBoxTopWrapper">
+              <div className="InnerBoxTop">
+                <div
+                  className="Foto"
+                  style={{
+                    backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
+                  }}
+                ></div>
+                <div className="Nama">Sugeno Fuzzy</div>
+                <div className="Jabatan">Ketua DPC</div>
+                <div className="Wilayah">Kabupaten Magelang</div>
+              </div>
+            </div>
+            <div className="InnerBoxBottomWrapper">
+              <div className="FloatBox">
+                <span className="FloatBoxContent NoKTA">
+                  33093020082307890001
+                </span>
+              </div>
+            </div>
+            <div className="BoxOverlay">
+              <div
+                className="ViewProfileButton"
+                onClick={(event) =>
+                  this.handleClickLihatProfil(event, "9922090922309201")
+                }
+              >
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="SingleDataAnggota" key="9922090922309203">
-          <div className="BoxSingleDataAnggota bg-c1">
-            <div
-              className="Foto"
-              style={{
-                backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-              }}
-            ></div>
-            <div className="Nama tx-c4">Sugeno Moto Fuzzy</div>
-            <div className="NoKTA bg-c5">9922090922309201</div>
-            <div className="Jabatan tx-c6">Presiden</div>
-            <div className="Wilayah tx-c7">Kota Salatiga</div>
-            <div
-              className="ViewDetailButton"
-              onClick={event =>
-                this.handleClickLihatProfil(event, "9922090922309203")
-              }
-            >
-              <FontAwesomeIcon icon={faEye} />
-              <span>Lihat Profil</span>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota">
+            <div className="InnerBoxTopWrapper">
+              <div className="InnerBoxTop">
+                <div
+                  className="Foto"
+                  style={{
+                    backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
+                  }}
+                ></div>
+                <div className="Nama">Sugeno Fuzzy</div>
+                <div className="Jabatan">Ketua DPC</div>
+                <div className="Wilayah">Kabupaten Magelang</div>
+              </div>
+            </div>
+            <div className="InnerBoxBottomWrapper">
+              <div className="FloatBox">
+                <span className="FloatBoxContent NoKTA">
+                  33093020082307890001
+                </span>
+              </div>
+            </div>
+            <div className="BoxOverlay">
+              <div
+                className="ViewProfileButton"
+                onClick={(event) =>
+                  this.handleClickLihatProfil(event, "9922090922309201")
+                }
+              >
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="SingleDataAnggota" key="9922090922309204">
-          <div className="BoxSingleDataAnggota bg-c1">
-            <div
-              className="Foto"
-              style={{
-                backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-              }}
-            ></div>
-            <div className="Nama tx-c4">Sugeno Moto Fuzzy</div>
-            <div className="NoKTA bg-c5">9922090922309201</div>
-            <div className="Jabatan tx-c6">Presiden</div>
-            <div className="Wilayah tx-c7">Kota Salatiga</div>
-            <div
-              className="ViewDetailButton"
-              onClick={event =>
-                this.handleClickLihatProfil(event, "9922090922309204")
-              }
-            >
-              <FontAwesomeIcon icon={faEye} />
-              <span>Lihat Profil</span>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota">
+            <div className="InnerBoxTopWrapper">
+              <div className="InnerBoxTop">
+                <div
+                  className="Foto"
+                  style={{
+                    backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
+                  }}
+                ></div>
+                <div className="Nama">Sugeno Fuzzy</div>
+                <div className="Jabatan">Ketua DPC</div>
+                <div className="Wilayah">Kabupaten Magelang</div>
+              </div>
+            </div>
+            <div className="InnerBoxBottomWrapper">
+              <div className="FloatBox">
+                <span className="FloatBoxContent NoKTA">
+                  33093020082307890001
+                </span>
+              </div>
+            </div>
+            <div className="BoxOverlay">
+              <div
+                className="ViewProfileButton"
+                onClick={(event) =>
+                  this.handleClickLihatProfil(event, "9922090922309201")
+                }
+              >
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="SingleDataAnggota" key="9922090922309205">
-          <div className="BoxSingleDataAnggota bg-c1">
-            <div
-              className="Foto"
-              style={{
-                backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-              }}
-            ></div>
-            <div className="Nama tx-c4">Sugeno Moto Fuzzy</div>
-            <div className="NoKTA bg-c5">9922090922309201</div>
-            <div className="Jabatan tx-c6">Presiden</div>
-            <div className="Wilayah tx-c7">Kota Salatiga</div>
-            <div
-              className="ViewDetailButton"
-              onClick={event =>
-                this.handleClickLihatProfil(event, "9922090922309205")
-              }
-            >
-              <FontAwesomeIcon icon={faEye} />
-              <span>Lihat Profil</span>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota">
+            <div className="InnerBoxTopWrapper">
+              <div className="InnerBoxTop">
+                <div
+                  className="Foto"
+                  style={{
+                    backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
+                  }}
+                ></div>
+                <div className="Nama">Sugeno Fuzzy</div>
+                <div className="Jabatan">Ketua DPC</div>
+                <div className="Wilayah">Kabupaten Magelang</div>
+              </div>
+            </div>
+            <div className="InnerBoxBottomWrapper">
+              <div className="FloatBox">
+                <span className="FloatBoxContent NoKTA">
+                  33093020082307890001
+                </span>
+              </div>
+            </div>
+            <div className="BoxOverlay">
+              <div
+                className="ViewProfileButton"
+                onClick={(event) =>
+                  this.handleClickLihatProfil(event, "9922090922309201")
+                }
+              >
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="SingleDataAnggota" key="9922090922309206">
-          <div className="BoxSingleDataAnggota bg-c1">
-            <div
-              className="Foto"
-              style={{
-                backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-              }}
-            ></div>
-            <div className="Nama tx-c4">Sugeno Moto Fuzzy</div>
-            <div className="NoKTA bg-c5">9922090922309201</div>
-            <div className="Jabatan tx-c6">Presiden</div>
-            <div className="Wilayah tx-c7">Kota Salatiga</div>
-            <div
-              className="ViewDetailButton"
-              onClick={event =>
-                this.handleClickLihatProfil(event, "9922090922309206")
-              }
-            >
-              <FontAwesomeIcon icon={faEye} />
-              <span>Lihat Profil</span>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota">
+            <div className="InnerBoxTopWrapper">
+              <div className="InnerBoxTop">
+                <div
+                  className="Foto"
+                  style={{
+                    backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
+                  }}
+                ></div>
+                <div className="Nama">Sugeno Fuzzy</div>
+                <div className="Jabatan">Ketua DPC</div>
+                <div className="Wilayah">Kabupaten Magelang</div>
+              </div>
+            </div>
+            <div className="InnerBoxBottomWrapper">
+              <div className="FloatBox">
+                <span className="FloatBoxContent NoKTA">
+                  33093020082307890001
+                </span>
+              </div>
+            </div>
+            <div className="BoxOverlay">
+              <div
+                className="ViewProfileButton"
+                onClick={(event) =>
+                  this.handleClickLihatProfil(event, "9922090922309201")
+                }
+              >
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="SingleDataAnggota" key="9922090922309207">
-          <div className="BoxSingleDataAnggota bg-c1">
-            <div
-              className="Foto"
-              style={{
-                backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-              }}
-            ></div>
-            <div className="Nama tx-c4">Sugeno Moto Fuzzy</div>
-            <div className="NoKTA bg-c5">9922090922309201</div>
-            <div className="Jabatan tx-c6">Presiden</div>
-            <div className="Wilayah tx-c7">Kota Salatiga</div>
-            <div
-              className="ViewDetailButton"
-              onClick={event =>
-                this.handleClickLihatProfil(event, "9922090922309207")
-              }
-            >
-              <FontAwesomeIcon icon={faEye} />
-              <span>Lihat Profil</span>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota">
+            <div className="InnerBoxTopWrapper">
+              <div className="InnerBoxTop">
+                <div
+                  className="Foto"
+                  style={{
+                    backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
+                  }}
+                ></div>
+                <div className="Nama">Sugeno Fuzzy</div>
+                <div className="Jabatan">Ketua DPC</div>
+                <div className="Wilayah">Kabupaten Magelang</div>
+              </div>
+            </div>
+            <div className="InnerBoxBottomWrapper">
+              <div className="FloatBox">
+                <span className="FloatBoxContent NoKTA">
+                  33093020082307890001
+                </span>
+              </div>
+            </div>
+            <div className="BoxOverlay">
+              <div
+                className="ViewProfileButton"
+                onClick={(event) =>
+                  this.handleClickLihatProfil(event, "9922090922309201")
+                }
+              >
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="SingleDataAnggota" key="9922090922309208">
-          <div className="BoxSingleDataAnggota bg-c1">
-            <div
-              className="Foto"
-              style={{
-                backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-              }}
-            ></div>
-            <div className="Nama tx-c4">Sugeno Moto Fuzzy</div>
-            <div className="NoKTA bg-c5">9922090922309201</div>
-            <div className="Jabatan tx-c6">Presiden</div>
-            <div className="Wilayah tx-c7">Kota Salatiga</div>
-            <div
-              className="ViewDetailButton"
-              onClick={event =>
-                this.handleClickLihatProfil(event, "9922090922309208")
-              }
-            >
-              <FontAwesomeIcon icon={faEye} />
-              <span>Lihat Profil</span>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota">
+            <div className="InnerBoxTopWrapper">
+              <div className="InnerBoxTop">
+                <div
+                  className="Foto"
+                  style={{
+                    backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
+                  }}
+                ></div>
+                <div className="Nama">Sugeno Fuzzy</div>
+                <div className="Jabatan">Ketua DPC</div>
+                <div className="Wilayah">Kabupaten Magelang</div>
+              </div>
+            </div>
+            <div className="InnerBoxBottomWrapper">
+              <div className="FloatBox">
+                <span className="FloatBoxContent NoKTA">
+                  33093020082307890001
+                </span>
+              </div>
+            </div>
+            <div className="BoxOverlay">
+              <div
+                className="ViewProfileButton"
+                onClick={(event) =>
+                  this.handleClickLihatProfil(event, "9922090922309201")
+                }
+              >
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="SingleDataAnggota" key="9922090922309209">
-          <div className="BoxSingleDataAnggota bg-c1">
-            <div
-              className="Foto"
-              style={{
-                backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-              }}
-            ></div>
-            <div className="Nama tx-c4">Sugeno Moto Fuzzy</div>
-            <div className="NoKTA bg-c5">9922090922309201</div>
-            <div className="Jabatan tx-c6">Presiden</div>
-            <div className="Wilayah tx-c7">Kota Salatiga</div>
-            <div
-              className="ViewDetailButton"
-              onClick={event =>
-                this.handleClickLihatProfil(event, "9922090922309209")
-              }
-            >
-              <FontAwesomeIcon icon={faEye} />
-              <span>Lihat Profil</span>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota">
+            <div className="InnerBoxTopWrapper">
+              <div className="InnerBoxTop">
+                <div
+                  className="Foto"
+                  style={{
+                    backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
+                  }}
+                ></div>
+                <div className="Nama">Sugeno Fuzzy</div>
+                <div className="Jabatan">Ketua DPC</div>
+                <div className="Wilayah">Kabupaten Magelang</div>
+              </div>
+            </div>
+            <div className="InnerBoxBottomWrapper">
+              <div className="FloatBox">
+                <span className="FloatBoxContent NoKTA">
+                  33093020082307890001
+                </span>
+              </div>
+            </div>
+            <div className="BoxOverlay">
+              <div
+                className="ViewProfileButton"
+                onClick={(event) =>
+                  this.handleClickLihatProfil(event, "9922090922309201")
+                }
+              >
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="SingleDataAnggota" key="9922090922309210">
-          <div className="BoxSingleDataAnggota bg-c1">
-            <div
-              className="Foto"
-              style={{
-                backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-              }}
-            ></div>
-            <div className="Nama tx-c4">Sugeno Moto Fuzzy</div>
-            <div className="NoKTA bg-c5">9922090922309201</div>
-            <div className="Jabatan tx-c6">Presiden</div>
-            <div className="Wilayah tx-c7">Kota Salatiga</div>
-            <div
-              className="ViewDetailButton"
-              onClick={event =>
-                this.handleClickLihatProfil(event, "9922090922309210")
-              }
-            >
-              <FontAwesomeIcon icon={faEye} />
-              <span>Lihat Profil</span>
+        <div className="SingleDataAnggota">
+          <div className="BoxSingleDataAnggota">
+            <div className="InnerBoxTopWrapper">
+              <div className="InnerBoxTop">
+                <div
+                  className="Foto"
+                  style={{
+                    backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
+                  }}
+                ></div>
+                <div className="Nama">Sugeno Fuzzy</div>
+                <div className="Jabatan">Ketua DPC</div>
+                <div className="Wilayah">Kabupaten Magelang</div>
+              </div>
+            </div>
+            <div className="InnerBoxBottomWrapper">
+              <div className="FloatBox">
+                <span className="FloatBoxContent NoKTA">
+                  33093020082307890001
+                </span>
+              </div>
+            </div>
+            <div className="BoxOverlay">
+              <div
+                className="ViewProfileButton"
+                onClick={(event) =>
+                  this.handleClickLihatProfil(event, "9922090922309201")
+                }
+              >
+                <FontAwesomeIcon icon={faEye} />
+                <span>Lihat Profil</span>
+              </div>
             </div>
           </div>
         </div>
@@ -294,7 +395,7 @@ class ListPreview extends React.Component {
               <td className="Aksi">
                 <div
                   className="ViewDetailButton"
-                  onClick={event =>
+                  onClick={(event) =>
                     this.handleClickLihatProfil(event, "9922090922309201")
                   }
                 >
@@ -312,7 +413,7 @@ class ListPreview extends React.Component {
               <td className="Aksi">
                 <div
                   className="ViewDetailButton"
-                  onClick={event =>
+                  onClick={(event) =>
                     this.handleClickLihatProfil(event, "9922090922309202")
                   }
                 >
@@ -330,7 +431,7 @@ class ListPreview extends React.Component {
               <td className="Aksi">
                 <div
                   className="ViewDetailButton"
-                  onClick={event =>
+                  onClick={(event) =>
                     this.handleClickLihatProfil(event, "9922090922309203")
                   }
                 >
@@ -348,7 +449,7 @@ class ListPreview extends React.Component {
               <td className="Aksi">
                 <div
                   className="ViewDetailButton"
-                  onClick={event =>
+                  onClick={(event) =>
                     this.handleClickLihatProfil(event, "9922090922309204")
                   }
                 >
@@ -366,7 +467,7 @@ class ListPreview extends React.Component {
               <td className="Aksi">
                 <div
                   className="ViewDetailButton"
-                  onClick={event =>
+                  onClick={(event) =>
                     this.handleClickLihatProfil(event, "9922090922309205")
                   }
                 >
@@ -384,7 +485,7 @@ class ListPreview extends React.Component {
               <td className="Aksi">
                 <div
                   className="ViewDetailButton"
-                  onClick={event =>
+                  onClick={(event) =>
                     this.handleClickLihatProfil(event, "9922090922309206")
                   }
                 >
@@ -402,7 +503,7 @@ class ListPreview extends React.Component {
               <td className="Aksi">
                 <div
                   className="ViewDetailButton"
-                  onClick={event =>
+                  onClick={(event) =>
                     this.handleClickLihatProfil(event, "9922090922309207")
                   }
                 >
@@ -420,7 +521,7 @@ class ListPreview extends React.Component {
               <td className="Aksi">
                 <div
                   className="ViewDetailButton"
-                  onClick={event =>
+                  onClick={(event) =>
                     this.handleClickLihatProfil(event, "9922090922309208")
                   }
                 >
@@ -438,7 +539,7 @@ class ListPreview extends React.Component {
               <td className="Aksi">
                 <div
                   className="ViewDetailButton"
-                  onClick={event =>
+                  onClick={(event) =>
                     this.handleClickLihatProfil(event, "9922090922309209")
                   }
                 >
@@ -456,7 +557,7 @@ class ListPreview extends React.Component {
               <td className="Aksi">
                 <div
                   className="ViewDetailButton"
-                  onClick={event =>
+                  onClick={(event) =>
                     this.handleClickLihatProfil(event, "9922090922309210")
                   }
                 >
@@ -476,7 +577,7 @@ class PreviewAnggota extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      displayDataBy: "Grid"
+      displayDataBy: "Grid",
     };
     this.byGridRef = React.createRef();
     this.byListRef = React.createRef();
@@ -517,25 +618,35 @@ class PreviewAnggota extends React.Component {
     return (
       <div className="Preview">
         <div className="HeadDataAnggota">
-          <div className="ResultData">
-            <span>
-              Menampilkan <span className="bold tx-c7">10</span> Data
-            </span>
+          <div className="LeftHead">
+            <h4>Data Anggota</h4>
           </div>
-          <div className="DisplayDataBy">
-            <div
-              className="ByGrid Active"
-              ref={this.byGridRef}
-              onClick={event => this.handleClickDisplayDataBy(event, "Grid")}
-            >
-              <FontAwesomeIcon icon={faTh} />
+          <div className="RightHead">
+            <div className="SearchBar">
+              <span className="SearchIcon">
+                <FontAwesomeIcon icon={faSearch} />
+              </span>
+              <input type="text" placeholder="Cari Nama atau No. KTA" />
             </div>
-            <div
-              className="ByList"
-              ref={this.byListRef}
-              onClick={event => this.handleClickDisplayDataBy(event, "List")}
-            >
-              <FontAwesomeIcon icon={faList} />
+            <div className="PreviewBy">
+              <div
+                className="ByGrid Active"
+                ref={this.byGridRef}
+                onClick={(event) =>
+                  this.handleClickDisplayDataBy(event, "Grid")
+                }
+              >
+                <FontAwesomeIcon icon={faTh} />
+              </div>
+              <div
+                className="ByList"
+                ref={this.byListRef}
+                onClick={(event) =>
+                  this.handleClickDisplayDataBy(event, "List")
+                }
+              >
+                <FontAwesomeIcon icon={faList} />
+              </div>
             </div>
           </div>
         </div>

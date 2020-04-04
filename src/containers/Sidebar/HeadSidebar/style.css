@@ -4,10 +4,12 @@
   height: 120px;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.068);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 60px;
 }
 
 .brand {
   font-weight: 400;
   text-transform: capitalize;
+  color: #fff;
 }

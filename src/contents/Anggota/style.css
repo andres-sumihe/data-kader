@@ -340,13 +340,13 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  color: rgba(0, 0, 0, 0.4);
   position: relative;
   right: 7.5px;
 }
 
 .SingleOfTypeSearch span {
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .SingleOfTypeSearch:last-of-type {
@@ -354,7 +354,7 @@
 }
 
 .SingleOfTypeSearch span.Active {
-  color: #2bcf8a;
+  color: #b71c1c;
   font-weight: 700;
 }
 
@@ -553,45 +553,111 @@
 
 /* PREVIEW */
 
+.Preview {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .Preview .HeadDataAnggota {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  height: 45px;
 }
 
-.Preview .ResultData .bold {
-  font-size: 1.2em;
-  font-weight: 700;
-}
-
-.Preview .DisplayDataBy {
+.Preview .HeadDataAnggota .LeftHead {
   display: flex;
-  justify-content: space-between;
-  width: 100px;
-  font-size: 1.4em;
+  align-items: center;
 }
 
-.Preview .ByGrid,
-.Preview .ByList {
+.Preview .HeadDataAnggota .LeftHead,
+.Preview .HeadDataAnggota .RightHead {
+  height: 100%;
+}
+
+.Preview .HeadDataAnggota .LeftHead h4 {
+  font-weight: 400;
+  line-height: 1;
+}
+
+.Preview .HeadDataAnggota .RightHead {
+  display: flex;
+  align-items: center;
+}
+
+.Preview .HeadDataAnggota .RightHead .SearchBar,
+.Preview .HeadDataAnggota .RightHead .PreviewBy {
+  height: 100%;
+}
+
+.Preview .HeadDataAnggota .RightHead .SearchBar {
+  margin-right: 15px;
+  position: relative;
+}
+
+.Preview .HeadDataAnggota .RightHead .SearchBar .SearchIcon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  font-size: 1em;
+}
+
+.Preview .HeadDataAnggota .RightHead .SearchBar input[type="text"] {
+  height: 100%;
+  width: 350px;
+  border-radius: 30px;
+  border: 1px solid #888;
+  padding: 5px 15px 5px 35px;
+  font-size: 1em;
+}
+
+.Preview .HeadDataAnggota .RightHead .PreviewBy {
+  display: flex;
+  align-items: center;
+}
+
+.Preview .HeadDataAnggota .RightHead .PreviewBy .ByGrid,
+.Preview .HeadDataAnggota .RightHead .PreviewBy .ByList {
+  width: 45px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 12px;
+  font-size: 1.5em;
+  border-radius: 5px;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.4);
 }
 
-.Preview .ByGrid.Active,
-.Preview .ByList.Active {
-  color: #2bcf8a !important;
-  border: 1px solid #2bcf8a !important;
-  border-radius: 5px !important;
+.Preview .HeadDataAnggota .RightHead .PreviewBy .Active {
+  border: 1px solid #b71c1c;
+  color: #b71c1c;
+}
+
+.Preview .HeadDataAnggota .RightHead .PreviewBy .ByGrid:not(.Active) {
+  margin-left: -12px;
+}
+
+.Preview .HeadDataAnggota .RightHead .PreviewBy .ByList:not(.Active) {
+  margin-right: -9px;
 }
 
 .Preview .BodyDataAnggota {
   padding-top: 15px;
-  border-radius: 5px;
+  overflow-y: auto;
+  flex-grow: 1;
+  width: calc(100% + 30px);
+  height: calc(100% - 45px);
+  position: absolute;
+  left: 0;
+  top: 60px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .Preview .GridPreview .SingleDataAnggota {
@@ -624,80 +690,169 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   position: relative;
   height: 100%;
-  padding: 15px 0 0;
+  padding: 15px;
   line-height: 1.2;
   border-radius: 5px;
+  background-color: #fff;
+  position: relative;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
   -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
 }
 
-.Preview .GridPreview .BoxSingleDataAnggota .Foto {
-  line-height: 1;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 13px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-size: cover;
-}
-
-.Preview .GridPreview .BoxSingleDataAnggota .Nama {
-  letter-spacing: 1;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 7px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.Preview .GridPreview .BoxSingleDataAnggota .NoKTA {
-  padding: 9px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 9px;
-  border-radius: 5px;
-  font-size: 0.9em;
-}
-
-.Preview .GridPreview .BoxSingleDataAnggota .Jabatan {
-  letter-spacing: 0.025em;
-  margin-bottom: 6px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.Preview .GridPreview .BoxSingleDataAnggota .Wilayah {
-  margin-bottom: 11px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.Preview .GridPreview .BoxSingleDataAnggota .ViewDetailButton {
-  width: 100%;
-  text-align: center;
-  color: #fff;
+.Preview
+  .GridPreview
+  .SingleDataAnggota:first-of-type
+  .BoxSingleDataAnggota
+  .InnerBoxTopWrapper {
   cursor: pointer;
-  pointer-events: auto;
-  background-color: rgba(43, 207, 138, 0.8);
-  padding: 15px;
-  font-size: 1.1em;
-  position: relative;
-  z-index: 20;
-  transition: 0.4s ease-in-out;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
-.Preview .GridPreview .BoxSingleDataAnggota .ViewDetailButton span {
+.Preview
+  .GridPreview
+  .SingleDataAnggota:not(:first-of-type)
+  .BoxSingleDataAnggota
+  .BoxOverlay {
+  width: 100%;
+  height: calc(100% - 47px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.Preview
+  .GridPreview
+  .SingleDataAnggota:not(:first-of-type)
+  .BoxSingleDataAnggota
+  .BoxOverlay
+  .ViewProfileButton {
+  color: #fff;
+  background-color: #b71c1c;
+  width: calc(100% - 30px);
+  border-radius: 30px;
+  padding: 12px 17.5px;
+  text-align: center;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.Preview
+  .GridPreview
+  .SingleDataAnggota:not(:first-of-type)
+  .BoxSingleDataAnggota
+  .BoxOverlay
+  .ViewProfileButton:hover {
+  background-color: rgba(183, 28, 28, 0.9);
+}
+
+.Preview
+  .GridPreview
+  .SingleDataAnggota:not(:first-of-type)
+  .BoxSingleDataAnggota
+  .BoxOverlay
+  .ViewProfileButton
+  > span {
   margin-left: 7px;
 }
 
-.Preview .GridPreview .BoxSingleDataAnggota .ViewDetailButton:hover {
-  background-color: rgba(43, 207, 138, 1);
+.Preview
+  .GridPreview
+  .SingleDataAnggota:not(:first-of-type)
+  .BoxSingleDataAnggota:hover
+  .BoxOverlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Preview
+  .GridPreview
+  .SingleDataAnggota:first-of-type
+  .BoxSingleDataAnggota
+  .InnerBoxTopWrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7.5em;
+  margin-bottom: 15px;
+  border: 2px dashed #777;
+  border-radius: 5px;
+}
+
+.Preview .GridPreview .BoxSingleDataAnggota .InnerBoxTopWrapper,
+.Preview .GridPreview .BoxSingleDataAnggota .InnerBoxTop,
+.Preview .GridPreview .BoxSingleDataAnggota .InnerBoxBottomWrapper {
+  width: 100%;
+}
+
+.Preview .GridPreview .BoxSingleDataAnggota .InnerBoxTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Preview .GridPreview .Foto {
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 7px;
+}
+
+.Preview .GridPreview .Nama {
+  font-size: 1.15em;
+  margin-bottom: 7px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 7px;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.Preview .GridPreview .Jabatan,
+.Preview .GridPreview .Wilayah {
+  font-size: 0.9em;
+  text-transform: capitalize;
+}
+
+.Preview .GridPreview .Jabatan {
+  margin-bottom: 3px;
+  color: #666;
+}
+
+.Preview .GridPreview .Wilayah {
+  margin-bottom: 7px;
+  color: #333;
+}
+
+.Preview .GridPreview .FloatBox {
+  margin-left: -18.5px;
+  margin-right: -18.5px;
+  background-color: #b71c1c;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 14px;
+  text-align: center;
+}
+
+.Preview .GridPreview .FloatBox.AddAnggotaBaru {
+  background-color: #00a85a;
 }
 
 .Preview .ListPreview {
@@ -719,7 +874,7 @@
   color: #fff;
   text-align: left;
   font-weight: 400;
-  background-color: #2bcf8a;
+  background-color: #414141;
 }
 
 .Preview .ListPreview .ListPreviewTable tbody tr td {
@@ -746,7 +901,7 @@
 
 .Preview .ListPreview .ListPreviewTable tbody tr td.Aksi .ViewDetailButton {
   border-radius: 5px;
-  background-color: rgba(43, 207, 138, 0.8);
+  background-color: #b71c1c;
   color: #fff;
   display: inline-block;
   padding: 7px 14px;
@@ -761,7 +916,7 @@
   tr
   td.Aksi
   .ViewDetailButton:hover {
-  background-color: rgba(43, 207, 138, 1);
+  background-color: rgba(183, 28, 28, 0.9);
 }
 
 .Preview
@@ -777,7 +932,7 @@
 
 /* DETAIL ANGGOTA */
 
-.QRCodeOverlay {
+.QRCodeWrapper {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -790,12 +945,12 @@
   transition: 0.5s ease-in-out;
 }
 
-.QRCodeOverlay.Active {
+.QRCodeWrapper.Active {
   opacity: 1;
   visibility: visible;
 }
 
-.QRCodeOverlay .CloseIcon {
+.QRCodeWrapper .CloseIcon {
   font-size: 3.1em;
   position: absolute;
   display: block;
@@ -808,13 +963,13 @@
   transition: 0.4s ease-in-out;
 }
 
-.QRCodeOverlay .CloseIcon:hover {
+.QRCodeWrapper .CloseIcon:hover {
   transform: rotate(90deg);
 }
 
-.QRCodeOverlay .BoxQRCode {
-  width: 50%;
-  height: 55%;
+.QRCodeWrapper .BoxQRCode {
+  width: 350px;
+  height: 350px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -824,22 +979,22 @@
   padding: 5px 5px 0;
 }
 
-.QRCodeOverlay .BoxQRCode .QRCodeArea {
+.QRCodeWrapper .BoxQRCode .QRCodeArea {
   width: 100%;
   height: calc(100% - 70px);
   text-align: center;
   padding-bottom: 5px;
 }
 
-.QRCodeOverlay .BoxQRCode .QRCodeArea img {
+.QRCodeWrapper .BoxQRCode .QRCodeArea img {
   max-height: 100%;
 }
 
-.QRCodeOverlay .BoxQRCode .InfoArea {
+.QRCodeWrapper .BoxQRCode .InfoArea {
   height: 70px;
   margin: 0 -5px;
   line-height: 1.55em;
-  background-color: #2bcf8a;
+  background-color: #b71c1c;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   color: #fff;
@@ -849,7 +1004,7 @@
   align-items: center;
 }
 
-.QRCodeOverlay .BoxQRCode .InfoArea .bold {
+.QRCodeWrapper .BoxQRCode .InfoArea .bold {
   font-weight: 700;
 }
 
@@ -862,68 +1017,41 @@
   opacity: 0;
   visibility: hidden;
   overflow-y: auto;
-  overflow-x: hidden;
   transition: 0.8s ease-in-out;
   background-color: #fff;
   transform: translateX(100%);
 }
 
+.DetailAnggota .CloseIconWrapper {
+  position: absolute;
+  left: -15px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 400;
+}
+
+.DetailAnggota .CloseIconWrapper .CloseIcon {
+  transition: 0.4s ease-in-out;
+}
+
+.DetailAnggota .CloseIconWrapper:hover .CloseIcon {
+  transform: rotate(90deg);
+}
+
 .DetailAnggota.Active {
   opacity: 1;
   visibility: visible;
+  overflow-x: visible;
   transform: translateX(0);
-}
-
-.DetailAnggota .Step {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  position: absolute;
-  overflow: hidden;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  z-index: 400;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.DetailAnggota .Step .GoToInfoProfil {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgba(0, 0, 0, 0.25);
-  font-weight: 700;
-  cursor: not-allowed;
-  pointer-events: auto;
-}
-
-.DetailAnggota .Step .GoToInfoProfil.Active {
-  color: #2bcf8a;
-  cursor: pointer;
-}
-
-.DetailAnggota .Step .GoToInfoProfil span {
-  margin-left: 8px;
-}
-
-.DetailAnggota .Step .GoToEditProfil {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgba(0, 0, 0, 0.25);
-  font-weight: 700;
-  cursor: not-allowed;
-  pointer-events: auto;
-}
-
-.DetailAnggota .Step .GoToEditProfil.Active {
-  color: #2bcf8a;
-  cursor: pointer;
-}
-
-.DetailAnggota .Step .GoToEditProfil span {
-  margin-right: 8px;
 }
 
 .DetailAnggota .DetailInfoProfil,
@@ -931,13 +1059,13 @@
   opacity: 0;
   visibility: hidden;
   width: 100%;
-  height: calc(100% - 48px);
+  height: 100%;
   background-color: #fff;
   overflow-y: auto;
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 300;
+  z-index: 200;
   display: flex;
   opacity: 0;
   visibility: hidden;
@@ -952,52 +1080,58 @@
   z-index: 350;
 }
 
-.DetailAnggota .DetailInfoProfil .DetailHeadTopInfoProfil,
-.DetailAnggota .DetailEditProfil .DetailHeadEditProfil {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  line-height: 1;
-  padding: 15px 15px 13px;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.DetailAnggota .DetailInfoProfil .DetailHeadTopInfoProfil h5,
-.DetailAnggota .DetailEditProfil .DetailHeadEditProfil h5 {
-  font-weight: 400;
-}
-
-.DetailAnggota .DetailInfoProfil .DetailHeadTopInfoProfil h5 span,
-.DetailAnggota .DetailEditProfil .DetailHeadEditProfil h5 span {
-  margin-left: 12px;
-}
-
-.DetailAnggota .DetailInfoProfil .DetailHeadTopInfoProfil .CloseIcon,
-.DetailAnggota .DetailEditProfil .DetailHeadEditProfil .CloseIcon {
-  font-size: 1.35em;
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-}
-
-.DetailAnggota .DetailInfoProfil .DetailHeadTopInfoProfil .CloseIcon:hover,
-.DetailAnggota .DetailEditProfil .DetailHeadEditProfil .CloseIcon:hover {
-  transform: rotate(90deg);
-}
-
 .DetailAnggota .DetailInfoProfil .DetailHeadBodyInfoProfil {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #2bcf8a;
+  background-size: cover;
   color: #fff;
-  padding: 20px 15px;
+  padding: 15px 0;
+  position: relative;
+}
+
+.DetailAnggota .DetailInfoProfil .DetailHeadBodyInfoProfil .PrevButton {
+  line-height: 1;
+  font-weight: 400;
+  font-size: 3em;
+  display: block;
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  left: 15px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .DetailAnggota .DetailInfoProfil .DetailHeadBodyInfoProfil .MainInfoAnggota {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.DetailAnggota
+  .DetailInfoProfil
+  .DetailHeadBodyInfoProfil
+  .MainInfoAnggota
+  .NextButton {
+  line-height: 1;
+  font-weight: 400;
+  font-size: 3em;
+  display: block;
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  right: 15px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .DetailAnggota
@@ -1010,6 +1144,8 @@
   background-size: cover;
   border-radius: 50%;
   position: relative;
+  margin-bottom: 6px;
+  border: 2px solid #fff;
 }
 
 .DetailAnggota
@@ -1028,28 +1164,14 @@
   justify-content: center;
   align-items: center;
   line-height: 1;
-  background-color: #fff;
-  color: #2bcf8a;
-  border: 2px solid #2bcf8a;
+  background-color: #b71c1c;
+  color: #fff;
   cursor: pointer;
 }
-
 .DetailAnggota
   .DetailInfoProfil
   .DetailHeadBodyInfoProfil
   .MainInfoAnggota
-  .ProfileTextAnggota {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-left: 20px;
-}
-
-.DetailAnggota
-  .DetailInfoProfil
-  .DetailHeadBodyInfoProfil
-  .MainInfoAnggota
-  .ProfileTextAnggota
   .Nama {
   text-transform: uppercase;
   font-size: 1.25em;
@@ -1060,50 +1182,27 @@
   .DetailInfoProfil
   .DetailHeadBodyInfoProfil
   .MainInfoAnggota
-  .ProfileTextAnggota
   .NoKTA
   span {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   padding: 3px 10px;
-  margin-bottom: 12px;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .DetailAnggota
   .DetailInfoProfil
   .DetailHeadBodyInfoProfil
-  .MainInfoAnggota
-  .ProfileTextAnggota
-  .Jabatan {
-  text-transform: capitalize;
-}
-
+  .ButtonAction
+  .DetailKTAAnggota,
 .DetailAnggota .DetailInfoProfil .DetailHeadBodyInfoProfil .ButtonAction {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-}
-
-.DetailAnggota
-  .DetailInfoProfil
-  .DetailHeadBodyInfoProfil
-  .ButtonAction
-  .BackToMainProfile {
-  margin-right: 20px;
-  cursor: pointer;
-  border-bottom: 1px solid transparent;
-  transition: 0.4s ease-in-out;
-}
-
-.DetailAnggota
-  .DetailInfoProfil
-  .DetailHeadBodyInfoProfil
-  .ButtonAction
-  .BackToMainProfile:hover {
-  border-bottom-color: #fff;
+  margin-left: -45px;
+  margin-right: -45px;
+  margin-bottom: -15px;
+  text-align: center;
 }
 
 .DetailAnggota
@@ -1116,11 +1215,10 @@
   .DetailHeadBodyInfoProfil
   .ButtonAction
   .ShowQRCode {
-  border: 1px solid #fff;
-  background-color: transparent;
-  border-radius: 5px;
-  padding: 4px 15px;
+  padding: 8px 15px;
   cursor: pointer;
+  color: #fff;
+  background-color: #b71c1c;
   transition: 0.4s ease-in-out;
 }
 
@@ -1134,7 +1232,7 @@
   .DetailHeadBodyInfoProfil
   .ButtonAction
   .ShowQRCode:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(183, 28, 28, 0.9);
 }
 
 .DetailAnggota
@@ -1160,6 +1258,9 @@
 
 .DetailAnggota .DetailInfoProfil .DetailHeadBodyInfoProfil .KTACard {
   height: 200px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .DetailAnggota .DetailInfoProfil .DetailHeadBodyInfoProfil .KTACard img {
@@ -1177,13 +1278,28 @@
   text-align: center;
   padding-top: 8px;
   padding-bottom: 7px;
-  background-color: #2bcf8a;
+  background-color: #fff;
+  border-bottom: 2px solid #aaa;
   cursor: pointer;
   pointer-events: auto;
 }
 
+.DetailAnggota
+  .DetailInfoProfil
+  .DetailTabInfoProfil
+  .SingleTabWrapper:first-of-type {
+  border-right: 1px solid #aaa;
+}
+
+.DetailAnggota
+  .DetailInfoProfil
+  .DetailTabInfoProfil
+  .SingleTabWrapper:last-of-type {
+  border-left: 1px solid #aaa;
+}
+
 .DetailAnggota .DetailInfoProfil .DetailTabInfoProfil .SingleTabWrapper.Active {
-  background-color: #fff;
+  border-bottom-color: #b71c1c;
 }
 
 .DetailAnggota
@@ -1191,7 +1307,7 @@
   .DetailTabInfoProfil
   .SingleTabWrapper.Active
   .SingleTab {
-  color: #2bcf8a;
+  color: #b71c1c;
   font-weight: 700;
 }
 
@@ -1200,8 +1316,8 @@
   .DetailTabInfoProfil
   .SingleTabWrapper
   .SingleTab {
+  color: #666;
   line-height: 1;
-  color: #fff;
   text-transform: uppercase;
 }
 

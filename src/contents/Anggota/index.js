@@ -12,13 +12,13 @@ class Anggota extends React.Component {
     this.state = {
       typeOfSearch: "Pencarian-Cepat",
       valueOfFastSearch: "",
-      valueOfFullSearch: []
+      valueOfFullSearch: [],
     };
   }
 
   handleTypeOfSearchChange(typeOfSearch) {
     this.setState({
-      typeOfSearch: typeOfSearch
+      typeOfSearch: typeOfSearch,
     });
   }
 
@@ -26,12 +26,6 @@ class Anggota extends React.Component {
     const { typeOfSearch, valueOfFastSearch, valueOfFullSearch } = this.state;
     return (
       <div className="AnggotaContent container-fluid">
-        <AddAnggota />
-        <SearchAnggota
-          typeOfSearch={typeOfSearch}
-          onTypeOfSearchChange={this.state.handleTypeOfSearchChange}
-          valueOfFastSearch={valueOfFastSearch}
-        />
         <PreviewAnggota
           typeOfSearch={typeOfSearch}
           valueOfFastSearch={valueOfFastSearch}

@@ -5,8 +5,10 @@ import "./../../../skin.css";
 class HeadSidebar extends React.Component {
   render() {
     return (
-      <div className="HeadSidebar">
-        <h3 className="brand bg-c1 tx-c4">Data Kader</h3>
+      <div className="HeadSidebarWrapper">
+        <div className="HeadSidebar">
+          <h3 className="brand">Data Kader</h3>
+        </div>
       </div>
     );
   }

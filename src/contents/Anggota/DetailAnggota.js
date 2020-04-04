@@ -12,7 +12,7 @@ import {
   faChevronRight,
   faCamera,
   faIdCard,
-  faSave
+  faSave,
 } from "@fortawesome/free-solid-svg-icons";
 
 class InfoKepartaian extends React.Component {
@@ -168,14 +168,14 @@ class DetailTabInfoProfil extends React.Component {
         <div
           className="SingleTabWrapper Active"
           ref={this.biodataTabRef}
-          onClick={event => this.handleClickTab(event, "Biodata")}
+          onClick={(event) => this.handleClickTab(event, "Biodata")}
         >
           <span className="SingleTab">Biodata</span>
         </div>
         <div
           className="SingleTabWrapper"
           ref={this.kepartaianTabRef}
-          onClick={event => this.handleClickTab(event, "Kepartaian")}
+          onClick={(event) => this.handleClickTab(event, "Kepartaian")}
         >
           <span className="SingleTab">Kepartaian</span>
         </div>
@@ -187,43 +187,35 @@ class DetailTabInfoProfil extends React.Component {
 class DetailMainProfil extends React.Component {
   constructor(props) {
     super(props);
-    this.handleClickDetailKTA = this.handleClickDetailKTA.bind(this);
+    this.handleClickNextButton = this.handleClickNextButton.bind(this);
   }
 
-  handleClickDetailKTA(event) {
-    this.props.onDetailKTAClicked();
+  handleClickNextButton(event) {
+    this.props.onNextButtonClicked();
     event.preventDefault();
   }
 
   render() {
     return (
-      <React.Fragment>
-        <div className="MainInfoAnggota">
-          <div
-            className="ProfilePhotoAnggota"
-            style={{
-              backgroundImage: `url(${require("../../photos/photo1.jpg")})`
-            }}
-          >
-            <div className="ChangePhotoAnggota">
-              <FontAwesomeIcon icon={faCamera} />
-            </div>
-          </div>
-          <div className="ProfileTextAnggota">
-            <div className="Nama">Sugeno Moto Fuzzy</div>
-            <div className="NoKTA">
-              <span>9283924245999201</span>
-            </div>
-            <div className="Jabatan">Presiden</div>
+      <div className="MainInfoAnggota">
+        <div className="NextButton" onClick={this.handleClickNextButton}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </div>
+        <div
+          className="ProfilePhotoAnggota"
+          style={{
+            backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
+          }}
+        >
+          <div className="ChangePhotoAnggota">
+            <FontAwesomeIcon icon={faCamera} />
           </div>
         </div>
-        <div className="ButtonAction">
-          <div className="DetailKTAAnggota" onClick={this.handleClickDetailKTA}>
-            <FontAwesomeIcon icon={faIdCard} />
-            <span>Detail KTA</span>
-          </div>
+        <div className="Nama">Sugeno Moto Fuzzy</div>
+        <div className="NoKTA">
+          <span>9283924245999201</span>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
@@ -232,9 +224,7 @@ class DetailKTA extends React.Component {
   constructor(props) {
     super(props);
     this.handleClickShowQRCode = this.handleClickShowQRCode.bind(this);
-    this.handleClickBackToMainProfile = this.handleClickBackToMainProfile.bind(
-      this
-    );
+    this.handleClickPrevButton = this.handleClickPrevButton.bind(this);
   }
 
   handleClickShowQRCode(event) {
@@ -242,25 +232,21 @@ class DetailKTA extends React.Component {
     event.preventDefault();
   }
 
-  handleClickBackToMainProfile(event) {
-    this.props.onBackToMainProfileClicked();
+  handleClickPrevButton(event) {
+    this.props.onPrevButtonClicked();
     event.preventDefault();
   }
 
   render() {
     return (
       <React.Fragment>
+        <div className="PrevButton" onClick={this.handleClickPrevButton}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </div>
         <div className="KTACard">
           <img src={require("../../photos/photo4.jpeg")} alt="KTA" />
         </div>
         <div className="ButtonAction">
-          <div
-            className="BackToMainProfile"
-            onClick={this.handleClickBackToMainProfile}
-          >
-            <FontAwesomeIcon icon={faChevronLeft} />
-            <span>Kembali</span>
-          </div>
           <div className="ShowQRCode" onClick={this.handleClickShowQRCode}>
             <FontAwesomeIcon icon={faEye} />
             <span>Tampilkan QR Code</span>
@@ -275,27 +261,19 @@ class DetailHeadInfoProfil extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      headInfoProfilActive: "Info Profil"
+      headInfoProfilActive: "Info Profil",
     };
-    this.handleDetailKTAClicked = this.handleDetailKTAClicked.bind(this);
-    this.handleBackToMainProfileClicked = this.handleBackToMainProfileClicked.bind(
-      this
-    );
-    this.handleClickClose = this.handleClickClose.bind(this);
+    this.handleNextButtonClicked = this.handleNextButtonClicked.bind(this);
+    this.handlePrevButtonClicked = this.handlePrevButtonClicked.bind(this);
     this.handleShowQRCodeClicked = this.handleShowQRCodeClicked.bind(this);
   }
 
-  handleDetailKTAClicked() {
+  handleNextButtonClicked() {
     this.setState({ headInfoProfilActive: "Detail KTA" });
   }
 
-  handleBackToMainProfileClicked() {
+  handlePrevButtonClicked() {
     this.setState({ headInfoProfilActive: "Info Profil" });
-  }
-
-  handleClickClose(event) {
-    this.props.onCloseClicked();
-    event.preventDefault();
   }
 
   handleShowQRCodeClicked() {
@@ -306,24 +284,20 @@ class DetailHeadInfoProfil extends React.Component {
     const headInfoProfilActive = this.state.headInfoProfilActive;
     return (
       <React.Fragment>
-        <div className="DetailHeadTopInfoProfil">
-          <h5>
-            <FontAwesomeIcon icon={faUser} />
-            <span>Info Profil</span>
-          </h5>
-          <span className="CloseIcon" onClick={this.handleClickClose}>
-            <FontAwesomeIcon icon={faTimes} />
-          </span>
-        </div>
-        <div className="DetailHeadBodyInfoProfil">
+        <div
+          className="DetailHeadBodyInfoProfil"
+          style={{
+            backgroundImage: `url(${require("../../photos/batik.jpg")})`,
+          }}
+        >
           {headInfoProfilActive === "Detail KTA" ? (
             <DetailKTA
-              onBackToMainProfileClicked={this.handleBackToMainProfileClicked}
+              onPrevButtonClicked={this.handlePrevButtonClicked}
               onShowQRCodeClicked={this.handleShowQRCodeClicked}
             />
           ) : (
             <DetailMainProfil
-              onDetailKTAClicked={this.handleDetailKTAClicked}
+              onNextButtonClicked={this.handleNextButtonClicked}
             />
           )}
         </div>
@@ -336,7 +310,7 @@ class DetailInfoProfil extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tabActive: "Biodata"
+      tabActive: "Biodata",
     };
     this.handleTabClicked = this.handleTabClicked.bind(this);
     this.handleCloseClicked = this.handleCloseClicked.bind(this);
@@ -358,6 +332,11 @@ class DetailInfoProfil extends React.Component {
   render() {
     return (
       <div className="DetailInfoProfil Active">
+        {/* <div className="CloseIconWrapper">
+          <span className="CloseIcon">
+            <FontAwesomeIcon icon={faChevronRight} />
+          </span>
+        </div> */}
         <DetailHeadInfoProfil
           onCloseClicked={this.handleCloseClicked}
           onShowQRCodeClicked={this.handleShowQRCodeClicked}
@@ -691,14 +670,14 @@ class DetailTabEditProfil extends React.Component {
         <div
           className="SingleTabWrapper Active"
           ref={this.biodataTabRef}
-          onClick={event => this.handleClickTab(event, "Biodata")}
+          onClick={(event) => this.handleClickTab(event, "Biodata")}
         >
           <span className="SingleTab">Biodata</span>
         </div>
         <div
           className="SingleTabWrapper"
           ref={this.kepartaianTabRef}
-          onClick={event => this.handleClickTab(event, "Kepartaian")}
+          onClick={(event) => this.handleClickTab(event, "Kepartaian")}
         >
           <span className="SingleTab">Kepartaian</span>
         </div>
@@ -751,7 +730,7 @@ class DetailEditProfil extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tabActive: "Biodata"
+      tabActive: "Biodata",
     };
     this.handleCloseClicked = this.handleCloseClicked.bind(this);
     this.handleTabClicked = this.handleTabClicked.bind(this);
@@ -784,38 +763,20 @@ class DetailAnggota extends React.Component {
     super(props);
     this.detailAnggotaOverlayRef = React.createRef();
     this.detailAnggotaRef = React.createRef();
-    this.QRCodeOverlayRef = React.createRef();
+    this.QRCodeWrapper = React.createRef();
     this.state = {
-      pageActive: "InfoProfil"
+      pageActive: "InfoProfil",
     };
-    this.handleCloseClicked = this.handleCloseClicked.bind(this);
     this.handleCloseQRCode = this.handleCloseQRCode.bind(this);
     this.handleShowQRCodeClicked = this.handleShowQRCodeClicked.bind(this);
-    this.handleClickStep = this.handleClickStep.bind(this);
-  }
-
-  handleClickStep(event, pageTarget) {
-    if (
-      (this.state.pageActive === "InfoProfil" && pageTarget === "EditProfil") ||
-      (this.state.pageActive === "EditProfil" && pageTarget === "InfoProfil")
-    ) {
-      this.setState({ pageActive: pageTarget });
-      event.preventDefault();
-    }
-  }
-
-  handleCloseClicked() {
-    document.body.style.overflowY = "auto";
-    this.detailAnggotaRef.current.classList.remove("Active");
-    this.detailAnggotaOverlayRef.current.classList.remove("Active");
   }
 
   handleCloseQRCode() {
-    this.QRCodeOverlayRef.current.classList.remove("Active");
+    this.QRCodeWrapper.current.classList.remove("Active");
   }
 
   handleShowQRCodeClicked() {
-    this.QRCodeOverlayRef.current.classList.add("Active");
+    this.QRCodeWrapper.current.classList.add("Active");
   }
 
   render() {
@@ -834,39 +795,19 @@ class DetailAnggota extends React.Component {
               onShowQRCodeClicked={this.handleShowQRCodeClicked}
             />
           )}
-          <div className="Step">
-            <div
-              className={`GoToInfoProfil${
-                pageActive === "InfoProfil" ? "" : " Active"
-              }`}
-              onClick={event => this.handleClickStep(event, "InfoProfil")}
-            >
-              <FontAwesomeIcon icon={faChevronLeft} />
-              <span>Info Profil</span>
+        </div>
+        <div className="QRCodeWrapper" ref={this.QRCodeWrapper}>
+          <span className="CloseIcon" onClick={this.handleCloseQRCode}>
+            <FontAwesomeIcon icon={faTimes} />
+          </span>
+          <div className="BoxQRCode">
+            <div className="QRCodeArea">
+              <img src={require("../../photos/photo5.png")} alt="QR Code" />
             </div>
-            <div
-              className={`GoToEditProfil${
-                pageActive === "InfoProfil" ? " Active" : ""
-              }`}
-              onClick={event => this.handleClickStep(event, "EditProfil")}
-            >
-              <span>Edit Profil</span>
-              <FontAwesomeIcon icon={faChevronRight} />
-            </div>
-          </div>
-          <div className="QRCodeOverlay" ref={this.QRCodeOverlayRef}>
-            <span className="CloseIcon" onClick={this.handleCloseQRCode}>
-              <FontAwesomeIcon icon={faTimes} />
-            </span>
-            <div className="BoxQRCode">
-              <div className="QRCodeArea">
-                <img src={require("../../photos/photo5.png")} alt="QR Code" />
-              </div>
-              <div className="InfoArea">
-                <div>
-                  Scan <span className="bold">QRCode</span> di atas untuk
-                  berteman dan kebutuhan lainnya
-                </div>
+            <div className="InfoArea">
+              <div>
+                Scan <span className="bold">QRCode</span> di atas untuk berteman
+                dan kebutuhan lainnya
               </div>
             </div>
           </div>

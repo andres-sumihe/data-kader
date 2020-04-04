@@ -1,12 +1,14 @@
 .Sidebar {
-  width: 190px;
+  width: 200px;
   height: 100%;
   position: fixed;
   overflow-y: auto;
   opacity: 0;
   transform: translateX(-100%);
   transition: 0.4s ease-in-out;
-  padding: 0 15px 15px;
+  padding: 0 0 15px;
+  background-color: #414141;
+  border-top-right-radius: 60px;
 }
 
 .Sidebar.Active {

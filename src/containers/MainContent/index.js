@@ -17,7 +17,7 @@ class MainContent extends React.Component {
   render() {
     const isSidebarActive = this.props.isSidebarActive;
     return (
-      <div className={"MainContent bg-c5" + (!isSidebarActive ? " Full" : "")}>
+      <div className={"MainContent" + (!isSidebarActive ? " Full" : "")}>
         <HeadContent
           isSidebarActive={isSidebarActive}
           onMenuButtonClicked={this.handleMenuButtonClicked}
