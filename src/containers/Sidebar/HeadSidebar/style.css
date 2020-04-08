@@ -4,12 +4,25 @@
   height: 120px;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   border-top-right-radius: 60px;
 }
 
-.brand {
+.HeadSidebarWrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h3.brand {
   font-weight: 400;
   text-transform: capitalize;
   color: #fff;
+}
+
+.brand {
+  width: 60%;
+}
+
+.brand img {
+  max-width: 100%;
+  width: 100%;
 }

@@ -13,53 +13,250 @@ import {
   faCamera,
   faIdCard,
   faSave,
+  faPen,
 } from "@fortawesome/free-solid-svg-icons";
 
 class InfoKepartaian extends React.Component {
   render() {
     return (
       <div className="Kepartaian row">
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Struktural</legend>
-            <div className="content">Lorem Ipsum</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Struktural</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Struktural</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Departemen</legend>
-            <div className="content">Lorem Ipsum</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Departemen</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Departemen</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Alat Kelengkapan</legend>
-            <div className="content">Lorem Ipsum</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Alat</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Alat</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Komite</legend>
-            <div className="content">Lorem Ipsum</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Komite</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Komite</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Sekolah Partai</legend>
-            <div className="content">Lorem Ipsum</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Sekolah Partai/Kader</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Sekolah Partai/Kader</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Penugasan</legend>
-            <div className="content">Lorem Ipsum</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Penugasan</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Penugasan</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Komunitas Juang</legend>
-            <div className="content">Lorem Ipsum</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Komunitas Juang</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Lorem Ipsum Dolor Sit Amet
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Komunitas Juang</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -70,53 +267,219 @@ class InfoBiodata extends React.Component {
   render() {
     return (
       <div className="Biodata row">
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Wilayah</legend>
-            <div className="content">Kota Salatiga</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Alamat</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">Turen 1 No. 33 D</div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">Jl. Mangunsari Blok 14 C</div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Alamat</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Alamat</legend>
-            <div className="content">Jl. Diponegoro No. 77</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Kontak</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">081248678908</div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">082248565998</div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Kontak</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Kontak</legend>
-            <div className="content">Lorem Ipsum</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Pendidikan</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Universitas Amikom Yogyakarta
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">SMAN 1 Babakan Cirebon</div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Pendidikan</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Pendidikan</legend>
-            <div className="content">Lorem Ipsum</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Pekerjaan</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">Pegawai Negeri Sipil</div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">Ketua RT</div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Pekerjaan</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Pekerjaan</legend>
-            <div className="content">Lorem Ipsum</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Bahasa</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">Indonesia</div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">Inggris</div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Bahasa</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Bahasa</legend>
-            <div className="content">Lorem Ipsum</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Organisasi</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">Pecinta Alam Shaba Buana</div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">
+                  Barisan Nasionalis Pancasila
+                </div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Organisasi</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Organisasi</legend>
-            <div className="content">Lorem Ipsum</div>
-          </fieldset>
-        </div>
-        <div className="box-item column-6">
-          <fieldset>
-            <legend className="label">Bakat</legend>
-            <div className="content">Lorem Ipsum</div>
-          </fieldset>
+        <div className="SingleDetail">
+          <div className="HeadDetail">
+            <span>Bakat</span>
+          </div>
+          <div className="BodyDetail">
+            <div className="ValueWrapper">
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">Beatbox</div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+              <div className="SingleValueWrapper">
+                <div className="SingleValueText">Menyanyi</div>
+                <div className="SingleValueAction">
+                  <div className="EditButton">
+                    <FontAwesomeIcon icon={faPen} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="SubmitButtonArea">
+              <div className="SubmitButton">
+                <span>Tambahkan Bakat</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -332,11 +695,6 @@ class DetailInfoProfil extends React.Component {
   render() {
     return (
       <div className="DetailInfoProfil Active">
-        {/* <div className="CloseIconWrapper">
-          <span className="CloseIcon">
-            <FontAwesomeIcon icon={faChevronRight} />
-          </span>
-        </div> */}
         <DetailHeadInfoProfil
           onCloseClicked={this.handleCloseClicked}
           onShowQRCodeClicked={this.handleShowQRCodeClicked}
@@ -466,297 +824,6 @@ class EditKepartaian extends React.Component {
     );
   }
 }
-class EditBiodata extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleInputType = this.handleInputType.bind(this);
-  }
-
-  handleInputType(event) {
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-      <form className="Biodata">
-        <table className="InputWrapper">
-          <tbody>
-            <tr className="SingleInput">
-              <td className="Label">
-                <label htmlFor="BiodataNama">Nama</label>
-              </td>
-              <td className="Value">
-                <input
-                  type="text"
-                  value="Lorem Ipsum"
-                  onChange={this.handleInputType}
-                  id="BiodataNama"
-                />
-              </td>
-            </tr>
-            <tr className="SingleInput">
-              <td className="Label">
-                <label htmlFor="BiodataNoKTA">No. KTA</label>
-              </td>
-              <td className="Value">
-                <input
-                  type="text"
-                  value="Lorem Ipsum"
-                  onChange={this.handleInputType}
-                  id="BiodataNoKTA"
-                />
-              </td>
-            </tr>
-            <tr className="SingleInput">
-              <td className="Label">
-                <label htmlFor="BiodataFotoKTA">Foto KTA</label>
-              </td>
-              <td className="Value">
-                <input type="file" id="BiodataFotoKTA" />
-              </td>
-            </tr>
-            <tr className="SingleInput">
-              <td className="Label">
-                <label htmlFor="BiodataJabatan">Jabatan</label>
-              </td>
-              <td className="Value">
-                <input
-                  type="text"
-                  value="Lorem Ipsum"
-                  onChange={this.handleInputType}
-                  id="BiodataJabatan"
-                />
-              </td>
-            </tr>
-            <tr className="SingleInput">
-              <td className="Label">
-                <label htmlFor="BiodataWilayah">Wilayah</label>
-              </td>
-              <td className="Value">
-                <input
-                  type="text"
-                  value="Lorem Ipsum"
-                  onChange={this.handleInputType}
-                  id="BiodataWilayah"
-                />
-              </td>
-            </tr>
-            <tr className="SingleInput">
-              <td className="Label">
-                <label htmlFor="BiodataAlamat">Alamat</label>
-              </td>
-              <td className="Value">
-                <input
-                  type="text"
-                  value="Lorem Ipsum"
-                  onChange={this.handleInputType}
-                  id="BiodataAlamat"
-                />
-              </td>
-            </tr>
-            <tr className="SingleInput">
-              <td className="Label">
-                <label htmlFor="BiodataKontak">Kontak</label>
-              </td>
-              <td className="Value">
-                <input
-                  type="text"
-                  value="Lorem Ipsum"
-                  onChange={this.handleInputType}
-                  id="BiodataKontak"
-                />
-              </td>
-            </tr>
-            <tr className="SingleInput">
-              <td className="Label">
-                <label htmlFor="BiodataPendidikan">Pendidikan</label>
-              </td>
-              <td className="Value">
-                <input
-                  type="text"
-                  value="Lorem Ipsum"
-                  onChange={this.handleInputType}
-                  id="BiodataPendidikan"
-                />
-              </td>
-            </tr>
-            <tr className="SingleInput">
-              <td className="Label">
-                <label htmlFor="BiodataPekerjaan">Pekerjaan</label>
-              </td>
-              <td className="Value">
-                <input
-                  type="text"
-                  value="Lorem Ipsum"
-                  onChange={this.handleInputType}
-                  id="BiodataPekerjaan"
-                />
-              </td>
-            </tr>
-            <tr className="SingleInput">
-              <td className="Label">
-                <label htmlFor="BiodataBahasa">Bahasa</label>
-              </td>
-              <td className="Value">
-                <input
-                  type="text"
-                  value="Lorem Ipsum"
-                  onChange={this.handleInputType}
-                  id="BiodataBahasa"
-                />
-              </td>
-            </tr>
-            <tr className="SingleInput">
-              <td className="Label">
-                <label htmlFor="BiodataOrganisasi">Organisasi</label>
-              </td>
-              <td className="Value">
-                <input
-                  type="text"
-                  value="Lorem Ipsum"
-                  onChange={this.handleInputType}
-                  id="BiodataOrganisasi"
-                />
-              </td>
-            </tr>
-            <tr className="SingleInput">
-              <td className="Label">
-                <label htmlFor="BiodataBakat">Bakat</label>
-              </td>
-              <td className="Value">
-                <input
-                  type="text"
-                  value="Lorem Ipsum"
-                  onChange={this.handleInputType}
-                  id="BiodataBakat"
-                />
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </form>
-    );
-  }
-}
-
-class DetailTabEditProfil extends React.Component {
-  constructor(props) {
-    super(props);
-    this.biodataTabRef = React.createRef();
-    this.kepartaianTabRef = React.createRef();
-    this.handleClickTab = this.handleClickTab.bind(this);
-  }
-
-  handleClickTab(event, tabTarget) {
-    if (this.props.tabActive !== tabTarget) {
-      switch (tabTarget) {
-        case "Kepartaian":
-          this.biodataTabRef.current.classList.remove("Active");
-          this.kepartaianTabRef.current.classList.add("Active");
-          break;
-        case "Biodata":
-        default:
-          this.kepartaianTabRef.current.classList.remove("Active");
-          this.biodataTabRef.current.classList.add("Active");
-      }
-      this.props.onTabClicked(tabTarget);
-      event.preventDefault();
-    }
-  }
-
-  render() {
-    return (
-      <div className="DetailTabEditProfil">
-        <div
-          className="SingleTabWrapper Active"
-          ref={this.biodataTabRef}
-          onClick={(event) => this.handleClickTab(event, "Biodata")}
-        >
-          <span className="SingleTab">Biodata</span>
-        </div>
-        <div
-          className="SingleTabWrapper"
-          ref={this.kepartaianTabRef}
-          onClick={(event) => this.handleClickTab(event, "Kepartaian")}
-        >
-          <span className="SingleTab">Kepartaian</span>
-        </div>
-      </div>
-    );
-  }
-}
-
-class DetailHeadEditProfil extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleClickClose = this.handleClickClose.bind(this);
-  }
-
-  handleClickClose(event) {
-    this.props.onCloseClicked();
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-      <div className="DetailHeadEditProfil">
-        <h5>
-          <FontAwesomeIcon icon={faUser} />
-          <span>Edit Profil</span>
-        </h5>
-        <span className="CloseIcon" onClick={this.handleClickClose}>
-          <FontAwesomeIcon icon={faTimes} />
-        </span>
-      </div>
-    );
-  }
-}
-
-class DetailBodyEditProfil extends React.Component {
-  render() {
-    return (
-      <div className="DetailBodyEditProfil">
-        {this.props.tabActive === "Kepartaian" ? (
-          <EditKepartaian />
-        ) : (
-          <EditBiodata />
-        )}
-      </div>
-    );
-  }
-}
-
-class DetailEditProfil extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      tabActive: "Biodata",
-    };
-    this.handleCloseClicked = this.handleCloseClicked.bind(this);
-    this.handleTabClicked = this.handleTabClicked.bind(this);
-  }
-
-  handleCloseClicked() {
-    this.props.onCloseClicked();
-  }
-
-  handleTabClicked(tabTarget) {
-    this.setState({ tabActive: tabTarget });
-  }
-
-  render() {
-    return (
-      <div className="DetailEditProfil Active">
-        <DetailHeadEditProfil onCloseClicked={this.handleCloseClicked} />
-        <DetailTabEditProfil
-          tabActive={this.state.tabActive}
-          onTabClicked={this.handleTabClicked}
-        />
-        <DetailBodyEditProfil tabActive={this.state.tabActive} />
-      </div>
-    );
-  }
-}
 
 class DetailAnggota extends React.Component {
   constructor(props) {
@@ -769,6 +836,13 @@ class DetailAnggota extends React.Component {
     };
     this.handleCloseQRCode = this.handleCloseQRCode.bind(this);
     this.handleShowQRCodeClicked = this.handleShowQRCodeClicked.bind(this);
+    this.handleClickClose = this.handleClickClose.bind(this);
+  }
+
+  handleClickClose(event) {
+    this.detailAnggotaRef.current.classList.remove("Active");
+    this.detailAnggotaOverlayRef.current.classList.remove("Active");
+    event.preventDefault();
   }
 
   handleCloseQRCode() {
@@ -787,14 +861,14 @@ class DetailAnggota extends React.Component {
         ref={this.detailAnggotaOverlayRef}
       >
         <div className="DetailAnggota" ref={this.detailAnggotaRef}>
-          {pageActive === "EditProfil" ? (
-            <DetailEditProfil onCloseClicked={this.handleCloseClicked} />
-          ) : (
-            <DetailInfoProfil
-              onCloseClicked={this.handleCloseClicked}
-              onShowQRCodeClicked={this.handleShowQRCodeClicked}
-            />
-          )}
+          <DetailInfoProfil
+            onShowQRCodeClicked={this.handleShowQRCodeClicked}
+          />
+          <div className="CloseIconWrapper" onClick={this.handleClickClose}>
+            <div className="CloseIcon">
+              <FontAwesomeIcon icon={faTimes} />
+            </div>
+          </div>
         </div>
         <div className="QRCodeWrapper" ref={this.QRCodeWrapper}>
           <span className="CloseIcon" onClick={this.handleCloseQRCode}>

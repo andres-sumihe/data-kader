@@ -16,6 +16,7 @@ class GridPreview extends React.Component {
   constructor(props) {
     super(props);
     this.handleClickLihatProfil = this.handleClickLihatProfil.bind(this);
+    this.areaFotoRef = React.createRef();
   }
 
   handleClickLihatProfil(event, noKTA) {
@@ -27,46 +28,46 @@ class GridPreview extends React.Component {
     return (
       <div className="GridPreview row no-gutters">
         <div className="SingleDataAnggota">
-          <div className="BoxSingleDataAnggota">
-            <div className="InnerBoxTopWrapper">
-              <div className="InnerBoxTop">
+          <div className="BoxWrapper">
+            <div className="BoxTopWrapper">
+              <div className="AddAnggota">
                 <FontAwesomeIcon icon={faPlus} />
               </div>
             </div>
-            <div className="InnerBoxBottomWrapper">
-              <div className="FloatBox AddAnggotaBaru">
-                <span className="FloatBoxContent">Tambah Anggota Baru</span>
+            <div className="BoxBottomWrapper">
+              <div className="BoxBottomContent">
+                <span className="LabelTambahAnggotaBaru">
+                  Tambah Anggota Baru
+                </span>
               </div>
             </div>
           </div>
         </div>
         <div className="SingleDataAnggota">
-          <div className="BoxSingleDataAnggota">
-            <div className="InnerBoxTopWrapper">
-              <div className="InnerBoxTop">
+          <div className="BoxWrapper">
+            <div className="BoxTopWrapper">
+              <div className="AreaFoto">
                 <div
                   className="Foto"
                   style={{
                     backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
                   }}
                 ></div>
-                <div className="Nama">Sugeno Fuzzy</div>
-                <div className="Jabatan">Ketua DPC</div>
-                <div className="Wilayah">Kabupaten Magelang</div>
               </div>
+              <div className="Nama">Sugeno Fuzzy</div>
+              <div className="Jabatan">Ketua DPC</div>
+              <div className="Wilayah">Kabupaten Magelang</div>
             </div>
-            <div className="InnerBoxBottomWrapper">
-              <div className="FloatBox">
-                <span className="FloatBoxContent NoKTA">
-                  33093020082307890001
-                </span>
+            <div className="BoxBottomWrapper">
+              <div className="BoxBottomContent">
+                <span className="NoKTA">33093020082307890001</span>
               </div>
             </div>
             <div className="BoxOverlay">
               <div
-                className="ViewProfileButton"
-                onClick={(event) =>
-                  this.handleClickLihatProfil(event, "9922090922309201")
+                className="LihatProfilButton"
+                onClick={(e) =>
+                  this.handleClickLihatProfil(e, "33093020082307890001")
                 }
               >
                 <FontAwesomeIcon icon={faEye} />
@@ -76,32 +77,30 @@ class GridPreview extends React.Component {
           </div>
         </div>
         <div className="SingleDataAnggota">
-          <div className="BoxSingleDataAnggota">
-            <div className="InnerBoxTopWrapper">
-              <div className="InnerBoxTop">
+          <div className="BoxWrapper">
+            <div className="BoxTopWrapper">
+              <div className="AreaFoto">
                 <div
                   className="Foto"
                   style={{
                     backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
                   }}
                 ></div>
-                <div className="Nama">Sugeno Fuzzy</div>
-                <div className="Jabatan">Ketua DPC</div>
-                <div className="Wilayah">Kabupaten Magelang</div>
               </div>
+              <div className="Nama">Sugeno Fuzzy</div>
+              <div className="Jabatan">Ketua DPC</div>
+              <div className="Wilayah">Kabupaten Magelang</div>
             </div>
-            <div className="InnerBoxBottomWrapper">
-              <div className="FloatBox">
-                <span className="FloatBoxContent NoKTA">
-                  33093020082307890001
-                </span>
+            <div className="BoxBottomWrapper">
+              <div className="BoxBottomContent">
+                <span className="NoKTA">33093020082307890001</span>
               </div>
             </div>
             <div className="BoxOverlay">
               <div
-                className="ViewProfileButton"
-                onClick={(event) =>
-                  this.handleClickLihatProfil(event, "9922090922309201")
+                className="LihatProfilButton"
+                onClick={(e) =>
+                  this.handleClickLihatProfil(e, "33093020082307890001")
                 }
               >
                 <FontAwesomeIcon icon={faEye} />
@@ -111,32 +110,30 @@ class GridPreview extends React.Component {
           </div>
         </div>
         <div className="SingleDataAnggota">
-          <div className="BoxSingleDataAnggota">
-            <div className="InnerBoxTopWrapper">
-              <div className="InnerBoxTop">
+          <div className="BoxWrapper">
+            <div className="BoxTopWrapper">
+              <div className="AreaFoto">
                 <div
                   className="Foto"
                   style={{
                     backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
                   }}
                 ></div>
-                <div className="Nama">Sugeno Fuzzy</div>
-                <div className="Jabatan">Ketua DPC</div>
-                <div className="Wilayah">Kabupaten Magelang</div>
               </div>
+              <div className="Nama">Sugeno Fuzzy</div>
+              <div className="Jabatan">Ketua DPC</div>
+              <div className="Wilayah">Kabupaten Magelang</div>
             </div>
-            <div className="InnerBoxBottomWrapper">
-              <div className="FloatBox">
-                <span className="FloatBoxContent NoKTA">
-                  33093020082307890001
-                </span>
+            <div className="BoxBottomWrapper">
+              <div className="BoxBottomContent">
+                <span className="NoKTA">33093020082307890001</span>
               </div>
             </div>
             <div className="BoxOverlay">
               <div
-                className="ViewProfileButton"
-                onClick={(event) =>
-                  this.handleClickLihatProfil(event, "9922090922309201")
+                className="LihatProfilButton"
+                onClick={(e) =>
+                  this.handleClickLihatProfil(e, "33093020082307890001")
                 }
               >
                 <FontAwesomeIcon icon={faEye} />
@@ -146,32 +143,30 @@ class GridPreview extends React.Component {
           </div>
         </div>
         <div className="SingleDataAnggota">
-          <div className="BoxSingleDataAnggota">
-            <div className="InnerBoxTopWrapper">
-              <div className="InnerBoxTop">
+          <div className="BoxWrapper">
+            <div className="BoxTopWrapper">
+              <div className="AreaFoto">
                 <div
                   className="Foto"
                   style={{
                     backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
                   }}
                 ></div>
-                <div className="Nama">Sugeno Fuzzy</div>
-                <div className="Jabatan">Ketua DPC</div>
-                <div className="Wilayah">Kabupaten Magelang</div>
               </div>
+              <div className="Nama">Sugeno Fuzzy Hello</div>
+              <div className="Jabatan">Ketua DPC</div>
+              <div className="Wilayah">Kabupaten Magelang</div>
             </div>
-            <div className="InnerBoxBottomWrapper">
-              <div className="FloatBox">
-                <span className="FloatBoxContent NoKTA">
-                  33093020082307890001
-                </span>
+            <div className="BoxBottomWrapper">
+              <div className="BoxBottomContent">
+                <span className="NoKTA">33093020082307890001</span>
               </div>
             </div>
             <div className="BoxOverlay">
               <div
-                className="ViewProfileButton"
-                onClick={(event) =>
-                  this.handleClickLihatProfil(event, "9922090922309201")
+                className="LihatProfilButton"
+                onClick={(e) =>
+                  this.handleClickLihatProfil(e, "33093020082307890001")
                 }
               >
                 <FontAwesomeIcon icon={faEye} />
@@ -181,32 +176,30 @@ class GridPreview extends React.Component {
           </div>
         </div>
         <div className="SingleDataAnggota">
-          <div className="BoxSingleDataAnggota">
-            <div className="InnerBoxTopWrapper">
-              <div className="InnerBoxTop">
+          <div className="BoxWrapper">
+            <div className="BoxTopWrapper">
+              <div className="AreaFoto">
                 <div
                   className="Foto"
                   style={{
                     backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
                   }}
                 ></div>
-                <div className="Nama">Sugeno Fuzzy</div>
-                <div className="Jabatan">Ketua DPC</div>
-                <div className="Wilayah">Kabupaten Magelang</div>
               </div>
+              <div className="Nama">Sugeno Fuzzy Hello</div>
+              <div className="Jabatan">Ketua DPC</div>
+              <div className="Wilayah">Kabupaten Magelang</div>
             </div>
-            <div className="InnerBoxBottomWrapper">
-              <div className="FloatBox">
-                <span className="FloatBoxContent NoKTA">
-                  33093020082307890001
-                </span>
+            <div className="BoxBottomWrapper">
+              <div className="BoxBottomContent">
+                <span className="NoKTA">33093020082307890001</span>
               </div>
             </div>
             <div className="BoxOverlay">
               <div
-                className="ViewProfileButton"
-                onClick={(event) =>
-                  this.handleClickLihatProfil(event, "9922090922309201")
+                className="LihatProfilButton"
+                onClick={(e) =>
+                  this.handleClickLihatProfil(e, "33093020082307890001")
                 }
               >
                 <FontAwesomeIcon icon={faEye} />
@@ -216,32 +209,30 @@ class GridPreview extends React.Component {
           </div>
         </div>
         <div className="SingleDataAnggota">
-          <div className="BoxSingleDataAnggota">
-            <div className="InnerBoxTopWrapper">
-              <div className="InnerBoxTop">
+          <div className="BoxWrapper">
+            <div className="BoxTopWrapper">
+              <div className="AreaFoto">
                 <div
                   className="Foto"
                   style={{
                     backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
                   }}
                 ></div>
-                <div className="Nama">Sugeno Fuzzy</div>
-                <div className="Jabatan">Ketua DPC</div>
-                <div className="Wilayah">Kabupaten Magelang</div>
               </div>
+              <div className="Nama">Sugeno Fuzzy Hello</div>
+              <div className="Jabatan">Ketua DPC</div>
+              <div className="Wilayah">Kabupaten Magelang</div>
             </div>
-            <div className="InnerBoxBottomWrapper">
-              <div className="FloatBox">
-                <span className="FloatBoxContent NoKTA">
-                  33093020082307890001
-                </span>
+            <div className="BoxBottomWrapper">
+              <div className="BoxBottomContent">
+                <span className="NoKTA">33093020082307890001</span>
               </div>
             </div>
             <div className="BoxOverlay">
               <div
-                className="ViewProfileButton"
-                onClick={(event) =>
-                  this.handleClickLihatProfil(event, "9922090922309201")
+                className="LihatProfilButton"
+                onClick={(e) =>
+                  this.handleClickLihatProfil(e, "33093020082307890001")
                 }
               >
                 <FontAwesomeIcon icon={faEye} />
@@ -251,32 +242,30 @@ class GridPreview extends React.Component {
           </div>
         </div>
         <div className="SingleDataAnggota">
-          <div className="BoxSingleDataAnggota">
-            <div className="InnerBoxTopWrapper">
-              <div className="InnerBoxTop">
+          <div className="BoxWrapper">
+            <div className="BoxTopWrapper">
+              <div className="AreaFoto">
                 <div
                   className="Foto"
                   style={{
                     backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
                   }}
                 ></div>
-                <div className="Nama">Sugeno Fuzzy</div>
-                <div className="Jabatan">Ketua DPC</div>
-                <div className="Wilayah">Kabupaten Magelang</div>
               </div>
+              <div className="Nama">Sugeno Fuzzy Hello</div>
+              <div className="Jabatan">Ketua DPC</div>
+              <div className="Wilayah">Kabupaten Magelang</div>
             </div>
-            <div className="InnerBoxBottomWrapper">
-              <div className="FloatBox">
-                <span className="FloatBoxContent NoKTA">
-                  33093020082307890001
-                </span>
+            <div className="BoxBottomWrapper">
+              <div className="BoxBottomContent">
+                <span className="NoKTA">33093020082307890001</span>
               </div>
             </div>
             <div className="BoxOverlay">
               <div
-                className="ViewProfileButton"
-                onClick={(event) =>
-                  this.handleClickLihatProfil(event, "9922090922309201")
+                className="LihatProfilButton"
+                onClick={(e) =>
+                  this.handleClickLihatProfil(e, "33093020082307890001")
                 }
               >
                 <FontAwesomeIcon icon={faEye} />
@@ -286,32 +275,30 @@ class GridPreview extends React.Component {
           </div>
         </div>
         <div className="SingleDataAnggota">
-          <div className="BoxSingleDataAnggota">
-            <div className="InnerBoxTopWrapper">
-              <div className="InnerBoxTop">
+          <div className="BoxWrapper">
+            <div className="BoxTopWrapper">
+              <div className="AreaFoto">
                 <div
                   className="Foto"
                   style={{
                     backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
                   }}
                 ></div>
-                <div className="Nama">Sugeno Fuzzy</div>
-                <div className="Jabatan">Ketua DPC</div>
-                <div className="Wilayah">Kabupaten Magelang</div>
               </div>
+              <div className="Nama">Sugeno Fuzzy Hello</div>
+              <div className="Jabatan">Ketua DPC</div>
+              <div className="Wilayah">Kabupaten Magelang</div>
             </div>
-            <div className="InnerBoxBottomWrapper">
-              <div className="FloatBox">
-                <span className="FloatBoxContent NoKTA">
-                  33093020082307890001
-                </span>
+            <div className="BoxBottomWrapper">
+              <div className="BoxBottomContent">
+                <span className="NoKTA">33093020082307890001</span>
               </div>
             </div>
             <div className="BoxOverlay">
               <div
-                className="ViewProfileButton"
-                onClick={(event) =>
-                  this.handleClickLihatProfil(event, "9922090922309201")
+                className="LihatProfilButton"
+                onClick={(e) =>
+                  this.handleClickLihatProfil(e, "33093020082307890001")
                 }
               >
                 <FontAwesomeIcon icon={faEye} />
@@ -321,32 +308,30 @@ class GridPreview extends React.Component {
           </div>
         </div>
         <div className="SingleDataAnggota">
-          <div className="BoxSingleDataAnggota">
-            <div className="InnerBoxTopWrapper">
-              <div className="InnerBoxTop">
+          <div className="BoxWrapper">
+            <div className="BoxTopWrapper">
+              <div className="AreaFoto">
                 <div
                   className="Foto"
                   style={{
                     backgroundImage: `url(${require("../../photos/photo1.jpg")})`,
                   }}
                 ></div>
-                <div className="Nama">Sugeno Fuzzy</div>
-                <div className="Jabatan">Ketua DPC</div>
-                <div className="Wilayah">Kabupaten Magelang</div>
               </div>
+              <div className="Nama">Sugeno Fuzzy Hello</div>
+              <div className="Jabatan">Ketua DPC</div>
+              <div className="Wilayah">Kabupaten Magelang</div>
             </div>
-            <div className="InnerBoxBottomWrapper">
-              <div className="FloatBox">
-                <span className="FloatBoxContent NoKTA">
-                  33093020082307890001
-                </span>
+            <div className="BoxBottomWrapper">
+              <div className="BoxBottomContent">
+                <span className="NoKTA">33093020082307890001</span>
               </div>
             </div>
             <div className="BoxOverlay">
               <div
-                className="ViewProfileButton"
-                onClick={(event) =>
-                  this.handleClickLihatProfil(event, "9922090922309201")
+                className="LihatProfilButton"
+                onClick={(e) =>
+                  this.handleClickLihatProfil(e, "33093020082307890001")
                 }
               >
                 <FontAwesomeIcon icon={faEye} />

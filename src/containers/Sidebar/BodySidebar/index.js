@@ -9,7 +9,7 @@ class BodySidebar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuActive: "Anggota"
+      menuActive: "Anggota",
     };
     this.anggotaRef = React.createRef();
     this.eksekutifRef = React.createRef();
@@ -19,21 +19,21 @@ class BodySidebar extends React.Component {
   handleSingleMenuClick(event, title) {
     if (this.state.menuActive !== title) {
       this.setState({
-        menuActive: title
+        menuActive: title,
       });
-      switch(title) {
+      switch (title) {
         case "Eksekutif":
           this.anggotaRef.current.classList.remove("Active");
           this.legislatifRef.current.classList.remove("Active");
           this.eksekutifRef.current.classList.add("Active");
-        break;
+          break;
         case "Legislatif":
           this.anggotaRef.current.classList.remove("Active");
           this.eksekutifRef.current.classList.remove("Active");
           this.legislatifRef.current.classList.add("Active");
-        break;
+          break;
         case "Anggota":
-        default: 
+        default:
           this.eksekutifRef.current.classList.remove("Active");
           this.legislatifRef.current.classList.remove("Active");
           this.anggotaRef.current.classList.add("Active");
@@ -49,7 +49,7 @@ class BodySidebar extends React.Component {
             <Link to="/anggota">
               <div
                 className="InnerSingleMenu"
-                onClick={event => {
+                onClick={(event) => {
                   this.handleSingleMenuClick(event, "Anggota");
                 }}
               >
@@ -64,7 +64,7 @@ class BodySidebar extends React.Component {
             <Link to="/eksekutif">
               <div
                 className="InnerSingleMenu"
-                onClick={event => {
+                onClick={(event) => {
                   this.handleSingleMenuClick(event, "Eksekutif");
                 }}
               >
@@ -79,7 +79,7 @@ class BodySidebar extends React.Component {
             <Link to="/legislatif">
               <div
                 className="InnerSingleMenu"
-                onClick={event => {
+                onClick={(event) => {
                   this.handleSingleMenuClick(event, "Legislatif");
                 }}
               >
@@ -91,6 +91,17 @@ class BodySidebar extends React.Component {
             </Link>
           </li>
         </ul>
+        <div className="PDIPSection">
+          <img
+            class="logo"
+            src={require("../../../photos/logo_pdi.png")}
+            alt="logo_pdi"
+          />
+          <ul className="TextWrapper">
+            <li>DPD PDI Perjuangan</li>
+            <li>Jawa Tengah</li>
+          </ul>
+        </div>
       </div>
     );
   }

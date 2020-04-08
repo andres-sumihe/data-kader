@@ -660,6 +660,11 @@
   margin-right: -15px;
 }
 
+.Preview .GridPreview {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
 .Preview .GridPreview .SingleDataAnggota {
   margin-bottom: 15px;
   max-width: calc(100% / 12 * 2.4);
@@ -667,68 +672,33 @@
   -webkit-flex: 0 0 calc(100% / 12 * 2.4);
   flex: 0 0 calc(100% / 12 * 2.4);
   border-radius: 5px;
-}
-
-.Preview .GridPreview .SingleDataAnggota:nth-child(5n + 1) {
-  padding-right: 7.5px;
-  padding-left: 15px;
-}
-
-.Preview .GridPreview .SingleDataAnggota:nth-child(5n + 2),
-.Preview .GridPreview .SingleDataAnggota:nth-child(5n + 3),
-.Preview .GridPreview .SingleDataAnggota:nth-child(5n + 4) {
   padding-left: 7.5px;
   padding-right: 7.5px;
 }
 
-.Preview .GridPreview .SingleDataAnggota:nth-child(5n + 5) {
-  padding-left: 7.5px;
-  padding-right: 15px;
-}
-
-.Preview .GridPreview .BoxSingleDataAnggota {
+.Preview .GridPreview .SingleDataAnggota .BoxWrapper {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: relative;
   justify-content: space-between;
-  position: relative;
-  height: 100%;
-  padding: 15px;
-  line-height: 1.2;
-  border-radius: 5px;
-  background-color: #fff;
-  position: relative;
-  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
-  -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
 }
 
-.Preview
-  .GridPreview
-  .SingleDataAnggota:first-of-type
-  .BoxSingleDataAnggota
-  .InnerBoxTopWrapper {
-  cursor: pointer;
-}
-
-.Preview
-  .GridPreview
-  .SingleDataAnggota:not(:first-of-type)
-  .BoxSingleDataAnggota
-  .BoxOverlay {
+.Preview .GridPreview .SingleDataAnggota .BoxWrapper .BoxOverlay {
   width: 100%;
-  height: calc(100% - 47px);
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 5;
+  height: calc(100% - 45px);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  transition: 0.4s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.65);
+  transition: 0.5s ease-in-out;
   opacity: 0;
   visibility: hidden;
 }
@@ -736,43 +706,7 @@
 .Preview
   .GridPreview
   .SingleDataAnggota:not(:first-of-type)
-  .BoxSingleDataAnggota
-  .BoxOverlay
-  .ViewProfileButton {
-  color: #fff;
-  background-color: #b71c1c;
-  width: calc(100% - 30px);
-  border-radius: 30px;
-  padding: 12px 17.5px;
-  text-align: center;
-  font-size: 1.1em;
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-}
-
-.Preview
-  .GridPreview
-  .SingleDataAnggota:not(:first-of-type)
-  .BoxSingleDataAnggota
-  .BoxOverlay
-  .ViewProfileButton:hover {
-  background-color: rgba(183, 28, 28, 0.9);
-}
-
-.Preview
-  .GridPreview
-  .SingleDataAnggota:not(:first-of-type)
-  .BoxSingleDataAnggota
-  .BoxOverlay
-  .ViewProfileButton
-  > span {
-  margin-left: 7px;
-}
-
-.Preview
-  .GridPreview
-  .SingleDataAnggota:not(:first-of-type)
-  .BoxSingleDataAnggota:hover
+  .BoxWrapper:hover
   .BoxOverlay {
   opacity: 1;
   visibility: visible;
@@ -780,79 +714,164 @@
 
 .Preview
   .GridPreview
+  .SingleDataAnggota
+  .BoxWrapper
+  .BoxOverlay
+  .LihatProfilButton {
+  width: 80%;
+  background-color: #b71c1c;
+  border-radius: 30px;
+  color: #fff;
+  padding: 12px 15px;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: 0.4s ease-in-out;
+}
+
+.Preview
+  .GridPreview
+  .SingleDataAnggota
+  .BoxWrapper
+  .BoxOverlay
+  .LihatProfilButton:hover {
+  background-color: rgba(183, 28, 28, 0.9);
+}
+
+.Preview
+  .GridPreview
+  .SingleDataAnggota
+  .BoxWrapper
+  .BoxOverlay
+  .LihatProfilButton
+  > span {
+  margin-left: 7px;
+}
+
+.Preview .GridPreview .SingleDataAnggota .BoxWrapper .BoxTopWrapper {
+  padding: 15px 15px 0;
+  line-height: 1.2;
+  height: auto;
+  position: relative;
+  flex-grow: 1;
+}
+
+.Preview
+  .GridPreview
   .SingleDataAnggota:first-of-type
-  .BoxSingleDataAnggota
-  .InnerBoxTopWrapper {
+  .BoxWrapper
+  .BoxTopWrapper {
+  padding-bottom: 15px;
+}
+
+.Preview
+  .GridPreview
+  .SingleDataAnggota:first-of-type
+  .BoxWrapper
+  .BoxTopWrapper
+  .AddAnggota {
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 7.5em;
+  justify-content: center;
+  border: 1px dashed #aaa;
+  font-size: 7em;
+}
+
+.Preview .GridPreview .SingleDataAnggota .BoxWrapper .BoxTopWrapper .AreaFoto {
+  width: 100%;
+  padding-top: 100%;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.Preview
+  .GridPreview
+  .SingleDataAnggota
+  .BoxWrapper
+  .BoxTopWrapper
+  .AreaFoto
+  .Foto {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.Preview .GridPreview .SingleDataAnggota .BoxWrapper .BoxBottomWrapper {
   margin-bottom: 15px;
-  border: 2px dashed #777;
+}
+
+.Preview
+  .GridPreview
+  .SingleDataAnggota
+  .BoxWrapper
+  .BoxBottomWrapper
+  .BoxBottomContent {
+  padding: 3px 15px;
+  color: #fff;
+  margin-left: -3.75px;
+  margin-right: -3.75px;
   border-radius: 5px;
 }
 
-.Preview .GridPreview .BoxSingleDataAnggota .InnerBoxTopWrapper,
-.Preview .GridPreview .BoxSingleDataAnggota .InnerBoxTop,
-.Preview .GridPreview .BoxSingleDataAnggota .InnerBoxBottomWrapper {
-  width: 100%;
+.Preview
+  .GridPreview
+  .SingleDataAnggota:first-of-type
+  .BoxWrapper
+  .BoxBottomWrapper
+  .BoxBottomContent {
+  background-color: #00a85a;
 }
 
-.Preview .GridPreview .BoxSingleDataAnggota .InnerBoxTop {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.Preview
+  .GridPreview
+  .SingleDataAnggota:not(:first-of-type)
+  .BoxWrapper
+  .BoxBottomWrapper
+  .BoxBottomContent {
+  background-color: #b71c1c;
 }
 
-.Preview .GridPreview .Foto {
-  background-size: cover;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
+.Preview .GridPreview .SingleDataAnggota:not(:first-of-type) .BoxWrapper .Nama {
+  font-size: 1.2em;
+  font-weight: 700;
+  border-bottom: 1px solid #777;
+  padding-bottom: 11px;
   margin-bottom: 7px;
 }
 
-.Preview .GridPreview .Nama {
-  font-size: 1.15em;
-  margin-bottom: 7px;
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #444;
-  padding-bottom: 7px;
-  color: #333;
-  text-transform: capitalize;
+.Preview
+  .GridPreview
+  .SingleDataAnggota:not(:first-of-type)
+  .BoxWrapper
+  .Jabatan,
+.Preview
+  .GridPreview
+  .SingleDataAnggota:not(:first-of-type)
+  .BoxWrapper
+  .Wilayah {
+  font-size: 0.925em;
 }
 
-.Preview .GridPreview .Jabatan,
-.Preview .GridPreview .Wilayah {
-  font-size: 0.9em;
-  text-transform: capitalize;
-}
-
-.Preview .GridPreview .Jabatan {
+.Preview
+  .GridPreview
+  .SingleDataAnggota:not(:first-of-type)
+  .BoxWrapper
+  .Jabatan {
   margin-bottom: 3px;
   color: #666;
 }
 
-.Preview .GridPreview .Wilayah {
-  margin-bottom: 7px;
-  color: #333;
-}
-
-.Preview .GridPreview .FloatBox {
-  margin-left: -18.5px;
-  margin-right: -18.5px;
-  background-color: #b71c1c;
-  color: #fff;
-  border-radius: 5px;
-  padding: 8px 14px;
-  text-align: center;
-}
-
-.Preview .GridPreview .FloatBox.AddAnggotaBaru {
-  background-color: #00a85a;
+.Preview
+  .GridPreview
+  .SingleDataAnggota:not(:first-of-type)
+  .BoxWrapper
+  .Wilayah {
+  margin-bottom: 11px;
+  font-weight: 700;
 }
 
 .Preview .ListPreview {
@@ -1009,22 +1028,22 @@
 }
 
 .DetailAnggota {
-  width: 575px;
+  width: 465px;
   height: 100%;
   position: absolute;
   right: 0;
   top: 0;
   opacity: 0;
   visibility: hidden;
-  overflow-y: auto;
+  z-index: 1;
   transition: 0.8s ease-in-out;
-  background-color: #fff;
+  background-color: transparent;
   transform: translateX(100%);
 }
 
 .DetailAnggota .CloseIconWrapper {
   position: absolute;
-  left: -15px;
+  left: 0px;
   top: 15px;
   width: 30px;
   height: 30px;
@@ -1050,18 +1069,16 @@
 .DetailAnggota.Active {
   opacity: 1;
   visibility: visible;
-  overflow-x: visible;
   transform: translateX(0);
 }
 
-.DetailAnggota .DetailInfoProfil,
-.DetailAnggota .DetailEditProfil {
+.DetailAnggota .DetailInfoProfil {
   opacity: 0;
   visibility: hidden;
   width: 100%;
   height: 100%;
-  background-color: #fff;
-  overflow-y: auto;
+  padding-left: 15px;
+  background-color: transparent;
   position: absolute;
   left: 0;
   top: 0;
@@ -1087,8 +1104,9 @@
   justify-content: center;
   background-size: cover;
   color: #fff;
-  padding: 15px 0;
+  padding: 15px 0 15px;
   position: relative;
+  background-color: #fff;
 }
 
 .DetailAnggota .DetailInfoProfil .DetailHeadBodyInfoProfil .PrevButton {
@@ -1114,6 +1132,8 @@
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .DetailAnggota
@@ -1258,14 +1278,17 @@
 
 .DetailAnggota .DetailInfoProfil .DetailHeadBodyInfoProfil .KTACard {
   height: 200px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 45px;
+  margin-right: 45px;
   margin-bottom: 15px;
+  width: 75%;
+  display: flex;
+  align-items: center;
 }
 
 .DetailAnggota .DetailInfoProfil .DetailHeadBodyInfoProfil .KTACard img {
-  max-height: 100%;
-  height: 100%;
+  max-width: 100%;
+  width: 100%;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
   -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
@@ -1327,253 +1350,118 @@
   overflow-y: auto;
   flex-grow: 1;
   padding: 0 15px;
+  background-color: #fff;
 }
 
 .DetailAnggota .DetailInfoProfil .DetailBodyInfoProfil .Biodata,
 .DetailAnggota .DetailInfoProfil .DetailBodyInfoProfil .Kepartaian {
-  margin-top: 14px;
-  margin-bottom: 12px;
+  margin-top: 15px;
 }
 
-.DetailAnggota .DetailInfoProfil .DetailBodyInfoProfil .box-item {
-  margin-bottom: 12px;
+.DetailAnggota .DetailInfoProfil .DetailBodyInfoProfil .SingleDetail {
+  width: 100%;
 }
 
-.DetailAnggota
-  .DetailInfoProfil
-  .DetailBodyInfoProfil
-  .box-item:nth-child(odd) {
-  padding-left: 0 !important;
-  padding-right: 7.5px !important;
-}
-
-.DetailAnggota
-  .DetailInfoProfil
-  .DetailBodyInfoProfil
-  .box-item:nth-child(even) {
-  padding-left: 7.5px !important;
-  padding-right: 0 !important;
-}
-
-.DetailAnggota .DetailInfoProfil .DetailBodyInfoProfil .box-item fieldset {
-  border: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-.DetailAnggota
-  .DetailInfoProfil
-  .DetailBodyInfoProfil
-  .box-item
-  fieldset
-  .label {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.DetailAnggota
-  .DetailInfoProfil
-  .DetailBodyInfoProfil
-  .box-item
-  fieldset
-  .content {
-  color: rgba(0, 0, 0, 0.55);
-  padding-bottom: 4px;
-  margin-top: -4px;
-}
-
-.DetailAnggota .DetailEditProfil .DetailTabEditProfil .SingleTabWrapper {
-  width: 50%;
-  float: left;
-  text-align: center;
-  padding-top: 8px;
-  padding-bottom: 7px;
-  background-color: #fff;
-  cursor: pointer;
-  pointer-events: auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.DetailAnggota
-  .DetailEditProfil
-  .DetailTabEditProfil
-  .SingleTabWrapper:first-of-type {
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.DetailAnggota .DetailEditProfil .DetailTabEditProfil .SingleTabWrapper.Active {
-  border-bottom-color: #2bcf8a;
-}
-
-.DetailAnggota
-  .DetailEditProfil
-  .DetailTabEditProfil
-  .SingleTabWrapper
-  .SingleTab {
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.4);
-  text-transform: uppercase;
-}
-
-.DetailAnggota
-  .DetailEditProfil
-  .DetailTabEditProfil
-  .SingleTabWrapper.Active
-  .SingleTab {
-  color: #2bcf8a;
+.DetailAnggota .DetailInfoProfil .DetailBodyInfoProfil .HeadDetail {
+  background-color: #d7d7d7;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 8px 15px;
   font-weight: 700;
 }
 
-.DetailAnggota .DetailEditProfil .DetailBodyEditProfil .Biodata,
-.DetailAnggota .DetailEditProfil .DetailBodyEditProfil .Kepartaian {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.DetailAnggota .DetailEditProfil .DetailBodyEditProfil .Biodata .InputWrapper,
 .DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Kepartaian
-  .InputWrapper {
-  width: 100%;
-}
-
-.DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Biodata
-  .InputWrapper
-  .SingleInput
-  .Label,
-.DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Biodata
-  .InputWrapper
-  .SingleInput
-  .Value,
-.DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Kepartaian
-  .InputWrapper
-  .SingleInput
-  .Label,
-.DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Kepartaian
-  .InputWrapper
-  .SingleInput
-  .Value {
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-
-.DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Biodata
-  .InputWrapper
-  .SingleInput
-  .Value,
-.DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Kepartaian
-  .InputWrapper
-  .SingleInput
-  .Value {
-  padding-left: 7.5px;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Biodata
-  .InputWrapper
-  .SingleInput
-  .Value
-  input[type="text"],
-.DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Kepartaian
-  .InputWrapper
-  .SingleInput
-  .Value
-  input[type="text"] {
-  width: 100%;
-  border-radius: 5px;
-  padding: 6px;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-}
-
-.DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Kepartaian
-  .InputWrapper
-  .SingleInput:last-of-type
-  td {
-  padding-top: 7.5px;
-  padding-bottom: 7.5px;
-}
-
-.DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Kepartaian
-  .InputWrapper
-  .SingleInput
-  .SubmitArea {
-  padding-left: 7.5px;
-}
-
-.DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Kepartaian
-  .InputWrapper
-  .SingleInput
-  .SubmitArea
-  .SaveButton {
-  width: 120px;
-  height: 40px;
-  text-align: center;
-  border-radius: 5px;
-  border: 0;
-  color: #fff;
-  background-color: rgba(43, 207, 138, 0.8);
-  cursor: pointer;
-  font-size: 1em;
+  .DetailInfoProfil
+  .DetailBodyInfoProfil
+  .BodyDetail
+  .SingleValueWrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 8px 15px;
+  margin-left: -15px;
+  margin-right: -15px;
   transition: 0.4s ease-in-out;
 }
 
 .DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Kepartaian
-  .InputWrapper
-  .SingleInput
-  .SubmitArea
-  .SaveButton:hover {
-  background-color: rgba(43, 207, 138, 1);
+  .DetailInfoProfil
+  .DetailBodyInfoProfil
+  .BodyDetail
+  .SingleValueWrapper:hover {
+  background-color: rgba(0, 0, 0, 0.055);
 }
 
 .DetailAnggota
-  .DetailEditProfil
-  .DetailBodyEditProfil
-  .Kepartaian
-  .InputWrapper
-  .SingleInput
-  .SubmitArea
-  .SaveButton
-  span {
-  margin-left: 7px;
+  .DetailInfoProfil
+  .DetailBodyInfoProfil
+  .BodyDetail
+  .SingleValueWrapper
+  .EditButton {
+  cursor: pointer;
+}
+
+.DetailAnggota
+  .DetailInfoProfil
+  .DetailBodyInfoProfil
+  .BodyDetail
+  .SubmitButtonArea {
+  padding: 15px;
+}
+
+.DetailAnggota
+  .DetailInfoProfil
+  .DetailBodyInfoProfil
+  .BodyDetail
+  .SubmitButton {
+  width: 70%;
+  background-color: #b71c1c;
+  color: #fff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 7px 15px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.DetailAnggota
+  .DetailInfoProfil
+  .DetailBodyInfoProfil
+  .BodyDetail
+  .SubmitButton:hover {
+  background-color: rgba(183, 28, 28, 0.9);
 }
 
 /* MEDIA QUERY */
+
+@media (min-width: 1440px) {
+  .Preview .GridPreview .SingleDataAnggota {
+    max-width: calc(100% / 12 * 2);
+    -ms-flex: 0 0 calc(100% / 12 * 2);
+    -webkit-flex: 0 0 calc(100% / 12 * 2);
+    flex: 0 0 calc(100% / 12 * 2);
+  }
+}
+
+@media (min-width: 1800px) {
+  .Preview .GridPreview .SingleDataAnggota {
+    max-width: calc(100% / 12 * 1.7142857);
+    -ms-flex: 0 0 calc(100% / 12 * 1.7142857);
+    -webkit-flex: 0 0 calc(100% / 12 * 1.7142857);
+    flex: 0 0 calc(100% / 12 * 1.7142857);
+  }
+}
+
+@media (min-width: 1920px) {
+  .Preview .GridPreview .SingleDataAnggota {
+    max-width: calc(100% / 12 * 1.5);
+    -ms-flex: 0 0 calc(100% / 12 * 1.5);
+    -webkit-flex: 0 0 calc(100% / 12 * 1.5);
+    flex: 0 0 calc(100% / 12 * 1.5);
+  }
+}
 
 @media (max-width: 1259px) {
   .Preview .GridPreview .SingleDataAnggota {
@@ -1581,31 +1469,6 @@
     -ms-flex: 0 0 calc(100% / 12 * 3);
     -webkit-flex: 0 0 calc(100% / 12 * 3);
     flex: 0 0 calc(100% / 12 * 3);
-  }
-
-  .Preview .GridPreview .SingleDataAnggota:nth-child(5n + 1),
-  .Preview .GridPreview .SingleDataAnggota:nth-child(5n + 2),
-  .Preview .GridPreview .SingleDataAnggota:nth-child(5n + 3),
-  .Preview .GridPreview .SingleDataAnggota:nth-child(5n + 4),
-  .Preview .GridPreview .SingleDataAnggota:nth-child(5n + 5) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .Preview .GridPreview .SingleDataAnggota:nth-child(4n + 1) {
-    padding-left: 15px;
-    padding-right: 7.5px;
-  }
-
-  .Preview .GridPreview .SingleDataAnggota:nth-child(4n + 2),
-  .Preview .GridPreview .SingleDataAnggota:nth-child(4n + 3) {
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-  }
-
-  .Preview .GridPreview .SingleDataAnggota:nth-child(4n + 4) {
-    padding-left: 7.5px;
-    padding-right: 15px;
   }
 }
 
@@ -1616,27 +1479,22 @@
     -webkit-flex: 0 0 calc(100% / 12 * 4);
     flex: 0 0 calc(100% / 12 * 4);
   }
+}
 
-  .Preview .GridPreview .SingleDataAnggota:nth-child(4n + 1),
-  .Preview .GridPreview .SingleDataAnggota:nth-child(4n + 2),
-  .Preview .GridPreview .SingleDataAnggota:nth-child(4n + 3),
-  .Preview .GridPreview .SingleDataAnggota:nth-child(4n + 4) {
-    padding-left: 0;
-    padding-right: 0;
+@media (max-width: 851px) {
+  .Preview .GridPreview .SingleDataAnggota {
+    max-width: calc(100% / 12 * 6);
+    -ms-flex: 0 0 calc(100% / 12 * 6);
+    -webkit-flex: 0 0 calc(100% / 12 * 6);
+    flex: 0 0 calc(100% / 12 * 6);
   }
+}
 
-  .Preview .GridPreview .SingleDataAnggota:nth-child(3n + 1) {
-    padding-left: 15px;
-    padding-right: 7.5px;
-  }
-
-  .Preview .GridPreview .SingleDataAnggota:nth-child(3n + 2) {
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-  }
-
-  .Preview .GridPreview .SingleDataAnggota:nth-child(3n + 3) {
-    padding-left: 7.5px;
-    padding-right: 15px;
+@media (max-width: 671px) {
+  .Preview .GridPreview .SingleDataAnggota {
+    max-width: calc(100% / 12 * 12);
+    -ms-flex: 0 0 calc(100% / 12 * 12);
+    -webkit-flex: 0 0 calc(100% / 12 * 12);
+    flex: 0 0 calc(100% / 12 * 12);
   }
 }

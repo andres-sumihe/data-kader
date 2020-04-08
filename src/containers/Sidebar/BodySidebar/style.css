@@ -1,16 +1,20 @@
 .BodySidebar {
-  padding-top: 15px;
+  flex-grow: 1;
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .MenuWrapper {
-  margin: 0;
+  margin: 0 -15px;
   padding: 0;
 }
 
 .SingleMenu {
   transition: 0.4s ease-in-out;
   color: #d7d7d7;
-  border-left: 6px solid transparent;
+  border-left: 8px solid transparent;
 }
 
 .SingleMenu:not(.Active):hover {
@@ -29,4 +33,32 @@
 
 .IconWrapper {
   margin-right: 14px;
+}
+
+.PDIPSection {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.PDIPSection .logo {
+  max-width: 100%;
+  width: 25%;
+  margin-right: 5px;
+}
+
+.PDIPSection .TextWrapper {
+  color: #fff;
+  padding: 0;
+}
+
+.PDIPSection .TextWrapper li {
+  font-weight: 700;
+  line-height: 1.4em;
 }
